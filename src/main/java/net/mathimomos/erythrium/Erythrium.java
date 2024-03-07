@@ -1,6 +1,7 @@
 package net.mathimomos.erythrium;
 
 import com.mojang.logging.LogUtils;
+import net.mathimomos.erythrium.block.ModBlocks;
 import net.mathimomos.erythrium.item.ModCreativeModeTabs;
 import net.mathimomos.erythrium.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -28,6 +29,7 @@ public class Erythrium {
         ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

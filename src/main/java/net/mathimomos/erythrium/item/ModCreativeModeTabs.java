@@ -1,6 +1,7 @@
 package net.mathimomos.erythrium.item;
 
 import net.mathimomos.erythrium.Erythrium;
+import net.mathimomos.erythrium.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -19,6 +20,7 @@ public class ModCreativeModeTabs {
             .displayItems((pParameters, pOutput) -> {
                 pOutput.accept(ModItems.ERYTHRIUM.get());
                 pOutput.accept(ModItems.ROUGH_ERYTHRIUM.get());
+                pOutput.accept(ModBlocks.ERYTHRIUM_BLOCK.get());
             })
             .build());
 
