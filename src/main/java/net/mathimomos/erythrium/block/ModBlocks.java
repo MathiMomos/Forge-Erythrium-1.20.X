@@ -20,6 +20,8 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> ERYTHRIUM_BLOCK = registerBlock("erythrium_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+    public static final RegistryObject<Block> ERYTHRIUM_TILES_BLOCK = registerBlock("erythrium_tiles_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

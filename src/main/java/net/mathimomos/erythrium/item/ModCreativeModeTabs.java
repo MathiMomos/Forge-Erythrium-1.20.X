@@ -21,6 +21,7 @@ public class ModCreativeModeTabs {
                 pOutput.accept(ModItems.ERYTHRIUM.get());
                 pOutput.accept(ModItems.ROUGH_ERYTHRIUM.get());
                 pOutput.accept(ModBlocks.ERYTHRIUM_BLOCK.get());
+                pOutput.accept(ModBlocks.ERYTHRIUM_TILES_BLOCK.get());
             })
             .build());
 
