@@ -2,17 +2,17 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "###",
-    "###",
-    "###"
+    "##",
+    "##"
 
   ],
   "key": {
     "#": {
-      "item": "erythrium:erythrium"
+      "item": "erythrium:erythrium_block"
     }
   },
   "result": {
-    "item": "erythrium:erythrium_block"
+    "item": "erythrium:erythrium_tiles_block",
+    "count": 4
   }
   }
