@@ -22,6 +22,11 @@ public class ModCreativeModeTabs {
                 pOutput.accept(ModItems.ROUGH_ERYTHRIUM.get());
                 pOutput.accept(ModBlocks.ERYTHRIUM_BLOCK.get());
                 pOutput.accept(ModBlocks.ERYTHRIUM_TILES_BLOCK.get());
+                pOutput.accept(ModBlocks.REDDISH_DEEPSLATE_BLOCK.get());
+                pOutput.accept(ModBlocks.REDDISH_DEEPSLATE_TILES_BLOCK.get());
+                pOutput.accept(ModBlocks.ERYTHRIUM_ORE.get());
+                pOutput.accept(ModBlocks.DEEPSLATE_ERYTHRIUM_ORE.get());
+                pOutput.accept(ModBlocks.COMPACTED_ERYTHRIUM.get());
             })
             .build());
 

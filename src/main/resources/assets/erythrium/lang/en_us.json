@@ -4,10 +4,14 @@
   "item.erythrium.rough_": "Erythrium Chunk",
 
   "block.erythrium.erythrium_block": "Block of Erythrium",
-  "block.erythrium.compacted_erythrium": "Compacted Erythrium",
   "block.erythrium.erythrium_tiles_block": "Erythrium Tiles Block",
   "block.erythrium.reddish_deepslate_block": "Reddish Deepslate Block",
   "block.erythrium.reddish_deepslate_tiles_block": "Reddish Deepslate Tiles Block",
+  "block.erythrium.erythrium_ore": "Erythrium Ore",
+  "block.erythrium.deepslate_erythrium_ore": "Deepslate Erythrium Ore",
+  "block.erythrium.compacted_erythrium": "Compacted Erythrium",
+
+
 
   "erythrium.erythrium_tab": "Erythrium"
 }
