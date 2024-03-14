@@ -1,8 +1,17 @@
 {
   "item.erythrium.erythrium": "Erythrium",
   "item.erythrium.rough_erythrium": "Rough Erythrium",
-  "item.erythrium.rough_": "Erythrium Chunk",
-
+  "item.erythrium.erythrium_chunk": "Erythrium Chunk",
+  
+  "item.erythrium.erythrium_sword": "Erythrium Sword",
+  "item.erythrium.erythrium_pickaxe": "Erythrium Pickaxe",
+  "item.erythrium.erythrium_axe": "Erythrium Axe",
+  "item.erythrium.erythrium_shovel": "Erythrium Shovel",
+  "item.erythrium.erythrium_hoe": "Erythrium Hoe",
+  
+  "item.erythrium.tomathi": "Tomathi",
+  "item.erythrium.glittermeat": "Glittermeat",
+  
   "block.erythrium.erythrium_block": "Block of Erythrium",
   "block.erythrium.erythrium_tiles_block": "Erythrium Tiles Block",
   "block.erythrium.reddish_deepslate_block": "Reddish Deepslate Block",
@@ -10,8 +19,6 @@
   "block.erythrium.erythrium_ore": "Erythrium Ore",
   "block.erythrium.deepslate_erythrium_ore": "Deepslate Erythrium Ore",
   "block.erythrium.compacted_erythrium": "Compacted Erythrium",
-
-
 
   "erythrium.erythrium_tab": "Erythrium"
 }
