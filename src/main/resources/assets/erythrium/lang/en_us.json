@@ -2,7 +2,16 @@
   "item.erythrium.erythrium": "Erythrium",
   "item.erythrium.rough_erythrium": "Rough Erythrium",
   "item.erythrium.erythrium_chunk": "Erythrium Chunk",
-  
+
+  "item.erythrium.leather_scraps": "Leather Scraps",
+  "item.erythrium.iron_plates": "Iron Plates",
+  "item.erythrium.gold_plates": "Gold Plates",
+  "item.erythrium.rough_diamond": "Rough Diamond",
+  "item.erythrium.diamond_chunk": "Diamond Chunk",
+  "item.erythrium.rough_emerald": "Rough Emerald",
+  "item.erythrium.lazurite": "Lazurite",
+  "item.erythrium.nether_star_shard": "Nether Star Shard",
+
   "item.erythrium.erythrium_sword": "Erythrium Sword",
   "item.erythrium.erythrium_pickaxe": "Erythrium Pickaxe",
   "item.erythrium.erythrium_axe": "Erythrium Axe",
