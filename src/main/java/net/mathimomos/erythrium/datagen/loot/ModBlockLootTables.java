@@ -24,9 +24,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.REDDISH_DEEPSLATE_TILES_BLOCK.get());
 
         this.add(ModBlocks.ERYTHRIUM_ORE.get(),
-                block -> createOreDrop(ModBlocks.ERYTHRIUM_ORE.get(), ModItems.ROUGH_ERYTHRIUM.get()));
-        this.add(ModBlocks.DEEPSLATE_ERYTHRIUM_ORE.get(),
-                block -> createOreDrop(ModBlocks.DEEPSLATE_ERYTHRIUM_ORE.get(), ModItems.ROUGH_ERYTHRIUM.get()));
+                block -> createOreDrop(ModBlocks.ERYTHRIUM_ORE.get(), ModItems.ERYTHRIUM.get()));
     }
 
     @Override
