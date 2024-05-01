@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "$#",
+    "#$"
+
+  ],
+  "key": {
+    "#": {
+      "item": "erythrium:erythrium_block"
+    },
+    "$": {
+      "item": "minecraft:deepslate"
+    }
+  },
+  "result": {
+    "item": "erythrium:reddish_deepslate_block",
+    "count": 8
+  }
+}
