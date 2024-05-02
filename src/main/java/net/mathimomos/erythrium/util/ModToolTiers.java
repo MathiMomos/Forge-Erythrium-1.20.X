@@ -15,6 +15,6 @@ public class ModToolTiers {
     public static final Tier ERYTHRIUM = TierSortingRegistry.registerTier(
             new ForgeTier(3,1822,5f,4f,12,
                     ModTags.Blocks.NEEDS_ERYTHRIUM_TOOL, () -> Ingredient.of(ModItems.ERYTHRIUM.get())),
-            new ResourceLocation(Erythrium.MOD_ID, "erythrium"), List.of(Tiers.IRON), List.of(Tiers.DIAMOND)
+            new ResourceLocation(Erythrium.MOD_ID, "erythrium"), List.of(Tiers.DIAMOND), List.of(Tiers.NETHERITE)
     );
 }
