@@ -16,7 +16,9 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ROUGH_ERYTHRIUM = ITEMS.register("rough_erythrium",
             () -> new Item(new Item.Properties()));
-
+    public static final RegistryObject<Item>
+IGNITE = ITEMS.register("ignite",
+            () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ERYTHRIUM_SWORD = ITEMS.register("erythrium_sword",
             () -> new SwordItem(ModToolTiers.ERYTHRIUM, 4, 2, new Item.Properties()));
     public static final RegistryObject<Item> ERYTHRIUM_PICKAXE = ITEMS.register("erythrium_pickaxe",
