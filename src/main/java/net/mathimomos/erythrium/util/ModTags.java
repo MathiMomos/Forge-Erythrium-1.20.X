@@ -10,6 +10,7 @@ import net.minecraft.world.level.block.Block;
 
 public class ModTags {
     public static class Blocks {
+        ///Tag
         public static TagKey<Block> NEEDS_ERYTHRIUM_TOOL = tag("needs_erythrium_tool");
 
 
