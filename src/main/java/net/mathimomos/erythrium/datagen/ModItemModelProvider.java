@@ -20,6 +20,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         simpleItem(ModItems.ERYTHRIUM);
         simpleItem(ModItems.ROUGH_ERYTHRIUM);
+        simpleItem(ModItems.IGNITE);
 
         handheldItem(ModItems.ERYTHRIUM_SWORD);
         handheldItem(ModItems.ERYTHRIUM_PICKAXE);

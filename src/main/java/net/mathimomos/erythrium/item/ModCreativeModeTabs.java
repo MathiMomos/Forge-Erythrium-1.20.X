@@ -20,6 +20,7 @@ public class ModCreativeModeTabs {
             .displayItems((pParameters, pOutput) -> {
                 pOutput.accept(ModItems.ERYTHRIUM.get());
                 pOutput.accept(ModItems.ROUGH_ERYTHRIUM.get());
+                pOutput.accept(ModItems.IGNITE.get());
 
                 pOutput.accept(ModItems.ERYTHRIUM_SWORD.get());
                 pOutput.accept(ModItems.ERYTHRIUM_PICKAXE.get());

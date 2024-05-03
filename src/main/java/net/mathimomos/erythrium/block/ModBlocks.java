@@ -28,6 +28,7 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
     public static final RegistryObject<Block> REDDISH_DEEPSLATE_TILES_BLOCK = registerBlock("reddish_deepslate_tiles_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+
     public static final RegistryObject<Block> ERYTHRIUM_ORE = registerBlock("erythrium_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
                     .strength(2f).requiresCorrectToolForDrops(), UniformInt.of(4,8)));
@@ -37,6 +38,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> COMPACTED_ERYTHRIUM = registerBlock("compacted_erythrium",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK)
                     .strength(1.75f).requiresCorrectToolForDrops(), UniformInt.of(4,8)));
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
