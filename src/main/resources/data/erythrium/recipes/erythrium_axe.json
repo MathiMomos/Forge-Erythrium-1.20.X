@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "##",
+    "#$",
+    " $"
+  ],
+  "key": {
+    "#": {
+      "item": "erythrium:erythrium"
+    },
+    "$": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "erythrium:erythrium_axe",
+    "count": 1
+  }
+}
