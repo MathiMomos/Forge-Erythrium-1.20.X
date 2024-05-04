@@ -37,6 +37,12 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createOreDrop(ModBlocks.DEEPSLATE_ERYTHRIUM_ORE.get(), ModItems.ROUGH_ERYTHRIUM.get()));
         this.add(ModBlocks.COMPACTED_ERYTHRIUM.get(),
                 block -> createErythriumOreDrops(ModBlocks.COMPACTED_ERYTHRIUM.get(), ModItems.ERYTHRIUM.get()));
+
+
+this.add(Mod.Blocks.IGNITE_ORE.get(),
+                block -> createOreDrop(ModBlocks.IGNITE_ORE.get(), ModItems.IGNITE.get()));
+this.dropSelf(ModBlocks.IGNITE_BLOCK.get());
+
     }
 
     protected LootTable.Builder createErythriumOreDrops(Block pBlock, Item pItem) {
