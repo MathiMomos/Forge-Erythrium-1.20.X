@@ -1,8 +1,10 @@
-// 1.20.1	2024-05-01T18:55:29.9697018	Loot Tables
+// 1.20.1	2024-05-04T16:50:40.7070057	Loot Tables
 a22923a74dbe52f84b5e745c4c43729a86a8a91d data/erythrium/loot_tables/blocks/compacted_erythrium.json
 fda6c6e37e46766233ec47f6cb511ff260f108dc data/erythrium/loot_tables/blocks/deepslate_erythrium_ore.json
 a5169bafc107512edd6d67a685b8d375848088a2 data/erythrium/loot_tables/blocks/erythrium_block.json
 143c845d09b9aa8df744945580ffabacee0f4f9f data/erythrium/loot_tables/blocks/erythrium_ore.json
 021862c95389d311be899c705e62e9dce0509ffc data/erythrium/loot_tables/blocks/erythrium_tiles_block.json
+42baafa878bc1ae8a80b872d813bcb62fc016537 data/erythrium/loot_tables/blocks/ignite_block.json
+3287104818aec17059c2fa3999e9c18cce8ea4de data/erythrium/loot_tables/blocks/ignite_ore.json
 84d4e2c0e9bc0284b3eaa6f9a8ea4b95901ab760 data/erythrium/loot_tables/blocks/reddish_deepslate_block.json
 5e1ebc64591eda9460dc4cd315379bef4f6a8786 data/erythrium/loot_tables/blocks/reddish_deepslate_tiles_block.json
