@@ -19,6 +19,11 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
+        this.tag(BlockTags.NEEDS_IRON_TOOL)
+                .add(ModBlocks.IGNITE_ORE.get(),
+                    ModBlocks.IGNITE_BLOCK.get()
+                );
+
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.ERYTHRIUM_BLOCK.get(),
                     ModBlocks.ERYTHRIUM_TILES_BLOCK.get(),
@@ -26,7 +31,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                     ModBlocks.REDDISH_DEEPSLATE_TILES_BLOCK.get(),
                     ModBlocks.ERYTHRIUM_ORE.get(),
                     ModBlocks.DEEPSLATE_ERYTHRIUM_ORE.get(),
-                    ModBlocks.COMPACTED_ERYTHRIUM.get());
+                    ModBlocks.COMPACTED_ERYTHRIUM.get()
+                );
 
         this.tag(ModTags.Blocks.NEEDS_ERYTHRIUM_TOOL);
 
@@ -38,6 +44,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.REDDISH_DEEPSLATE_TILES_BLOCK.get(),
                         ModBlocks.ERYTHRIUM_ORE.get(),
                         ModBlocks.DEEPSLATE_ERYTHRIUM_ORE.get(),
-                        ModBlocks.COMPACTED_ERYTHRIUM.get());
+                        ModBlocks.COMPACTED_ERYTHRIUM.get(),
+                        ModBlocks.IGNITE_ORE.get(),
+                        ModBlocks.IGNITE_BLOCK.get()
+                );
     }
 }

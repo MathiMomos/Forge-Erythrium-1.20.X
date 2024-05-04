@@ -36,6 +36,9 @@ public class ModCreativeModeTabs {
                 pOutput.accept(ModBlocks.DEEPSLATE_ERYTHRIUM_ORE.get());
                 pOutput.accept(ModBlocks.COMPACTED_ERYTHRIUM.get());
 
+                pOutput.accept(ModBlocks.IGNITE_ORE.get());
+                pOutput.accept(ModBlocks.IGNITE_BLOCK.get());
+
             })
             .build());
 

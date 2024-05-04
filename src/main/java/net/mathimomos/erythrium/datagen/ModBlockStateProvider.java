@@ -21,9 +21,13 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.ERYTHRIUM_TILES_BLOCK);
         blockWithItem(ModBlocks.REDDISH_DEEPSLATE_BLOCK);
         blockWithItem(ModBlocks.REDDISH_DEEPSLATE_TILES_BLOCK);
+
         blockWithItem(ModBlocks.ERYTHRIUM_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_ERYTHRIUM_ORE);
         blockWithItem(ModBlocks.COMPACTED_ERYTHRIUM);
+
+        blockWithItem(ModBlocks.IGNITE_ORE);
+        blockWithItem(ModBlocks.IGNITE_BLOCK);
 
     }
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
