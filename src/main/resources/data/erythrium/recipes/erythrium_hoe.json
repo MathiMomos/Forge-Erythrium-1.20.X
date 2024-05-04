@@ -3,7 +3,7 @@
   "category": "misc",
   "pattern": [
     "##",
-    "#$",
+    " $",
     " $"
   ],
   "key": {
@@ -15,6 +15,6 @@
     }
   },
   "result": {
-    "item": "erythrium:erythrium_axe"
+    "item": "erythrium:erythrium_hoe"
   }
 }
