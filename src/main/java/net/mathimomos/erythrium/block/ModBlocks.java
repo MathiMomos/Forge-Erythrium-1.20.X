@@ -43,7 +43,7 @@ public class ModBlocks {
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)
                     .strength(1.5f).requiresCorrectToolForDrops(), UniformInt.of(4,8)));
     public static final RegistryObject<Block> IGNITE_BLOCK = registerBlock("ignite_block",
-            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.COAL_BLOCK)
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.COAL_BLOCK)
                     .strength(1.75f).requiresCorrectToolForDrops(), UniformInt.of(4,8)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
