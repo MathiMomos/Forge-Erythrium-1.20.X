@@ -38,10 +38,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.COMPACTED_ERYTHRIUM.get(),
                 block -> createErythriumOreDrops(ModBlocks.COMPACTED_ERYTHRIUM.get(), ModItems.ERYTHRIUM.get()));
 
-///Saludos
-this.add(Mod.Blocks.IGNITE_ORE.get(),
+        this.add(ModBlocks.IGNITE_ORE.get(),
                 block -> createOreDrop(ModBlocks.IGNITE_ORE.get(), ModItems.IGNITE.get()));
-this.dropSelf(ModBlocks.IGNITE_BLOCK.get());
+        this.dropSelf(ModBlocks.IGNITE_BLOCK.get());
 
     }
 
