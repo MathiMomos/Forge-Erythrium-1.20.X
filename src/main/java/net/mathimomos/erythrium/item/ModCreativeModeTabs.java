@@ -20,7 +20,6 @@ public class ModCreativeModeTabs {
             .displayItems((pParameters, pOutput) -> {
                 pOutput.accept(ModItems.ERYTHRIUM.get());
                 pOutput.accept(ModItems.ROUGH_ERYTHRIUM.get());
-                pOutput.accept(ModItems.IGNITE.get());
 
                 pOutput.accept(ModItems.ERYTHRIUM_SWORD.get());
                 pOutput.accept(ModItems.ERYTHRIUM_PICKAXE.get());
@@ -36,6 +35,7 @@ public class ModCreativeModeTabs {
                 pOutput.accept(ModBlocks.DEEPSLATE_ERYTHRIUM_ORE.get());
                 pOutput.accept(ModBlocks.COMPACTED_ERYTHRIUM.get());
 
+                pOutput.accept(ModItems.IGNITE.get());
                 pOutput.accept(ModBlocks.IGNITE_ORE.get());
                 pOutput.accept(ModBlocks.IGNITE_BLOCK.get());
 
