@@ -19,15 +19,15 @@ public class ModItems {
     public static final RegistryObject<Item> IGNITE = ITEMS.register("ignite",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ERYTHRIUM_SWORD = ITEMS.register("erythrium_sword",
-            () -> new SwordItem(ModToolTiers.ERYTHRIUM, 4, 2, new Item.Properties()));
+            () -> new SwordItem(ModToolTiers.ERYTHRIUM, 6, -2.4f, new Item.Properties()));
     public static final RegistryObject<Item> ERYTHRIUM_PICKAXE = ITEMS.register("erythrium_pickaxe",
-            () -> new PickaxeItem(ModToolTiers.ERYTHRIUM, 4, 2, new Item.Properties()));
+            () -> new PickaxeItem(ModToolTiers.ERYTHRIUM, 4, -2.8f, new Item.Properties()));
     public static final RegistryObject<Item> ERYTHRIUM_AXE = ITEMS.register("erythrium_axe",
-            () -> new AxeItem(ModToolTiers.ERYTHRIUM, 4, 2, new Item.Properties()));
+            () -> new AxeItem(ModToolTiers.ERYTHRIUM, 8, -3f, new Item.Properties()));
     public static final RegistryObject<Item> ERYTHRIUM_SHOVEL = ITEMS.register("erythrium_shovel",
-            () -> new ShovelItem(ModToolTiers.ERYTHRIUM, 4, 2, new Item.Properties()));
+            () -> new ShovelItem(ModToolTiers.ERYTHRIUM, 4.5f, -3f, new Item.Properties()));
     public static final RegistryObject<Item> ERYTHRIUM_HOE = ITEMS.register("erythrium_hoe",
-            () -> new HoeItem(ModToolTiers.ERYTHRIUM, 4, 2, new Item.Properties()));
+            () -> new HoeItem(ModToolTiers.ERYTHRIUM, -1/2, 0, new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
