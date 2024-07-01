@@ -36,10 +36,6 @@ public class ModCreativeModeTabs {
                 pOutput.accept(ModBlocks.DEEPSLATE_ERYTHRIUM_ORE.get());
                 pOutput.accept(ModBlocks.COMPACTED_ERYTHRIUM.get());
 
-                pOutput.accept(ModItems.IGNITE.get());
-                pOutput.accept(ModBlocks.IGNITE_ORE.get());
-                pOutput.accept(ModBlocks.IGNITE_BLOCK.get());
-
                 pOutput.accept(ModItems.ROUGH_DIAMOND.get());
                 pOutput.accept(ModItems.ROUGH_EMERALD.get());
                 pOutput.accept(ModItems.LEATHER_FRAGMENT.get());
@@ -48,12 +44,20 @@ public class ModCreativeModeTabs {
                 pOutput.accept(ModItems.GOLD_PLATE.get());
                 pOutput.accept(ModItems.DIAMOND_TWIN.get());
                 pOutput.accept(ModItems.LAZURITE.get());
-                pOutput.accept(ModItems.ROSE_QUARTZ.get());
                 pOutput.accept(ModItems.ENCHANTED_TOME.get());
 
                 pOutput.accept(ModItems.STARDUST.get());
                 pOutput.accept(ModItems.NETHER_STAR_SHARD.get());
                 pOutput.accept(ModItems.STARSHINE.get());
+
+                pOutput.accept(ModItems.IGNITE.get());
+                pOutput.accept(ModBlocks.IGNITE_ORE.get());
+                pOutput.accept(ModBlocks.IGNITE_BLOCK.get());
+                pOutput.accept(ModItems.ROSE_QUARTZ.get());
+                pOutput.accept(ModBlocks.ROSE_QUARTZ_ORE.get());
+                pOutput.accept(ModBlocks.ROSE_QUARTZ_BLOCK.get());
+
+                pOutput.accept(ModBlocks.FLINT_BLOCK.get());
 
                 pOutput.accept(ModItems.COPPER_NUGGET.get());
                 pOutput.accept(ModItems.COPPER_CIRCUIT.get());
