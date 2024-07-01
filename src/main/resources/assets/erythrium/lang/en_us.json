@@ -11,7 +11,6 @@
   "item.erythrium.diamond_twin": "Diamond Twin",
   "item.erythrium.rough_emerald": "Rough Emerald",
   "item.erythrium.lazurite": "Lazurite",
-  "item.erythrium.rose_quartz": "Rose Quartz",
   "item.erythrium.enchanted_tome": "Enchanted Tome",
 
   "item.erythrium.stardust": "Stardust",
@@ -38,6 +37,10 @@
   "block.erythrium.ignite_ore": "Ignite Ore",
   "block.erythrium.ignite_block": "Ignite Block",
   "item.erythrium.ignite": "Ignite",
+  "block.erythrium.rose_quartz_ore": "Rose Quartz Ore",
+  "block.erythrium.rose_quartz_block": "Rose Quartz Block",
+
+  "block.erythrium.flint_block": "Flint Block",
 
   "item.erythrium.copper_nugget": "Copper Nugget",
   "item.erythrium.copper_circuit": "Copper Circuit",
