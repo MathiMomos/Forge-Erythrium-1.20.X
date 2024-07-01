@@ -24,7 +24,7 @@
                   }
                 }
               ],
-              "name": "erythrium:compacted_erythrium"
+              "name": "erythrium:flint_block"
             },
             {
               "type": "minecraft:item",
@@ -47,7 +47,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "erythrium:erythrium"
+              "name": "minecraft:flint"
             }
           ]
         }
@@ -55,5 +55,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "erythrium:blocks/compacted_erythrium"
+  "random_sequence": "erythrium:blocks/flint_block"
 }
