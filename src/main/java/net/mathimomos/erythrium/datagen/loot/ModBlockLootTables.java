@@ -41,13 +41,22 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.IGNITE_ORE.get(),
                 block -> createOreDrop(ModBlocks.IGNITE_ORE.get(), ModItems.IGNITE.get()));
         this.dropSelf(ModBlocks.IGNITE_BLOCK.get());
+
+        this.add(ModBlocks.FLINT_BLOCK.get(),
+                block -> createErythriumOreDrops(ModBlocks.FLINT_BLOCK.get(), Items.FLINT));
+
+        this.add(ModBlocks.ROSE_QUARTZ_ORE.get(),
+                block -> createOreDrop(ModBlocks.ROSE_QUARTZ_ORE.get(), ModItems.ROSE_QUARTZ.get()));
+        this.dropSelf(ModBlocks.ROSE_QUARTZ_BLOCK.get());
+
+        this.dropSelf(ModBlocks.IGNITE_BLOCK.get());
     }
 
     protected LootTable.Builder createErythriumOreDrops(Block pBlock, Item pItem) {
         return createSilkTouchDispatchTable(pBlock,
                 this.applyExplosionDecay(pBlock,
                 LootItem.lootTableItem(pItem)
-                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(3.0F, 4.0F)))
+                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0F, 4.0F)))
                         .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))));
     }
 

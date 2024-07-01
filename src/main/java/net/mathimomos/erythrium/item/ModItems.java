@@ -16,18 +16,54 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ROUGH_ERYTHRIUM = ITEMS.register("rough_erythrium",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ERYTHRIUM_TWIN = ITEMS.register("erythrium_twin",
+            () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> IGNITE = ITEMS.register("ignite",
             () -> new Item(new Item.Properties()));
+
     public static final RegistryObject<Item> ERYTHRIUM_SWORD = ITEMS.register("erythrium_sword",
-            () -> new SwordItem(ModToolTiers.ERYTHRIUM, 6, -2.4f, new Item.Properties()));
+            () -> new SwordItem(ModToolTiers.ERYTHRIUM, 6, -2.4F, new Item.Properties()));
     public static final RegistryObject<Item> ERYTHRIUM_PICKAXE = ITEMS.register("erythrium_pickaxe",
-            () -> new PickaxeItem(ModToolTiers.ERYTHRIUM, 4, -2.8f, new Item.Properties()));
+            () -> new PickaxeItem(ModToolTiers.ERYTHRIUM, 4, -2.8F, new Item.Properties()));
     public static final RegistryObject<Item> ERYTHRIUM_AXE = ITEMS.register("erythrium_axe",
-            () -> new AxeItem(ModToolTiers.ERYTHRIUM, 8, -3f, new Item.Properties()));
+            () -> new AxeItem(ModToolTiers.ERYTHRIUM, 8, -3F, new Item.Properties()));
     public static final RegistryObject<Item> ERYTHRIUM_SHOVEL = ITEMS.register("erythrium_shovel",
-            () -> new ShovelItem(ModToolTiers.ERYTHRIUM, 4.5f, -3f, new Item.Properties()));
+            () -> new ShovelItem(ModToolTiers.ERYTHRIUM, 4.5f, -3F, new Item.Properties()));
     public static final RegistryObject<Item> ERYTHRIUM_HOE = ITEMS.register("erythrium_hoe",
-            () -> new HoeItem(ModToolTiers.ERYTHRIUM, -1/2, 0, new Item.Properties()));
+            () -> new HoeItem(ModToolTiers.ERYTHRIUM, 0, 0F, new Item.Properties()));
+
+    public static final RegistryObject<Item> ROUGH_DIAMOND = ITEMS.register("rough_diamond",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ROUGH_EMERALD = ITEMS.register("rough_emerald",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> LEATHER_FRAGMENT = ITEMS.register("leather_fragment",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> COPPER_PLATE = ITEMS.register("copper_plate",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> IRON_PLATE = ITEMS.register("iron_plate",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> GOLD_PLATE = ITEMS.register("gold_plate",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> DIAMOND_TWIN = ITEMS.register("diamond_twin",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> LAZURITE = ITEMS.register("lazurite",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ROSE_QUARTZ = ITEMS.register("rose_quartz",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ENCHANTED_TOME = ITEMS.register("enchanted_tome",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> STARDUST = ITEMS.register("stardust",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> NETHER_STAR_SHARD = ITEMS.register("nether_star_shard",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> STARSHINE = ITEMS.register("starshine",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> COPPER_NUGGET = ITEMS.register("copper_nugget",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> COPPER_CIRCUIT = ITEMS.register("copper_circuit",
+            () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

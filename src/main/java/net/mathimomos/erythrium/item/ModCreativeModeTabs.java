@@ -20,6 +20,7 @@ public class ModCreativeModeTabs {
             .displayItems((pParameters, pOutput) -> {
                 pOutput.accept(ModItems.ERYTHRIUM.get());
                 pOutput.accept(ModItems.ROUGH_ERYTHRIUM.get());
+                pOutput.accept(ModItems.ERYTHRIUM_TWIN.get());
 
                 pOutput.accept(ModItems.ERYTHRIUM_SWORD.get());
                 pOutput.accept(ModItems.ERYTHRIUM_PICKAXE.get());
@@ -39,6 +40,23 @@ public class ModCreativeModeTabs {
                 pOutput.accept(ModBlocks.IGNITE_ORE.get());
                 pOutput.accept(ModBlocks.IGNITE_BLOCK.get());
 
+                pOutput.accept(ModItems.ROUGH_DIAMOND.get());
+                pOutput.accept(ModItems.ROUGH_EMERALD.get());
+                pOutput.accept(ModItems.LEATHER_FRAGMENT.get());
+                pOutput.accept(ModItems.COPPER_PLATE.get());
+                pOutput.accept(ModItems.IRON_PLATE.get());
+                pOutput.accept(ModItems.GOLD_PLATE.get());
+                pOutput.accept(ModItems.DIAMOND_TWIN.get());
+                pOutput.accept(ModItems.LAZURITE.get());
+                pOutput.accept(ModItems.ROSE_QUARTZ.get());
+                pOutput.accept(ModItems.ENCHANTED_TOME.get());
+
+                pOutput.accept(ModItems.STARDUST.get());
+                pOutput.accept(ModItems.NETHER_STAR_SHARD.get());
+                pOutput.accept(ModItems.STARSHINE.get());
+
+                pOutput.accept(ModItems.COPPER_NUGGET.get());
+                pOutput.accept(ModItems.COPPER_CIRCUIT.get());
             })
             .build());
 

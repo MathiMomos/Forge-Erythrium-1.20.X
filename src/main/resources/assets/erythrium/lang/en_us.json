@@ -1,17 +1,22 @@
 {
   "item.erythrium.erythrium": "Erythrium",
   "item.erythrium.rough_erythrium": "Rough Erythrium",
-  "item.erythrium.erythrium_chunk": "Erythrium Chunk",
-  "item.erythrium.ignite": "Ignite",
+  "item.erythrium.erythrium_twin": "Erythrium Twin",
 
-  "item.erythrium.leather_scraps": "Leather Scraps",
-  "item.erythrium.iron_plates": "Iron Plates",
-  "item.erythrium.gold_plates": "Gold Plates",
+  "item.erythrium.leather_fragment": "Leather Fragment",
+  "item.erythrium.copper_plate": "Copper Plate",
+  "item.erythrium.iron_plate": "Iron Plate",
+  "item.erythrium.gold_plate": "Gold Plate",
   "item.erythrium.rough_diamond": "Rough Diamond",
-  "item.erythrium.diamond_chunk": "Diamond Chunk",
+  "item.erythrium.diamond_twin": "Diamond Twin",
   "item.erythrium.rough_emerald": "Rough Emerald",
   "item.erythrium.lazurite": "Lazurite",
+  "item.erythrium.rose_quartz": "Rose Quartz",
+  "item.erythrium.enchanted:tome": "Enchanted Tome",
+
+  "item.erythrium.stardust": "Stardust",
   "item.erythrium.nether_star_shard": "Nether Star Shard",
+  "item.erythrium.starshine": "Starshine",
 
   "item.erythrium.erythrium_sword": "Erythrium Sword",
   "item.erythrium.erythrium_pickaxe": "Erythrium Pickaxe",
@@ -29,8 +34,13 @@
   "block.erythrium.erythrium_ore": "Erythrium Ore",
   "block.erythrium.deepslate_erythrium_ore": "Deepslate Erythrium Ore",
   "block.erythrium.compacted_erythrium": "Compacted Erythrium",
+
   "block.erythrium.ignite_ore": "Ignite Ore",
   "block.erythrium.ignite_block": "Ignite Block",
+  "item.erythrium.ignite": "Ignite",
+
+  "item.erythrium.copper_nugget": "Copper Nugget",
+  "item.erythrium.copper_circuit": "Copper Circuit",
 
   "erythrium.erythrium_tab": "Erythrium"
 }

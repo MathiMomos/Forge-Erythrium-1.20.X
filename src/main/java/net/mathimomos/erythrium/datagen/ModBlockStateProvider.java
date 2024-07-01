@@ -29,6 +29,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.IGNITE_ORE);
         blockWithItem(ModBlocks.IGNITE_BLOCK);
 
+        blockWithItem(ModBlocks.ROSE_QUARTZ_ORE);
+        blockWithItem(ModBlocks.ROSE_QUARTZ_BLOCK);
+
+        blockWithItem(ModBlocks.FLINT_BLOCK);
+
     }
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));

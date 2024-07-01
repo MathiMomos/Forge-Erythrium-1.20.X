@@ -41,9 +41,18 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> IGNITE_ORE = registerBlock("ignite_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)
-                    .strength(1.5f).requiresCorrectToolForDrops(), UniformInt.of(4,8)));
+                    .strength(1.5f).requiresCorrectToolForDrops(), UniformInt.of(2,4)));
     public static final RegistryObject<Block> IGNITE_BLOCK = registerBlock("ignite_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.COAL_BLOCK)));
+
+    public static final RegistryObject<Block> ROSE_QUARTZ_ORE = registerBlock("rose_quartz_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_QUARTZ_ORE)
+                    .strength(2f).requiresCorrectToolForDrops(), UniformInt.of(8,12)));
+    public static final RegistryObject<Block> ROSE_QUARTZ_BLOCK = registerBlock("rose_quartz_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK)));
+
+    public static final RegistryObject<Block> FLINT_BLOCK = registerBlock("flint_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

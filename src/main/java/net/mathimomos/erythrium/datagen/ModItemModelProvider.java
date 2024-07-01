@@ -20,6 +20,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         simpleItem(ModItems.ERYTHRIUM);
         simpleItem(ModItems.ROUGH_ERYTHRIUM);
+        simpleItem(ModItems.ERYTHRIUM_TWIN);
         simpleItem(ModItems.IGNITE);
 
         handheldItem(ModItems.ERYTHRIUM_SWORD);
@@ -27,6 +28,24 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.ERYTHRIUM_AXE);
         handheldItem(ModItems.ERYTHRIUM_SHOVEL);
         handheldItem(ModItems.ERYTHRIUM_HOE);
+
+        simpleItem(ModItems.ROUGH_DIAMOND);
+        simpleItem(ModItems.ROUGH_EMERALD);
+        simpleItem(ModItems.LEATHER_FRAGMENT);
+        simpleItem(ModItems.COPPER_PLATE);
+        simpleItem(ModItems.IRON_PLATE);
+        simpleItem(ModItems.GOLD_PLATE);
+        simpleItem(ModItems.DIAMOND_TWIN);
+        simpleItem(ModItems.LAZURITE);
+        simpleItem(ModItems.ROSE_QUARTZ);
+        simpleItem(ModItems.ENCHANTED_TOME);
+
+        simpleItem(ModItems.STARDUST);
+        simpleItem(ModItems.NETHER_STAR_SHARD);
+        simpleItem(ModItems.STARSHINE);
+
+        simpleItem(ModItems.COPPER_NUGGET);
+        simpleItem(ModItems.COPPER_CIRCUIT);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
