@@ -57,7 +57,10 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.DEEPSLATE_ERYTHRIUM_ORE.get(),
                         ModBlocks.COMPACTED_ERYTHRIUM.get(),
                         ModBlocks.IGNITE_ORE.get(),
-                        ModBlocks.IGNITE_BLOCK.get()
+                        ModBlocks.IGNITE_BLOCK.get(),
+                        ModBlocks.FLINT_BLOCK.get(),
+                        ModBlocks.ROSE_QUARTZ_ORE.get(),
+                        ModBlocks.ROSE_QUARTZ_BLOCK.get()
                 );
     }
 }
