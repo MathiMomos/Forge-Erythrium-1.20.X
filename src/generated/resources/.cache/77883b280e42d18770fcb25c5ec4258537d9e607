@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-01T17:27:18.9495259	Item Models: erythrium
+// 1.20.1	2024-07-02T01:29:28.4480536	Item Models: erythrium
 e1602776b93c1c7254e1ae40511332ffd808e9cc assets/erythrium/models/item/copper_circuit.json
 c1f8df1a4ae88a2b29d487b66fe6f7cb4c86b2e9 assets/erythrium/models/item/copper_nugget.json
 9e4b5131f2818df57f63935ab5aaaeb92bed08b7 assets/erythrium/models/item/copper_plate.json
@@ -11,15 +11,18 @@ a738f4eb83f0aefefb6f69af8673b9967a552b1f assets/erythrium/models/item/erythrium_
 4034b787bdb408f85c6c321a369350b1da439b62 assets/erythrium/models/item/erythrium_shovel.json
 8e3f731d255ec2c4080800b4b85c1f605b67e495 assets/erythrium/models/item/erythrium_sword.json
 64ecb1be70626082c8470b5a64a57d24dd1d586e assets/erythrium/models/item/erythrium_twin.json
+d5ff61f6d05bc631041f7b6e050b44475c41f471 assets/erythrium/models/item/glittermeat.json
 266cc8a22030222380c304a2c445271800a888ed assets/erythrium/models/item/gold_plate.json
 7d802f5f823ed3fc46c1b28867bf32b5a5df934e assets/erythrium/models/item/ignite.json
 1912047f0f33b5c1527431b603ed7b25fcdd9f81 assets/erythrium/models/item/iron_plate.json
 268e0f87e936fcfd4550fe7b5b5a95b9ef67ab27 assets/erythrium/models/item/lazurite.json
 65714cbabed7dc107b643b7af8c1a5cd762da338 assets/erythrium/models/item/leather_fragment.json
 6bc97619bb233826f1f68ad0c4b96a73718a2b63 assets/erythrium/models/item/nether_star_shard.json
+224d9c05a23dace2e17bf3841f28c0b29e987cb2 assets/erythrium/models/item/oinkballs.json
 be3113013443fbc712f3ca8836ec9b8fbdeba505 assets/erythrium/models/item/rose_quartz.json
 2cbd7b15d2e063499467bbf47b61d4ebc0df2d07 assets/erythrium/models/item/rough_diamond.json
 1447fd1d9d265b8d88eacf67fae8541fda5071f7 assets/erythrium/models/item/rough_emerald.json
 31b9206cb60e208487388596b0fde9e66468a14f assets/erythrium/models/item/rough_erythrium.json
 b2fa63ad303702f18f1895f8c7f8a1fe99c74468 assets/erythrium/models/item/stardust.json
 fa67d7edd378983d02c6566da5d3d247e68ecc4f assets/erythrium/models/item/starshine.json
+3fe37aaadfddb584b36519b28528b5959f725b90 assets/erythrium/models/item/tomathi.json

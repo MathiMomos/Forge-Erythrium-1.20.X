@@ -1,6 +1,7 @@
 package net.mathimomos.erythrium.item;
 
 import net.mathimomos.erythrium.Erythrium;
+import net.mathimomos.erythrium.item.custom.FuelItem;
 import net.mathimomos.erythrium.util.ModToolTiers;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -19,7 +20,7 @@ public class ModItems {
     public static final RegistryObject<Item> ERYTHRIUM_TWIN = ITEMS.register("erythrium_twin",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> IGNITE = ITEMS.register("ignite",
-            () -> new Item(new Item.Properties()));
+            () -> new FuelItem(new Item.Properties(), 2000));
 
     public static final RegistryObject<Item> ERYTHRIUM_SWORD = ITEMS.register("erythrium_sword",
             () -> new SwordItem(ModToolTiers.ERYTHRIUM, 6, -2.4F, new Item.Properties()));
@@ -56,18 +57,19 @@ public class ModItems {
     public static final RegistryObject<Item> STARDUST = ITEMS.register("stardust",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> NETHER_STAR_SHARD = ITEMS.register("nether_star_shard",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
     public static final RegistryObject<Item> STARSHINE = ITEMS.register("starshine",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().rarity(Rarity.RARE)));
 
     public static final RegistryObject<Item> COPPER_NUGGET = ITEMS.register("copper_nugget",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> COPPER_CIRCUIT = ITEMS.register("copper_circuit",
             () -> new Item(new Item.Properties()));
+
     public static final RegistryObject<Item> TOMATHI = ITEMS.register("tomathi",
             () -> new Item(new Item.Properties().food(ModFoods.TOMATHI)));
     public static final RegistryObject<Item> GLITTERMEAT = ITEMS.register("glittermeat",
-            () -> new Item(new Item.Properties().food(ModFoods.GLITTERMEAT)));
+            () -> new Item(new Item.Properties().rarity(Rarity.RARE).food(ModFoods.GLITTERMEAT)));
     public static final RegistryObject<Item> OINKBALLS = ITEMS.register("oinkballs",
             () -> new Item(new Item.Properties().food(ModFoods.OINKBALLS)));
 
