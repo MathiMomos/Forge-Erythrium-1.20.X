@@ -64,6 +64,13 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> COPPER_CIRCUIT = ITEMS.register("copper_circuit",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> TOMATHI = ITEMS.register("tomathi",
+            () -> new Item(new Item.Properties().food(ModFoods.TOMATHI)));
+    public static final RegistryObject<Item> GLITTERMEAT = ITEMS.register("glittermeat",
+            () -> new Item(new Item.Properties().food(ModFoods.GLITTERMEAT)));
+    public static final RegistryObject<Item> OINKBALLS = ITEMS.register("oinkballs",
+            () -> new Item(new Item.Properties().food(ModFoods.OINKBALLS)));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

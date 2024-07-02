@@ -46,6 +46,10 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         simpleItem(ModItems.COPPER_NUGGET);
         simpleItem(ModItems.COPPER_CIRCUIT);
+
+        simpleItem(ModItems.TOMATHI);
+        simpleItem(ModItems.GLITTERMEAT);
+        simpleItem(ModItems.OINKBALLS);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

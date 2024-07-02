@@ -61,6 +61,10 @@ public class ModCreativeModeTabs {
 
                 pOutput.accept(ModItems.COPPER_NUGGET.get());
                 pOutput.accept(ModItems.COPPER_CIRCUIT.get());
+
+                pOutput.accept(ModItems.TOMATHI.get());
+                pOutput.accept(ModItems.GLITTERMEAT.get());
+                pOutput.accept(ModItems.OINKBALLS.get());
             })
             .build());
 

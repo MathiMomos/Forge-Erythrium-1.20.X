@@ -8,6 +8,9 @@
     "erythrium:deepslate_erythrium_ore",
     "erythrium:compacted_erythrium",
     "erythrium:ignite_ore",
-    "erythrium:ignite_block"
+    "erythrium:ignite_block",
+    "erythrium:flint_block",
+    "erythrium:rose_quartz_ore",
+    "erythrium:rose_quartz_block"
   ]
 }
