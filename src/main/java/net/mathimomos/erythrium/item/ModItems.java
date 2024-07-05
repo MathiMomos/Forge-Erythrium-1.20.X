@@ -57,7 +57,7 @@ public class ModItems {
     public static final RegistryObject<Item> STARDUST = ITEMS.register("stardust",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> NETHER_STAR_SHARD = ITEMS.register("nether_star_shard",
-            () -> new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
+            () -> new SimpleFoiledItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
     public static final RegistryObject<Item> STARSHINE = ITEMS.register("starshine",
             () -> new Item(new Item.Properties().rarity(Rarity.RARE)));
 
@@ -72,7 +72,14 @@ public class ModItems {
             () -> new Item(new Item.Properties().rarity(Rarity.RARE).food(ModFoods.GLITTERMEAT)));
     public static final RegistryObject<Item> OINKBALLS = ITEMS.register("oinkballs",
             () -> new Item(new Item.Properties().food(ModFoods.OINKBALLS)));
-
+    public static final RegistryObject<Item> ERYTHRIUM_CROWN = ITEMS.register("erythrium_crown",
+            () -> new ArmorItem(ModArmorMaterials.ERYTHRIUM, ArmorItem.Type.HELMET, new Item.Properties()));
+public static final RegistryObject<Item> ERYTHRIUM_CHESTPLATE = ITEMS.register("erythrium_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.ERYTHRIUM, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+public static final RegistryObject<Item> ERYTHRIUM_LEGGINS = ITEMS.register("erythrium_leggins",
+            () -> new ArmorItem(ModArmorMaterials.ERYTHRIUM, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+public static final RegistryObject<Item> ERYTHRIUM_BOOTS = ITEMS.register("erythrium_boots",
+            () -> new ArmorItem(ModArmorMaterials.ERYTHRIUM, ArmorItem.Type.BOOTS, new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

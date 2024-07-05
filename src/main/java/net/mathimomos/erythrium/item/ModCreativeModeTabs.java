@@ -65,6 +65,11 @@ public class ModCreativeModeTabs {
                 pOutput.accept(ModItems.TOMATHI.get());
                 pOutput.accept(ModItems.GLITTERMEAT.get());
                 pOutput.accept(ModItems.OINKBALLS.get());
+
+                pOutput.accept(ModItems.ERYTHRIUM_CROWN.get());
+                pOutput.accept(ModItems.ERYTHRIUM_CHESTPLATE.get());
+                pOutput.accept(ModItems.ERYTHRIUM_LEGGINS.get());
+                pOutput.accept(ModItems.ERYTHRIUM_BOOTS.get());
             })
             .build());
 

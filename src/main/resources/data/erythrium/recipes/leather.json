@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "erythrium:leather_fragment"
+    }
+  },
+  "result": {
+    "item": "minecraft:leather"
+  }
+}
