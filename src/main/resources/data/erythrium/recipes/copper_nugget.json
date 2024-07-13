@@ -3,11 +3,11 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "forge:leather"
+      "item": "minecraft:copper_ingot"
     }
   ],
   "result": {
-    "item": "erythrium:leather_fragment",
-    "count": 4
+    "item": "erythrium:copper_nugget",
+    "count": 9
   }
 }

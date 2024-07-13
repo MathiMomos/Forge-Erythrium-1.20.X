@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "#$#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "forge:nuggets/copper"
+    },
+    "$": {
+      "item": "minecraft:flint"
+    }
+  },
+  "result": {
+    "item": "erythrium:copper_circuit"
+  }
+}
