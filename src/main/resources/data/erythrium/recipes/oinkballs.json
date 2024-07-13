@@ -3,15 +3,18 @@
   "category": "misc",
   "pattern": [
     "###",
-    "###",
+    "#$#",
     "###"
   ],
   "key": {
     "#": {
-      "item": "erythrium:copper_nugget"
+      "item": "minecraft:sugar"
+    },
+    "$": {
+      "item": "minecraft:raw_porkchop"
     }
   },
   "result": {
-    "item": "minecraft:copper_ingot"
+    "item": "erythrium:oinkballs"
   }
 }

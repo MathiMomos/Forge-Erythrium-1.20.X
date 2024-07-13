@@ -8,7 +8,7 @@
   ],
   "key": {
     "#": {
-      "item": "forge:nuggets/copper"
+      "item": "erythrium:copper_nugget"
     },
     "$": {
       "item": "minecraft:flint"

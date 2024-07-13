@@ -2,16 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "###",
-    "###",
-    "###"
+    " ##",
+    "# #",
+    "## "
   ],
   "key": {
     "#": {
-      "item": "erythrium:copper_nugget"
+      "item": "minecraft:copper_ingot"
     }
   },
   "result": {
-    "item": "minecraft:copper_ingot"
+    "item": "erythrium:copper_plate"
   }
 }

@@ -8,10 +8,10 @@
   ],
   "key": {
     "#": {
-      "item": "erythrium:copper_nugget"
+      "item": "minecraft:flint"
     }
   },
   "result": {
-    "item": "minecraft:copper_ingot"
+    "item": "erythrium:flint_block"
   }
 }
