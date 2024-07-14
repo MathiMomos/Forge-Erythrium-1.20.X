@@ -62,5 +62,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.ROSE_QUARTZ_ORE.get(),
                         ModBlocks.ROSE_QUARTZ_BLOCK.get()
                 );
+
+        this.tag(BlockTags.MINEABLE_WITH_AXE)
+                .add(ModBlocks.TOMATHI_BLOCK.get());
     }
 }
