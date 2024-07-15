@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "C$C",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:copper_block"
+    },
+    "$": {
+      "item": "minecraft:glass"
+    },
+    "C": {
+      "item": "erythrium:copper_circuit"
+    }
+  },
+  "result": {
+    "item": "erythrium:copper_charger"
+  }
+}

@@ -11,6 +11,7 @@
     "erythrium:ignite_block",
     "erythrium:flint_block",
     "erythrium:rose_quartz_ore",
-    "erythrium:rose_quartz_block"
+    "erythrium:rose_quartz_block",
+    "erythrium:copper_charger"
   ]
 }

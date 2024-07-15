@@ -72,6 +72,8 @@ public class ModCreativeModeTabs {
                 pOutput.accept(ModItems.ERYTHRIUM_BOOTS.get());
 
                 pOutput.accept(ModBlocks.TOMATHI_BLOCK.get());
+
+                pOutput.accept(ModBlocks.COPPER_CHAGER.get());
             })
             .build());
 

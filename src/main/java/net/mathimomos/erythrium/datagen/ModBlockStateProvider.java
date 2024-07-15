@@ -35,19 +35,25 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.ROSE_QUARTZ_BLOCK);
 
         blockWithItem(ModBlocks.FLINT_BLOCK);
-        blockBottomTopWithItem(ModBlocks.TOMATHI_BLOCK,
-                new ResourceLocation(Erythrium.MOD_ID, "block/tomathi_block"),
-                new ResourceLocation(Erythrium.MOD_ID, "block/tomathi_block_bottom"),
-                new ResourceLocation(Erythrium.MOD_ID, "block/tomathi_block_top")
-        );
+        blockBottomTopWithItem(ModBlocks.TOMATHI_BLOCK);
+        //blockDifferentWithItem(ModBlocks.COPPER_CHAGER);
     }
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
     }
-    private void blockBottomTopWithItem(RegistryObject<Block> blockRegistryObject, ResourceLocation bottom, ResourceLocation side, ResourceLocation top){
-        simpleBlockWithItem(blockRegistryObject.get(), models().cubeBottomTop(blockRegistryObject.getId().getPath(), bottom, side, top));
+    private void blockBottomTopWithItem(RegistryObject<Block> blockRegistryObject){
+        ResourceLocation side = new ResourceLocation(Erythrium.MOD_ID, "block/" + blockRegistryObject.getId().getPath());
+        ResourceLocation bottom = new ResourceLocation(Erythrium.MOD_ID, "block/" + blockRegistryObject.getId().getPath() + "_bottom");
+        ResourceLocation top = new ResourceLocation(Erythrium.MOD_ID, "block/" + blockRegistryObject.getId().getPath() + "_top");
+        simpleBlockWithItem(blockRegistryObject.get(), models().cubeBottomTop(blockRegistryObject.getId().getPath(), side, bottom, top));
     }
-    private void blockWithDifferentTextures(RegistryObject<Block> blockRegistryObject, ResourceLocation down, ResourceLocation up, ResourceLocation north, ResourceLocation south, ResourceLocation west, ResourceLocation east) {
-        simpleBlockWithItem(blockRegistryObject.get(), models().cube(blockRegistryObject.getId().getPath(), down, up, north, south, west, east));
+    private void blockDifferentWithItem(RegistryObject<Block> blockRegistryObject) {
+        ResourceLocation down = new ResourceLocation(Erythrium.MOD_ID, "block/" + blockRegistryObject.getId().getPath()+ "_down");
+        ResourceLocation up = new ResourceLocation(Erythrium.MOD_ID, "block/" + blockRegistryObject.getId().getPath() + "_up");
+        ResourceLocation north = new ResourceLocation(Erythrium.MOD_ID, "block/" + blockRegistryObject.getId().getPath() + "_north");
+        ResourceLocation south = new ResourceLocation(Erythrium.MOD_ID, "block/" + blockRegistryObject.getId().getPath() + "_south");
+        ResourceLocation west = new ResourceLocation(Erythrium.MOD_ID, "block/" + blockRegistryObject.getId().getPath() + "_west");
+        ResourceLocation east = new ResourceLocation(Erythrium.MOD_ID, "block/" + blockRegistryObject.getId().getPath() + "_east");
+        simpleBlockWithItem(blockRegistryObject.get(), models().cube(blockRegistryObject.getId().getPath(), down, up, north, south, west, east).texture("particle", north));
     }
 }

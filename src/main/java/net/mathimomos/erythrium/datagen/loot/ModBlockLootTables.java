@@ -50,7 +50,10 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.ROSE_QUARTZ_BLOCK.get());
 
         this.dropSelf(ModBlocks.IGNITE_BLOCK.get());
+
         this.dropSelf(ModBlocks.TOMATHI_BLOCK.get());
+
+        this.dropSelf(ModBlocks.COPPER_CHAGER.get());
     }
 
     protected LootTable.Builder createErythriumOreDrops(Block pBlock, Item pItem) {

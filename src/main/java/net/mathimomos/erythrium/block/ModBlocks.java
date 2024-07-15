@@ -57,6 +57,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> TOMATHI_BLOCK = registerBlock("tomathi_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.BRAIN_CORAL_BLOCK).strength(0.8F)));
 
+    public static final RegistryObject<Block> COPPER_CHAGER = registerBlock("copper_charger",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK)));
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

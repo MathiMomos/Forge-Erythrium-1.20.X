@@ -60,7 +60,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.IGNITE_BLOCK.get(),
                         ModBlocks.FLINT_BLOCK.get(),
                         ModBlocks.ROSE_QUARTZ_ORE.get(),
-                        ModBlocks.ROSE_QUARTZ_BLOCK.get()
+                        ModBlocks.ROSE_QUARTZ_BLOCK.get(),
+                        ModBlocks.COPPER_CHAGER.get()
                 );
 
         this.tag(BlockTags.MINEABLE_WITH_AXE)
