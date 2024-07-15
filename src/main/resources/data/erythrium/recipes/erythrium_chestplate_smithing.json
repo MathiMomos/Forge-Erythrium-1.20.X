@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "erythrium:erythrium_twin"
+  },
+  "base": {
+    "item": "minecraft:diamond_chestplate"
+  },
+  "result": {
+    "item": "erythrium:erythrium_chestplate"
+  },
+  "template": {
+    "item": "erythrium:erythrium_upgrade_smithing_template"
+  }
+}

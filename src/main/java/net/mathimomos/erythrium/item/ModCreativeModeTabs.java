@@ -68,7 +68,7 @@ public class ModCreativeModeTabs {
 
                 pOutput.accept(ModItems.ERYTHRIUM_CROWN.get());
                 pOutput.accept(ModItems.ERYTHRIUM_CHESTPLATE.get());
-                pOutput.accept(ModItems.ERYTHRIUM_LEGGINS.get());
+                pOutput.accept(ModItems.ERYTHRIUM_LEGGINGS.get());
                 pOutput.accept(ModItems.ERYTHRIUM_BOOTS.get());
 
                 pOutput.accept(ModBlocks.TOMATHI_BLOCK.get());
@@ -76,6 +76,8 @@ public class ModCreativeModeTabs {
                 pOutput.accept(ModBlocks.COPPER_CHAGER.get());
 
                 pOutput.accept(ModBlocks.DIAMOND_CUTTER.get());
+
+                pOutput.accept(ModItems.ERYTHRIUM_UPGRADE_SMITHING_TEMPLATE.get());
             })
             .build());
 

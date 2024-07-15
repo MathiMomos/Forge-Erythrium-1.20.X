@@ -81,23 +81,23 @@ public class ModItems {
             () -> new ArmorItem(ModArmorMaterials.ERYTHRIUM, ArmorItem.Type.HELMET, new Item.Properties()));
 public static final RegistryObject<Item> ERYTHRIUM_CHESTPLATE = ITEMS.register("erythrium_chestplate",
             () -> new ArmorItem(ModArmorMaterials.ERYTHRIUM, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
-public static final RegistryObject<Item> ERYTHRIUM_LEGGINS = ITEMS.register("erythrium_leggins",
+public static final RegistryObject<Item> ERYTHRIUM_LEGGINGS = ITEMS.register("erythrium_leggings",
             () -> new ArmorItem(ModArmorMaterials.ERYTHRIUM, ArmorItem.Type.LEGGINGS, new Item.Properties()));
 public static final RegistryObject<Item> ERYTHRIUM_BOOTS = ITEMS.register("erythrium_boots",
             () -> new ArmorItem(ModArmorMaterials.ERYTHRIUM, ArmorItem.Type.BOOTS, new Item.Properties()));
 
-public static final RegistryObject<Item> ERYTHRIUM_UPGRADE_SMITHING_TEMPLATE = ITEMS.register("erythrium_upgrade_smithing_table",
+public static final RegistryObject<Item> ERYTHRIUM_UPGRADE_SMITHING_TEMPLATE = ITEMS.register("erythrium_upgrade_smithing_template",
             () -> new SmithingTemplateItem(
-                    Component.translatable("item.erythrium.erythrium_upgrade_smithing_template.aplies_to"),
-                    Component.translatable("item.erythrium_upgrade_smithing_table.ingredients"),
-                    Component.translatable("item.erythrium_upgrade_smithing_table.upgrade_description"),
-                    Component.translatable("item.erythrium_upgrade_smithing_table.base_slot_description"),
-                    Component.translatable("item.erythrium_upgrade_smithing_table.additions_slot_description"),
+                    Component.translatable("item.erythrium_upgrade_smithing_template.aplies_to"),
+                    Component.translatable("item.erythrium_upgrade_smithing_template.ingredients"),
+                    Component.translatable("item.erythrium_upgrade_smithing_template.upgrade_description"),
+                    Component.translatable("item.erythrium_upgrade_smithing_template.base_slot_description"),
+                    Component.translatable("item.erythrium_upgrade_smithing_template.additions_slot_description"),
                     List.of(new ResourceLocation("item/empty_armor_slot_helmet"),
                             new ResourceLocation("item/empty_armor_slot_chestplate"),
                             new ResourceLocation("item/empty_armor_slot_leggings"),
                             new ResourceLocation("item/empty_armor_slot_boots")),
-                    List.of(new ResourceLocation(Erythrium.MOD_ID,"erythrium:textures/item/empty_slot_erythrium"))
+                    List.of(new ResourceLocation(Erythrium.MOD_ID,"item/empty_slot_erythrium"))
                     ));
 
     public static void register(IEventBus eventBus) {

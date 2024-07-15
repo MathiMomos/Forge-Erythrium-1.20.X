@@ -21,7 +21,13 @@ public class ModItemTagGenerator extends ItemTagsProvider {
     protected void addTags(HolderLookup.Provider pProvider) {
         this.tag(ItemTags.TRIMMABLE_ARMOR)
                 .add(ModItems.ERYTHRIUM_CHESTPLATE.get(),
-                ModItems.ERYTHRIUM_LEGGINS.get(),
+                ModItems.ERYTHRIUM_LEGGINGS.get(),
                 ModItems.ERYTHRIUM_BOOTS.get());
+
+        this.tag(ItemTags.TRIM_TEMPLATES)
+                .add(ModItems.ERYTHRIUM_UPGRADE_SMITHING_TEMPLATE.get());
+
+        this.tag(ItemTags.TRIM_MATERIALS)
+                .add(ModItems.DIAMOND_TWIN.get());
     }
 }

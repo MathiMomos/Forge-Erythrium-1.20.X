@@ -1,6 +1,8 @@
-// 1.20.1	2024-07-01T17:27:18.9474052	Loot Tables
+// 1.20.1	2024-07-15T01:40:24.149173	Loot Tables
 427b266cd3f85127d21623bc964bb8bbc9971907 data/erythrium/loot_tables/blocks/compacted_erythrium.json
+0fc950b282f1a75048cf6fa93f9390e22279e947 data/erythrium/loot_tables/blocks/copper_charger.json
 fda6c6e37e46766233ec47f6cb511ff260f108dc data/erythrium/loot_tables/blocks/deepslate_erythrium_ore.json
+3eeeaf2b92fc9945c07414204bff2c4fc38a778d data/erythrium/loot_tables/blocks/diamond_cutter.json
 a5169bafc107512edd6d67a685b8d375848088a2 data/erythrium/loot_tables/blocks/erythrium_block.json
 143c845d09b9aa8df744945580ffabacee0f4f9f data/erythrium/loot_tables/blocks/erythrium_ore.json
 021862c95389d311be899c705e62e9dce0509ffc data/erythrium/loot_tables/blocks/erythrium_tiles_block.json
@@ -11,3 +13,4 @@ bbbba1e4b226a625112cbfcc3fd73e2d0860c815 data/erythrium/loot_tables/blocks/flint
 5e1ebc64591eda9460dc4cd315379bef4f6a8786 data/erythrium/loot_tables/blocks/reddish_deepslate_tiles_block.json
 eb9418da51f4efeee4572d7e1708fffae94b1a45 data/erythrium/loot_tables/blocks/rose_quartz_block.json
 8e297cf4231bc29ecb696af08751f4f608bcd050 data/erythrium/loot_tables/blocks/rose_quartz_ore.json
+813c1e9b6692b3b1a696d14a0eb43c0ef36a54fd data/erythrium/loot_tables/blocks/tomathi_block.json

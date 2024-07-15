@@ -50,13 +50,18 @@
 
   "item.erythrium.erythrium_crown": "Erythrium Crown",
   "item.erythrium.erythrium_chestplate": "Erythrium Chestplate",
-  "item.erythrium.erythrium_leggins": "Erythrium Leggins",
+  "item.erythrium.erythrium_leggings": "Erythrium Leggings",
   "item.erythrium.erythrium_boots": "Erythrium Boots",
 
   "block.erythrium.tomathi_block": "Tomathi Block",
 
   "block.erythrium.diamond_cutter": "Diamond Cutter",
-  "tooltip.erythrium.erythrium_upgrade_smithing_template.tooltip": "",
+
+  "item.erythrium_upgrade_smithing_template.upgrade_description": "§7Erythrium Upgrade",
+  "item.erythrium_upgrade_smithing_template.ingredients": "§9Erythrium Twin",
+  "item.erythrium_upgrade_smithing_template.aplies_to": "§9Diamond Equipment",
+  "item.erythrium_upgrade_smithing_template.base_slot_description": "Add diamond armor",
+  "item.erythrium_upgrade_smithing_template.additions_slot_description": "Add Erythrium Twin",
 
   "erythrium.erythrium_tab": "Erythrium"
 }

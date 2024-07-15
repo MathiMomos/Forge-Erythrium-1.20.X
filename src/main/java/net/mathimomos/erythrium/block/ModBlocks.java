@@ -10,6 +10,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DropExperienceBlock;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -57,7 +58,7 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
 
     public static final RegistryObject<Block> TOMATHI_BLOCK = registerBlock("tomathi_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BRAIN_CORAL_BLOCK).strength(0.8F)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.CORAL_BLOCK).strength(0.6F)));
 
     public static final RegistryObject<Block> COPPER_CHAGER = registerBlock("copper_charger",
             () -> new CopperChargerBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK)));
