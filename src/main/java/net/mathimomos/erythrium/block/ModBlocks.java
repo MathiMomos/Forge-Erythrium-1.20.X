@@ -55,7 +55,7 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
 
     public static final RegistryObject<Block> TOMATHI_BLOCK = registerBlock("tomathi_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BRAIN_CORAL)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BRAIN_CORAL_BLOCK).strength(0.8F)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

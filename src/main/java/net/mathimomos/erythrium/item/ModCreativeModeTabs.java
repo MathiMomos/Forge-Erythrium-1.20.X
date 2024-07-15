@@ -70,6 +70,8 @@ public class ModCreativeModeTabs {
                 pOutput.accept(ModItems.ERYTHRIUM_CHESTPLATE.get());
                 pOutput.accept(ModItems.ERYTHRIUM_LEGGINS.get());
                 pOutput.accept(ModItems.ERYTHRIUM_BOOTS.get());
+
+                pOutput.accept(ModBlocks.TOMATHI_BLOCK.get());
             })
             .build());
 

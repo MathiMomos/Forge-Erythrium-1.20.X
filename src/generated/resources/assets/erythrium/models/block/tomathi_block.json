@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "erythrium:block/tomathi_block_bottom",
+    "side": "erythrium:block/tomathi_block",
+    "top": "erythrium:block/tomathi_block_top"
+  }
+}

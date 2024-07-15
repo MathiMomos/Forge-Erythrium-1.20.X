@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "erythrium:tomathi_block"
+    }
+  ],
+  "result": {
+    "item": "erythrium:tomathi",
+    "count": 9
+  }
+}

@@ -10,7 +10,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    ERYTHRIUM("erythrium", 25, new int[]{3, 7, 5, 4}, 12,
+    ERYTHRIUM("erythrium", 25, new int[]{3, 8, 6, 3}, 12,
             SoundEvents.ARMOR_EQUIP_DIAMOND, 2.5f, 0f, () -> Ingredient.of(ModItems.ERYTHRIUM.get()));
 
     private final String name;
