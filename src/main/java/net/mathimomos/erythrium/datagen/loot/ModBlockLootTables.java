@@ -54,6 +54,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.TOMATHI_BLOCK.get());
 
         this.dropSelf(ModBlocks.COPPER_CHAGER.get());
+
+        this.dropSelf(ModBlocks.DIAMOND_CUTTER.get());
     }
 
     protected LootTable.Builder createErythriumOreDrops(Block pBlock, Item pItem) {

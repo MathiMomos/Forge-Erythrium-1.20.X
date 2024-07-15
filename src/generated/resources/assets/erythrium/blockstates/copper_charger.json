@@ -1,7 +1,19 @@
 {
   "variants": {
-    "": {
+    "facing=east": {
+      "model": "erythrium:block/copper_charger",
+      "y": 90
+    },
+    "facing=north": {
       "model": "erythrium:block/copper_charger"
+    },
+    "facing=south": {
+      "model": "erythrium:block/copper_charger",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "erythrium:block/copper_charger",
+      "y": 270
     }
   }
 }

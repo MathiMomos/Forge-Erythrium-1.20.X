@@ -36,7 +36,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         blockWithItem(ModBlocks.FLINT_BLOCK);
         blockBottomTopWithItem(ModBlocks.TOMATHI_BLOCK);
-        //blockDifferentWithItem(ModBlocks.COPPER_CHAGER);
+        blockDifferentWithItem(ModBlocks.COPPER_CHAGER, true);
+
+        simpleBlockItem(ModBlocks.DIAMOND_CUTTER.get(),
+                new ModelFile.UncheckedModelFile(modLoc("block/diamond_cutter")));
+        horizontalBlock(ModBlocks.DIAMOND_CUTTER.get(),
+                new ModelFile.UncheckedModelFile(modLoc("block/diamond_cutter")));
     }
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
@@ -47,13 +52,19 @@ public class ModBlockStateProvider extends BlockStateProvider {
         ResourceLocation top = new ResourceLocation(Erythrium.MOD_ID, "block/" + blockRegistryObject.getId().getPath() + "_top");
         simpleBlockWithItem(blockRegistryObject.get(), models().cubeBottomTop(blockRegistryObject.getId().getPath(), side, bottom, top));
     }
-    private void blockDifferentWithItem(RegistryObject<Block> blockRegistryObject) {
+    private void blockDifferentWithItem(RegistryObject<Block> blockRegistryObject, boolean rotation) {
         ResourceLocation down = new ResourceLocation(Erythrium.MOD_ID, "block/" + blockRegistryObject.getId().getPath()+ "_down");
         ResourceLocation up = new ResourceLocation(Erythrium.MOD_ID, "block/" + blockRegistryObject.getId().getPath() + "_up");
         ResourceLocation north = new ResourceLocation(Erythrium.MOD_ID, "block/" + blockRegistryObject.getId().getPath() + "_north");
         ResourceLocation south = new ResourceLocation(Erythrium.MOD_ID, "block/" + blockRegistryObject.getId().getPath() + "_south");
         ResourceLocation west = new ResourceLocation(Erythrium.MOD_ID, "block/" + blockRegistryObject.getId().getPath() + "_west");
         ResourceLocation east = new ResourceLocation(Erythrium.MOD_ID, "block/" + blockRegistryObject.getId().getPath() + "_east");
-        simpleBlockWithItem(blockRegistryObject.get(), models().cube(blockRegistryObject.getId().getPath(), down, up, north, south, west, east).texture("particle", north));
+        simpleBlockItem(blockRegistryObject.get(), models().cube(blockRegistryObject.getId().getPath(), down, up, north, south, west, east).texture("particle", north));
+        if (rotation){
+            horizontalBlock(blockRegistryObject.get(), models().cube(blockRegistryObject.getId().getPath(), down, up, north, south, west, east).texture("particle", north));
+        } else {
+            simpleBlock(blockRegistryObject.get(), models().cube(blockRegistryObject.getId().getPath(), down, up, north, south, west, east).texture("particle", north));
+        }
+
     }
 }

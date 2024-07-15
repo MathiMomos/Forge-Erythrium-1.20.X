@@ -3,6 +3,8 @@ package net.mathimomos.erythrium.item;
 import net.mathimomos.erythrium.Erythrium;
 import net.mathimomos.erythrium.item.custom.FuelItem;
 import net.mathimomos.erythrium.util.ModToolTiers;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -10,6 +12,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.awt.*;
+import java.util.List;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -82,6 +85,20 @@ public static final RegistryObject<Item> ERYTHRIUM_LEGGINS = ITEMS.register("ery
             () -> new ArmorItem(ModArmorMaterials.ERYTHRIUM, ArmorItem.Type.LEGGINGS, new Item.Properties()));
 public static final RegistryObject<Item> ERYTHRIUM_BOOTS = ITEMS.register("erythrium_boots",
             () -> new ArmorItem(ModArmorMaterials.ERYTHRIUM, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+public static final RegistryObject<Item> ERYTHRIUM_UPGRADE_SMITHING_TEMPLATE = ITEMS.register("erythrium_upgrade_smithing_table",
+            () -> new SmithingTemplateItem(
+                    Component.translatable("item.erythrium.erythrium_upgrade_smithing_template.aplies_to"),
+                    Component.translatable("item.erythrium_upgrade_smithing_table.ingredients"),
+                    Component.translatable("item.erythrium_upgrade_smithing_table.upgrade_description"),
+                    Component.translatable("item.erythrium_upgrade_smithing_table.base_slot_description"),
+                    Component.translatable("item.erythrium_upgrade_smithing_table.additions_slot_description"),
+                    List.of(new ResourceLocation("item/empty_armor_slot_helmet"),
+                            new ResourceLocation("item/empty_armor_slot_chestplate"),
+                            new ResourceLocation("item/empty_armor_slot_leggings"),
+                            new ResourceLocation("item/empty_armor_slot_boots")),
+                    List.of(new ResourceLocation(Erythrium.MOD_ID,"erythrium:textures/item/empty_slot_erythrium"))
+                    ));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

@@ -1,6 +1,8 @@
 package net.mathimomos.erythrium.block;
 
 import net.mathimomos.erythrium.Erythrium;
+import net.mathimomos.erythrium.block.custom.CopperChargerBlock;
+import net.mathimomos.erythrium.block.custom.DiamondCutterBlock;
 import net.mathimomos.erythrium.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -58,7 +60,10 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.BRAIN_CORAL_BLOCK).strength(0.8F)));
 
     public static final RegistryObject<Block> COPPER_CHAGER = registerBlock("copper_charger",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK)));
+            () -> new CopperChargerBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK)));
+
+    public static final RegistryObject<Block> DIAMOND_CUTTER = registerBlock("diamond_cutter",
+            () -> new DiamondCutterBlock(BlockBehaviour.Properties.copy(Blocks.STONECUTTER).noOcclusion()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

@@ -55,5 +55,8 @@
 
   "block.erythrium.tomathi_block": "Tomathi Block",
 
+  "block.erythrium.diamond_cutter": "Diamond Cutter",
+  "tooltip.erythrium.erythrium_upgrade_smithing_template.tooltip": "",
+
   "erythrium.erythrium_tab": "Erythrium"
 }
