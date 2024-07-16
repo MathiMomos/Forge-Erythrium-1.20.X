@@ -5,13 +5,17 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
+
     ERYTHRIUM("erythrium", 25, new int[]{3, 8, 6, 3}, 12,
-            SoundEvents.ARMOR_EQUIP_DIAMOND, 2.5f, 0f, () -> Ingredient.of(ModItems.ERYTHRIUM.get()));
+            SoundEvents.ARMOR_EQUIP_DIAMOND, 2.5f, 0f, () -> Ingredient.of(ModItems.ERYTHRIUM.get())),
+    COPPER("copper", 25, new int[]{2, 4, 3, 1}, 0,
+            SoundEvents.ARMOR_EQUIP_IRON, 0f, 0f, () -> Ingredient.of(Items.COPPER_INGOT));
 
     private final String name;
     private final int durabilityMultiplier;

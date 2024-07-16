@@ -63,5 +63,8 @@
   "item.erythrium_upgrade_smithing_template.base_slot_description": "Add diamond armor",
   "item.erythrium_upgrade_smithing_template.additions_slot_description": "Add Erythrium Twin",
 
+  "item.erythrium.raw_iron_nugget": "Raw Iron Nugget",
+  "block.erythrium.iron_nugget_ore": "Iron Nugget Ore",
+
   "erythrium.erythrium_tab": "Erythrium"
 }

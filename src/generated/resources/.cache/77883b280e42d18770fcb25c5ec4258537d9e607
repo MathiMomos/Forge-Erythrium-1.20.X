@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-15T16:14:24.9625883	Item Models: erythrium
+// 1.20.1	2024-07-15T19:47:04.6704746	Item Models: erythrium
 e1602776b93c1c7254e1ae40511332ffd808e9cc assets/erythrium/models/item/copper_circuit.json
 c1f8df1a4ae88a2b29d487b66fe6f7cb4c86b2e9 assets/erythrium/models/item/copper_nugget.json
 9e4b5131f2818df57f63935ab5aaaeb92bed08b7 assets/erythrium/models/item/copper_plate.json
@@ -54,6 +54,7 @@ d5ff61f6d05bc631041f7b6e050b44475c41f471 assets/erythrium/models/item/glittermea
 65714cbabed7dc107b643b7af8c1a5cd762da338 assets/erythrium/models/item/leather_fragment.json
 6bc97619bb233826f1f68ad0c4b96a73718a2b63 assets/erythrium/models/item/nether_star_shard.json
 224d9c05a23dace2e17bf3841f28c0b29e987cb2 assets/erythrium/models/item/oinkballs.json
+9f5da9a305cbf7897415556848000ac48f2cf9a9 assets/erythrium/models/item/raw_iron_nugget.json
 be3113013443fbc712f3ca8836ec9b8fbdeba505 assets/erythrium/models/item/rose_quartz.json
 2cbd7b15d2e063499467bbf47b61d4ebc0df2d07 assets/erythrium/models/item/rough_diamond.json
 1447fd1d9d265b8d88eacf67fae8541fda5071f7 assets/erythrium/models/item/rough_emerald.json

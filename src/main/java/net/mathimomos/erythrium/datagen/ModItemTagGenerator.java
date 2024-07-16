@@ -22,12 +22,16 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         this.tag(ItemTags.TRIMMABLE_ARMOR)
                 .add(ModItems.ERYTHRIUM_CHESTPLATE.get(),
                 ModItems.ERYTHRIUM_LEGGINGS.get(),
-                ModItems.ERYTHRIUM_BOOTS.get());
+                ModItems.ERYTHRIUM_BOOTS.get(),
 
+                ModItems.COPPER_HELMET.get(),
+                ModItems.COPPER_CHESTPLATE.get(),
+                ModItems.COPPER_LEGGINGS.get(),
+                ModItems.COPPER_BOOTS.get()
+                );
         this.tag(ItemTags.TRIM_TEMPLATES)
                 .add(ModItems.ERYTHRIUM_UPGRADE_SMITHING_TEMPLATE.get());
 
-        this.tag(ItemTags.TRIM_MATERIALS)
-                .add(ModItems.DIAMOND_TWIN.get());
+        this.tag(ItemTags.TRIM_MATERIALS);
     }
 }

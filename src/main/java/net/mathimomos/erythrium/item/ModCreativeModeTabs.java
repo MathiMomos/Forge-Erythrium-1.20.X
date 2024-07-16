@@ -78,6 +78,13 @@ public class ModCreativeModeTabs {
                 pOutput.accept(ModBlocks.DIAMOND_CUTTER.get());
 
                 pOutput.accept(ModItems.ERYTHRIUM_UPGRADE_SMITHING_TEMPLATE.get());
+                pOutput.accept(ModBlocks.IRON_NUGGET_ORE.get());
+                pOutput.accept(ModItems.RAW_IRON_NUGGET.get());
+
+                pOutput.accept(ModItems.COPPER_HELMET.get());
+                pOutput.accept(ModItems.COPPER_CHESTPLATE.get());
+                pOutput.accept(ModItems.COPPER_LEGGINGS.get());
+                pOutput.accept(ModItems.COPPER_BOOTS.get());
             })
             .build());
 

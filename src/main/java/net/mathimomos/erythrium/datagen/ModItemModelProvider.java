@@ -78,6 +78,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.ERYTHRIUM_BOOTS);
 
         simpleItem(ModItems.ERYTHRIUM_UPGRADE_SMITHING_TEMPLATE);
+        simpleItem(ModItems.RAW_IRON_NUGGET);
+
+        trimmedArmorItem(ModItems.COPPER_HELMET);
+        trimmedArmorItem(ModItems.COPPER_CHESTPLATE);
+        trimmedArmorItem(ModItems.COPPER_LEGGINGS);
+        trimmedArmorItem(ModItems.COPPER_BOOTS);
     }
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {
         final String MOD_ID = Erythrium.MOD_ID; // Change this to your mod id

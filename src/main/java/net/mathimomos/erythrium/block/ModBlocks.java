@@ -66,6 +66,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> DIAMOND_CUTTER = registerBlock("diamond_cutter",
             () -> new DiamondCutterBlock(BlockBehaviour.Properties.copy(Blocks.STONECUTTER).noOcclusion()));
 
+    public static final RegistryObject<Block> IRON_NUGGET_ORE = registerBlock("iron_nugget_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).requiresCorrectToolForDrops()));
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

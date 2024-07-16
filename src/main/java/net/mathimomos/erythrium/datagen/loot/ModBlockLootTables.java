@@ -49,13 +49,14 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createOreDrop(ModBlocks.ROSE_QUARTZ_ORE.get(), ModItems.ROSE_QUARTZ.get()));
         this.dropSelf(ModBlocks.ROSE_QUARTZ_BLOCK.get());
 
-        this.dropSelf(ModBlocks.IGNITE_BLOCK.get());
-
         this.dropSelf(ModBlocks.TOMATHI_BLOCK.get());
 
         this.dropSelf(ModBlocks.COPPER_CHAGER.get());
 
         this.dropSelf(ModBlocks.DIAMOND_CUTTER.get());
+
+        this.add(ModBlocks.IRON_NUGGET_ORE.get(),
+                block -> createOreDrop(ModBlocks.IRON_NUGGET_ORE.get(), ModItems.RAW_IRON_NUGGET.get()));
     }
 
     protected LootTable.Builder createErythriumOreDrops(Block pBlock, Item pItem) {

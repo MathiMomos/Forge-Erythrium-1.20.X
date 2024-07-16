@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-15T11:16:41.26713	Block States: erythrium
+// 1.20.1	2024-07-15T19:47:04.6615162	Block States: erythrium
 f36dcaa3b5cc95b243ecfacb65907e0c0fd1545a assets/erythrium/blockstates/compacted_erythrium.json
 feff5a79d7659e559fd53f85fc3764f94028bf30 assets/erythrium/blockstates/copper_charger.json
 6aeabe7920b2360dbfbae368b6163bd68686fdb7 assets/erythrium/blockstates/deepslate_erythrium_ore.json
@@ -9,6 +9,7 @@ eacb1d4b2b61fc7c770353e695b365785553a9bc assets/erythrium/blockstates/erythrium_
 bdfe5ddf44e4d515517695aa0c587885907e9433 assets/erythrium/blockstates/flint_block.json
 bb5e0f345c424dbd460f9ad198c4a5707c5c0bb0 assets/erythrium/blockstates/ignite_block.json
 00aca5d9e23e9a7d4d0f1b692fb3a1e6351df95f assets/erythrium/blockstates/ignite_ore.json
+80f96b92d81960448e2eba1452f4aefb33669bf9 assets/erythrium/blockstates/iron_nugget_ore.json
 abd67d399a2f05d4606cefb6f70f175e21052c1e assets/erythrium/blockstates/reddish_deepslate_block.json
 a1414ef7b1dfdd0bdfbe77369be1c3d6239f1203 assets/erythrium/blockstates/reddish_deepslate_tiles_block.json
 856239ae1fc38d86538f42f3a05c3495a508f66c assets/erythrium/blockstates/rose_quartz_block.json
@@ -23,6 +24,7 @@ fb7d8f7002a6d6aee011526350888606c72965c0 assets/erythrium/models/block/erythrium
 f5226bd1e10fce4138c2c487426fc4aa1ba72d89 assets/erythrium/models/block/flint_block.json
 e3aa0b84e54c1862b359bc103f9c4a6afe2e1677 assets/erythrium/models/block/ignite_block.json
 618755260fa0ebca119fa3ec1380357f66a3bd24 assets/erythrium/models/block/ignite_ore.json
+d1f018c9cab365b8fc93feaf19c58512b0689701 assets/erythrium/models/block/iron_nugget_ore.json
 e11a5eedb5c23b0266485483fc2847b1b5c40ddf assets/erythrium/models/block/reddish_deepslate_block.json
 b80b549293137f78b28246c0761836a675a16f42 assets/erythrium/models/block/reddish_deepslate_tiles_block.json
 960894177f3f0d4608d47d8622b2eb6261212fb8 assets/erythrium/models/block/rose_quartz_block.json
@@ -38,6 +40,7 @@ f502b9ddeddedbb57c047cdda6a48ddee20452c3 assets/erythrium/models/item/erythrium_
 bcb1a57f4570c59e329fdf2a5aba61f47aa489de assets/erythrium/models/item/flint_block.json
 cd35b31a46dd8e92c84287bb36446399b72295c9 assets/erythrium/models/item/ignite_block.json
 95b02a150d270dae547155775dd2a8e80ee04d19 assets/erythrium/models/item/ignite_ore.json
+8f72533b96ec96ccb6c962b59b6e8a2dd512853b assets/erythrium/models/item/iron_nugget_ore.json
 f2697c607a9f7269c0cf3689148bddb466af24f9 assets/erythrium/models/item/reddish_deepslate_block.json
 78ed70eda6155be93cf937f78afbded9fa17d983 assets/erythrium/models/item/reddish_deepslate_tiles_block.json
 e4d406ecc031e0e1a9e8861c6179c7edb7ee3d87 assets/erythrium/models/item/rose_quartz_block.json

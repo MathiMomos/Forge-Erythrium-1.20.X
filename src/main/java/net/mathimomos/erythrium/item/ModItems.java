@@ -79,26 +79,37 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.OINKBALLS)));
     public static final RegistryObject<Item> ERYTHRIUM_CROWN = ITEMS.register("erythrium_crown",
             () -> new ArmorItem(ModArmorMaterials.ERYTHRIUM, ArmorItem.Type.HELMET, new Item.Properties()));
-public static final RegistryObject<Item> ERYTHRIUM_CHESTPLATE = ITEMS.register("erythrium_chestplate",
-            () -> new ArmorItem(ModArmorMaterials.ERYTHRIUM, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
-public static final RegistryObject<Item> ERYTHRIUM_LEGGINGS = ITEMS.register("erythrium_leggings",
-            () -> new ArmorItem(ModArmorMaterials.ERYTHRIUM, ArmorItem.Type.LEGGINGS, new Item.Properties()));
-public static final RegistryObject<Item> ERYTHRIUM_BOOTS = ITEMS.register("erythrium_boots",
-            () -> new ArmorItem(ModArmorMaterials.ERYTHRIUM, ArmorItem.Type.BOOTS, new Item.Properties()));
+    public static final RegistryObject<Item> ERYTHRIUM_CHESTPLATE = ITEMS.register("erythrium_chestplate",
+                () -> new ArmorItem(ModArmorMaterials.ERYTHRIUM, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<Item> ERYTHRIUM_LEGGINGS = ITEMS.register("erythrium_leggings",
+                () -> new ArmorItem(ModArmorMaterials.ERYTHRIUM, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<Item> ERYTHRIUM_BOOTS = ITEMS.register("erythrium_boots",
+                () -> new ArmorItem(ModArmorMaterials.ERYTHRIUM, ArmorItem.Type.BOOTS, new Item.Properties()));
 
-public static final RegistryObject<Item> ERYTHRIUM_UPGRADE_SMITHING_TEMPLATE = ITEMS.register("erythrium_upgrade_smithing_template",
-            () -> new SmithingTemplateItem(
-                    Component.translatable("item.erythrium_upgrade_smithing_template.aplies_to"),
-                    Component.translatable("item.erythrium_upgrade_smithing_template.ingredients"),
-                    Component.translatable("item.erythrium_upgrade_smithing_template.upgrade_description"),
-                    Component.translatable("item.erythrium_upgrade_smithing_template.base_slot_description"),
-                    Component.translatable("item.erythrium_upgrade_smithing_template.additions_slot_description"),
-                    List.of(new ResourceLocation("item/empty_armor_slot_helmet"),
-                            new ResourceLocation("item/empty_armor_slot_chestplate"),
-                            new ResourceLocation("item/empty_armor_slot_leggings"),
-                            new ResourceLocation("item/empty_armor_slot_boots")),
-                    List.of(new ResourceLocation(Erythrium.MOD_ID,"item/empty_slot_erythrium"))
-                    ));
+    public static final RegistryObject<Item> ERYTHRIUM_UPGRADE_SMITHING_TEMPLATE = ITEMS.register("erythrium_upgrade_smithing_template",
+                () -> new SmithingTemplateItem(
+                        Component.translatable("item.erythrium_upgrade_smithing_template.aplies_to"),
+                        Component.translatable("item.erythrium_upgrade_smithing_template.ingredients"),
+                        Component.translatable("item.erythrium_upgrade_smithing_template.upgrade_description"),
+                        Component.translatable("item.erythrium_upgrade_smithing_template.base_slot_description"),
+                        Component.translatable("item.erythrium_upgrade_smithing_template.additions_slot_description"),
+                        List.of(new ResourceLocation("item/empty_armor_slot_helmet"),
+                                new ResourceLocation("item/empty_armor_slot_chestplate"),
+                                new ResourceLocation("item/empty_armor_slot_leggings"),
+                                new ResourceLocation("item/empty_armor_slot_boots")),
+                        List.of(new ResourceLocation(Erythrium.MOD_ID,"item/empty_slot_erythrium"))
+                        ));
+    public static final RegistryObject<Item> RAW_IRON_NUGGET = ITEMS.register("raw_iron_nugget",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> COPPER_HELMET = ITEMS.register("copper_helmet",
+            () -> new ArmorItem(ModArmorMaterials.COPPER, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> COPPER_CHESTPLATE = ITEMS.register("copper_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.COPPER, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<Item> COPPER_LEGGINGS = ITEMS.register("copper_leggings",
+            () -> new ArmorItem(ModArmorMaterials.COPPER, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<Item> COPPER_BOOTS = ITEMS.register("copper_boots",
+            () -> new ArmorItem(ModArmorMaterials.COPPER, ArmorItem.Type.BOOTS, new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

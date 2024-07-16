@@ -42,6 +42,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 new ModelFile.UncheckedModelFile(modLoc("block/diamond_cutter")));
         horizontalBlock(ModBlocks.DIAMOND_CUTTER.get(),
                 new ModelFile.UncheckedModelFile(modLoc("block/diamond_cutter")));
+
+        blockWithItem(ModBlocks.IRON_NUGGET_ORE);
     }
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));

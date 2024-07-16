@@ -22,7 +22,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
     protected void addTags(HolderLookup.Provider pProvider) {
 
         this.tag(BlockTags.NEEDS_STONE_TOOL)
-                .add(ModBlocks.FLINT_BLOCK.get()
+                .add(ModBlocks.FLINT_BLOCK.get(),
+                        ModBlocks.IRON_NUGGET_ORE.get()
                 );
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
@@ -61,7 +62,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.FLINT_BLOCK.get(),
                         ModBlocks.ROSE_QUARTZ_ORE.get(),
                         ModBlocks.ROSE_QUARTZ_BLOCK.get(),
-                        ModBlocks.COPPER_CHAGER.get()
+                        ModBlocks.COPPER_CHAGER.get(),
+                        ModBlocks.IRON_NUGGET_ORE.get()
                 );
 
         this.tag(BlockTags.MINEABLE_WITH_AXE)
