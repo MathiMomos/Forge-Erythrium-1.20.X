@@ -84,6 +84,23 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.COPPER_CHESTPLATE);
         trimmedArmorItem(ModItems.COPPER_LEGGINGS);
         trimmedArmorItem(ModItems.COPPER_BOOTS);
+
+        trimmedArmorItem(ModItems.EXPOSED_COPPER_HELMET);
+        trimmedArmorItem(ModItems.EXPOSED_COPPER_CHESTPLATE);
+        trimmedArmorItem(ModItems.EXPOSED_COPPER_LEGGINGS);
+        trimmedArmorItem(ModItems.EXPOSED_COPPER_BOOTS);
+
+        trimmedArmorItem(ModItems.WEATHERED_COPPER_HELMET);
+        trimmedArmorItem(ModItems.WEATHERED_COPPER_CHESTPLATE);
+        trimmedArmorItem(ModItems.WEATHERED_COPPER_LEGGINGS);
+        trimmedArmorItem(ModItems.WEATHERED_COPPER_BOOTS);
+
+        trimmedArmorItem(ModItems.OXIDIZED_COPPER_HELMET);
+        trimmedArmorItem(ModItems.OXIDIZED_COPPER_CHESTPLATE);
+        trimmedArmorItem(ModItems.OXIDIZED_COPPER_LEGGINGS);
+        trimmedArmorItem(ModItems.OXIDIZED_COPPER_BOOTS);
+
+
     }
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {
         final String MOD_ID = Erythrium.MOD_ID; // Change this to your mod id

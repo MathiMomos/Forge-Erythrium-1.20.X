@@ -21,6 +21,6 @@ public class ModToolTiers {
     public static final Tier COPPER = TierSortingRegistry.registerTier(
             new ForgeTier(1,528, 9, 0.5F, 7,
                     ModTags.Blocks.NEEDS_COPPER_TOOL, () -> Ingredient.of(Items.COPPER_INGOT)),
-            new ResourceLocation(Erythrium.MOD_ID, "erythrium"), List.of(Tiers.STONE), List.of(Tiers.IRON)
+            new ResourceLocation(Erythrium.MOD_ID, "copper"), List.of(Tiers.STONE), List.of(Tiers.IRON)
     );
 }

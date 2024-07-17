@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-15T16:14:24.9570398	Tags for minecraft:item mod id erythrium
-24d09dcf5e965aabb51a620ccc8e88f139b28c1c data/minecraft/tags/items/trimmable_armor.json
-2a431f8b0e77cc805b438316b345f29060e110c8 data/minecraft/tags/items/trim_materials.json
+// 1.20.1	2024-07-17T02:10:46.6395057	Tags for minecraft:item mod id erythrium
+63c83080c1315c9a59e7c6228e02e59762794a17 data/minecraft/tags/items/trimmable_armor.json
+607e67a873c98c5b6152052028371057ee651068 data/minecraft/tags/items/trim_materials.json
 3c7f97b8627fb609545e6c30345f0278b5fe8454 data/minecraft/tags/items/trim_templates.json

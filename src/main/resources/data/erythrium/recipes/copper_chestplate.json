@@ -1,10 +1,11 @@
 {
   "type": "minecraft:smithing_transform",
-  "addition": {
-    "item": "erythrium:copper_plate"
-  },
+  "template": [],
   "base": {
     "item": "minecraft:leather_chestplate"
+  },
+  "addition": {
+    "item": "erythrium:copper_plate"
   },
   "result": {
     "item": "erythrium:copper_chestplate"

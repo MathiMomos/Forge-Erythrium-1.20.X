@@ -27,11 +27,28 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 ModItems.COPPER_HELMET.get(),
                 ModItems.COPPER_CHESTPLATE.get(),
                 ModItems.COPPER_LEGGINGS.get(),
-                ModItems.COPPER_BOOTS.get()
+                ModItems.COPPER_BOOTS.get(),
+
+                ModItems.EXPOSED_COPPER_HELMET.get(),
+                ModItems.EXPOSED_COPPER_CHESTPLATE.get(),
+                ModItems.EXPOSED_COPPER_LEGGINGS.get(),
+                ModItems.EXPOSED_COPPER_BOOTS.get(),
+
+                ModItems.WEATHERED_COPPER_HELMET.get(),
+                ModItems.WEATHERED_COPPER_CHESTPLATE.get(),
+                ModItems.WEATHERED_COPPER_LEGGINGS.get(),
+                ModItems.WEATHERED_COPPER_BOOTS.get(),
+
+                ModItems.OXIDIZED_COPPER_HELMET.get(),
+                ModItems.OXIDIZED_COPPER_CHESTPLATE.get(),
+                ModItems.OXIDIZED_COPPER_LEGGINGS.get(),
+                ModItems.OXIDIZED_COPPER_BOOTS.get()
+
                 );
         this.tag(ItemTags.TRIM_TEMPLATES)
                 .add(ModItems.ERYTHRIUM_UPGRADE_SMITHING_TEMPLATE.get());
 
-        this.tag(ItemTags.TRIM_MATERIALS);
+        this.tag(ItemTags.TRIM_MATERIALS)
+                .add(ModItems.COPPER_PLATE.get());
     }
 }

@@ -2,6 +2,22 @@
   "values": [
     "erythrium:erythrium_chestplate",
     "erythrium:erythrium_leggings",
-    "erythrium:erythrium_boots"
+    "erythrium:erythrium_boots",
+    "erythrium:copper_helmet",
+    "erythrium:copper_chestplate",
+    "erythrium:copper_leggings",
+    "erythrium:copper_boots",
+    "erythrium:exposed_copper_helmet",
+    "erythrium:exposed_copper_chestplate",
+    "erythrium:exposed_copper_leggings",
+    "erythrium:exposed_copper_boots",
+    "erythrium:weathered_copper_helmet",
+    "erythrium:weathered_copper_chestplate",
+    "erythrium:weathered_copper_leggings",
+    "erythrium:weathered_copper_boots",
+    "erythrium:oxidized_copper_helmet",
+    "erythrium:oxidized_copper_chestplate",
+    "erythrium:oxidized_copper_leggings",
+    "erythrium:oxidized_copper_boots"
   ]
 }

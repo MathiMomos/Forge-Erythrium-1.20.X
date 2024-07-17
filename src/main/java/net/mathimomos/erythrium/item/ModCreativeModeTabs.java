@@ -85,6 +85,22 @@ public class ModCreativeModeTabs {
                 pOutput.accept(ModItems.COPPER_CHESTPLATE.get());
                 pOutput.accept(ModItems.COPPER_LEGGINGS.get());
                 pOutput.accept(ModItems.COPPER_BOOTS.get());
+
+                pOutput.accept(ModItems.EXPOSED_COPPER_HELMET.get());
+                pOutput.accept(ModItems.EXPOSED_COPPER_CHESTPLATE.get());
+                pOutput.accept(ModItems.EXPOSED_COPPER_LEGGINGS.get());
+                pOutput.accept(ModItems.EXPOSED_COPPER_BOOTS.get());
+
+                pOutput.accept(ModItems.WEATHERED_COPPER_HELMET.get());
+                pOutput.accept(ModItems.WEATHERED_COPPER_CHESTPLATE.get());
+                pOutput.accept(ModItems.WEATHERED_COPPER_LEGGINGS.get());
+                pOutput.accept(ModItems.WEATHERED_COPPER_BOOTS.get());
+
+                pOutput.accept(ModItems.OXIDIZED_COPPER_HELMET.get());
+                pOutput.accept(ModItems.OXIDIZED_COPPER_CHESTPLATE.get());
+                pOutput.accept(ModItems.OXIDIZED_COPPER_LEGGINGS.get());
+                pOutput.accept(ModItems.OXIDIZED_COPPER_BOOTS.get());
+
             })
             .build());
 
