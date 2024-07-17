@@ -66,5 +66,10 @@
   "item.erythrium.raw_iron_nugget": "Raw Iron Nugget",
   "block.erythrium.iron_nugget_ore": "Iron Nugget Ore",
 
+  "item.erythrium.copper_helmet": "Copper Helmet",
+  "item.erythrium.copper_chestplate": "Copper Chestplate",
+  "item.erythrium.copper_leggings": "Copper Leggings",
+  "item.erythrium.copper_boots": "Copper Boots",
+
   "erythrium.erythrium_tab": "Erythrium"
 }

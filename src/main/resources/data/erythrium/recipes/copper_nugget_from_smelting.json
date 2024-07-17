@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "erythrium:copper_pickaxe"
+    },
+    {
+      "item": "erythrium:copper_shovel"
+    },
+    {
+      "item": "erythrium:copper_axe"
+    },
+    {
+      "item": "erythrium:copper_hoe"
+    },
+    {
+      "item": "erythrium:copper_sword"
+    },
+    {
+      "item": "erythrium:copper_helmet"
+    },
+    {
+      "item": "erythrium:copper_chestplate"
+    },
+    {
+      "item": "erythrium:copper_leggings"
+    },
+    {
+      "item": "erythrium:copper_boots"
+    }
+  ],
+  "result": "erythrium:copper_nugget"
+}

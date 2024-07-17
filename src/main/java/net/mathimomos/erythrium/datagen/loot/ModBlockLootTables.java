@@ -36,14 +36,16 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.DEEPSLATE_ERYTHRIUM_ORE.get(),
                 block -> createOreDrop(ModBlocks.DEEPSLATE_ERYTHRIUM_ORE.get(), ModItems.ROUGH_ERYTHRIUM.get()));
         this.add(ModBlocks.COMPACTED_ERYTHRIUM.get(),
-                block -> createErythriumOreDrops(ModBlocks.COMPACTED_ERYTHRIUM.get(), ModItems.ERYTHRIUM.get()));
+                block -> createMoreThanOneOreDrops(ModBlocks.COMPACTED_ERYTHRIUM.get(), ModItems.ERYTHRIUM.get(),
+                        2F, 4F));
 
         this.add(ModBlocks.IGNITE_ORE.get(),
                 block -> createOreDrop(ModBlocks.IGNITE_ORE.get(), ModItems.IGNITE.get()));
         this.dropSelf(ModBlocks.IGNITE_BLOCK.get());
 
         this.add(ModBlocks.FLINT_BLOCK.get(),
-                block -> createErythriumOreDrops(ModBlocks.FLINT_BLOCK.get(), Items.FLINT));
+                block -> createMoreThanOneOreDrops(ModBlocks.FLINT_BLOCK.get(), Items.FLINT,
+                        3F, 4F));
 
         this.add(ModBlocks.ROSE_QUARTZ_ORE.get(),
                 block -> createOreDrop(ModBlocks.ROSE_QUARTZ_ORE.get(), ModItems.ROSE_QUARTZ.get()));
@@ -56,14 +58,15 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.DIAMOND_CUTTER.get());
 
         this.add(ModBlocks.IRON_NUGGET_ORE.get(),
-                block -> createOreDrop(ModBlocks.IRON_NUGGET_ORE.get(), ModItems.RAW_IRON_NUGGET.get()));
+                block -> createMoreThanOneOreDrops(ModBlocks.IRON_NUGGET_ORE.get(), ModItems.RAW_IRON_NUGGET.get(),
+                        1F, 4F));
     }
 
-    protected LootTable.Builder createErythriumOreDrops(Block pBlock, Item pItem) {
+    protected LootTable.Builder createMoreThanOneOreDrops(Block pBlock, Item pItem, float min, float max) {
         return createSilkTouchDispatchTable(pBlock,
                 this.applyExplosionDecay(pBlock,
                 LootItem.lootTableItem(pItem)
-                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0F, 4.0F)))
+                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(min, max)))
                         .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))));
     }
 

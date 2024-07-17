@@ -14,8 +14,15 @@ public enum ModArmorMaterials implements ArmorMaterial {
 
     ERYTHRIUM("erythrium", 25, new int[]{3, 8, 6, 3}, 12,
             SoundEvents.ARMOR_EQUIP_DIAMOND, 2.5f, 0f, () -> Ingredient.of(ModItems.ERYTHRIUM.get())),
-    COPPER("copper", 25, new int[]{2, 4, 3, 1}, 0,
-            SoundEvents.ARMOR_EQUIP_IRON, 0f, 0f, () -> Ingredient.of(Items.COPPER_INGOT));
+
+    COPPER("copper", 25, new int[]{2, 5, 4, 1}, 0,
+            SoundEvents.ARMOR_EQUIP_IRON, 0f, 0f, () -> Ingredient.of(Items.COPPER_INGOT)),
+    EXPOSED_COPPER("exposed_copper", 25, new int[]{2, 4, 3, 1}, 0,
+            SoundEvents.ARMOR_EQUIP_IRON, 0f, 0f, () ->Ingredient.of(Items.COPPER_INGOT)),
+    WEATHERED_COPPER("weathered_copper", 25, new int[]{1, 4, 2, 1}, 0,
+            SoundEvents.ARMOR_EQUIP_IRON, 0f, 0f, () ->Ingredient.of(Items.COPPER_INGOT)),
+    OXIDIZED_COPPER("oxidized_copper", 25, new int[]{1, 3, 2, 1}, 0,
+            SoundEvents.ARMOR_EQUIP_IRON, 0f, 0f, () ->Ingredient.of(Items.COPPER_INGOT));
 
     private final String name;
     private final int durabilityMultiplier;
