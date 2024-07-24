@@ -71,5 +71,26 @@
   "item.erythrium.copper_leggings": "Copper Leggings",
   "item.erythrium.copper_boots": "Copper Boots",
 
+  "item.erythrium.exposed_copper_helmet": "Exposed Copper Helmet",
+  "item.erythrium.exposed_copper_chestplate": "Exposed Copper Chestplate",
+  "item.erythrium.exposed_copper_leggings": "Exposed Copper Leggings",
+  "item.erythrium.exposed_copper_boots": "Exposed Copper Boots",
+
+  "item.erythrium.weathered_copper_helmet": "Weathered Copper Helmet",
+  "item.erythrium.weathered_copper_chestplate": "Weathered Copper Chestplate",
+  "item.erythrium.weathered_copper_leggings": "Weathered Copper Leggings",
+  "item.erythrium.weathered_copper_boots": "Weathered Copper Boots",
+
+  "item.erythrium.oxidized_copper_helmet": "Oxidized Copper Helmet",
+  "item.erythrium.oxidized_copper_chestplate": "Oxidized Copper Chestplate",
+  "item.erythrium.oxidized_copper_leggings": "Oxidized Copper Leggings",
+  "item.erythrium.oxidized_copper_boots": "Oxidized Copper Boots",
+
+  "item.erythrium.copper_sword": "Copper Sword",
+  "item.erythrium.copper_pickaxe": "Copper Pickaxe",
+  "item.erythrium.copper_axe": "Copper Axe",
+  "item.erythrium.copper_shovel": "Copper Shovel",
+  "item.erythrium.copper_hoe": "Copper Hoe",
+
   "erythrium.erythrium_tab": "Erythrium"
 }

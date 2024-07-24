@@ -101,6 +101,12 @@ public class ModCreativeModeTabs {
                 pOutput.accept(ModItems.OXIDIZED_COPPER_LEGGINGS.get());
                 pOutput.accept(ModItems.OXIDIZED_COPPER_BOOTS.get());
 
+                pOutput.accept(ModItems.COPPER_SWORD.get());
+                pOutput.accept(ModItems.COPPER_PICKAXE.get());
+                pOutput.accept(ModItems.COPPER_AXE.get());
+                pOutput.accept(ModItems.COPPER_SHOVEL.get());
+                pOutput.accept(ModItems.COPPER_HOE.get());
+
             })
             .build());
 

@@ -2,6 +2,7 @@ package net.mathimomos.erythrium.item;
 
 import net.mathimomos.erythrium.Erythrium;
 import net.mathimomos.erythrium.item.custom.FuelItem;
+import net.mathimomos.erythrium.item.custom.OxidizingSwordItem;
 import net.mathimomos.erythrium.util.ModToolTiers;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -138,6 +139,19 @@ public class ModItems {
     public static final RegistryObject<Item> OXIDIZED_COPPER_BOOTS = ITEMS.register("oxidized_copper_boots",
             () -> new ArmorItem(ModArmorMaterials.OXIDIZED_COPPER, ArmorItem.Type.BOOTS, new Item.Properties()));
 
+    public static final RegistryObject<Item> COPPER_SWORD = ITEMS.register("copper_sword",
+            () -> new OxidizingSwordItem(ModToolTiers.COPPER, 4, -2.4F, new Item.Properties()));
+    public static final RegistryObject<Item> COPPER_PICKAXE = ITEMS.register("copper_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.COPPER, 2, -2.8F, new Item.Properties()));
+    public static final RegistryObject<Item> COPPER_AXE = ITEMS.register("copper_axe",
+            () -> new AxeItem(ModToolTiers.COPPER, 7.5F, -3.1F, new Item.Properties()));
+    public static final RegistryObject<Item> COPPER_SHOVEL = ITEMS.register("copper_shovel",
+            () -> new ShovelItem(ModToolTiers.COPPER, 2.5f, -3F, new Item.Properties()));
+    public static final RegistryObject<Item> COPPER_HOE = ITEMS.register("copper_hoe",
+            () -> new HoeItem(ModToolTiers.COPPER, 0, -1F, new Item.Properties()));
+
+    public static final RegistryObject<Item> EXPOSED_COPPER_SWORD = ITEMS.register("exposed_copper_sword",
+            () -> new SwordItem(ModToolTiers.EXPOSED_COPPER, 4, -2.4F, new Item.Properties()));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

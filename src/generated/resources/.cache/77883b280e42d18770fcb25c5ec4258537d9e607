@@ -1,4 +1,5 @@
-// 1.20.1	2024-07-17T01:39:56.7238836	Item Models: erythrium
+// 1.20.1	2024-07-24T01:07:54.8327658	Item Models: erythrium
+8538337a8d2e1dbc694329ba13ba465552b2ac0a assets/erythrium/models/item/copper_axe.json
 578474b68d97a74cd51aae90a7cce38331f1114d assets/erythrium/models/item/copper_boots.json
 f9874a269d5bde61999b24e41f0fac58526f6046 assets/erythrium/models/item/copper_boots_amethyst_trim.json
 0438c44118ee0d243f1dedf6c74a8a3ae8019efc assets/erythrium/models/item/copper_boots_copper_trim.json
@@ -33,6 +34,7 @@ ed57b17068accb45fe48b926c77461b89eedded5 assets/erythrium/models/item/copper_hel
 1f190a50e590f0f2398175a74ed4655ef2f9fbed assets/erythrium/models/item/copper_helmet_netherite_trim.json
 83f8549d5cc0bb5d4adf7329327694ddeed2202f assets/erythrium/models/item/copper_helmet_quartz_trim.json
 728ed3a9b17f91604111a700301e46329c321007 assets/erythrium/models/item/copper_helmet_redstone_trim.json
+b1611fcba22a0e2834c20d70205422835e1520da assets/erythrium/models/item/copper_hoe.json
 e49fdba1fc1d0e68e80c3d0ace6a2dc5f1c4a872 assets/erythrium/models/item/copper_leggings.json
 247add15160b6b16e30b004417fc92419fba17a0 assets/erythrium/models/item/copper_leggings_amethyst_trim.json
 04f918a6a7669a7d3de9cd95e8eb22466f5dd46c assets/erythrium/models/item/copper_leggings_copper_trim.json
@@ -45,7 +47,10 @@ f9d01f416ee955d99f9731576be5d1fa4a5cd387 assets/erythrium/models/item/copper_leg
 5f5cbe4c7279d2479d30053885d62c188f5e1410 assets/erythrium/models/item/copper_leggings_quartz_trim.json
 537b4de10ec994c923fbbb13e83841fdd6787723 assets/erythrium/models/item/copper_leggings_redstone_trim.json
 c1f8df1a4ae88a2b29d487b66fe6f7cb4c86b2e9 assets/erythrium/models/item/copper_nugget.json
+470d039ccc0beea9044370a301457ae4157a5d87 assets/erythrium/models/item/copper_pickaxe.json
 9e4b5131f2818df57f63935ab5aaaeb92bed08b7 assets/erythrium/models/item/copper_plate.json
+e922e487c27f31511d463e6cda924c40a8aa23c4 assets/erythrium/models/item/copper_shovel.json
+00fc1bb7a1429826c0bfed1340b48b78e132d0f8 assets/erythrium/models/item/copper_sword.json
 4ad2a86dab463b72860416266921f1d497aea481 assets/erythrium/models/item/diamond_twin.json
 2247aa692e3681bf076398fd61c15e63b2307087 assets/erythrium/models/item/enchanted_tome.json
 1067c2c5b81583a093f906f92780f3f3c0c9ee2a assets/erythrium/models/item/erythrium.json
@@ -134,6 +139,7 @@ d2d0c174b4ff505032ae66dda56bdb12326d489a assets/erythrium/models/item/exposed_co
 e198fa394923550660a446aaaaaea442609eb47e assets/erythrium/models/item/exposed_copper_leggings_netherite_trim.json
 c15e93d2d1d12e2ddb79b93d3c2cd72be9a084bd assets/erythrium/models/item/exposed_copper_leggings_quartz_trim.json
 fd35bb95b1434e0da09f5bfd081e1208f63ae015 assets/erythrium/models/item/exposed_copper_leggings_redstone_trim.json
+1093f675751d57222fc4098aef7e73e2e870b9e9 assets/erythrium/models/item/exposed_copper_sword.json
 d5ff61f6d05bc631041f7b6e050b44475c41f471 assets/erythrium/models/item/glittermeat.json
 266cc8a22030222380c304a2c445271800a888ed assets/erythrium/models/item/gold_plate.json
 7d802f5f823ed3fc46c1b28867bf32b5a5df934e assets/erythrium/models/item/ignite.json

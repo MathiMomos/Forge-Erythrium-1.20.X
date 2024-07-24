@@ -2,19 +2,19 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "###",
-    " $ ",
-    " $ "
+    "#",
+    "#",
+    "$"
   ],
   "key": {
     "#": {
-      "item": "erythrium:erythrium"
+      "item": "minecraft:copper_ingot"
     },
     "$": {
-      "item": "minecraft:diamond"
+      "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "erythrium:erythrium_pickaxe"
+    "item": "erythrium:copper_sword"
   }
 }
