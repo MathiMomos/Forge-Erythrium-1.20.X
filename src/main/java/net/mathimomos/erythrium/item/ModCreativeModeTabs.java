@@ -106,7 +106,24 @@ public class ModCreativeModeTabs {
                 pOutput.accept(ModItems.COPPER_AXE.get());
                 pOutput.accept(ModItems.COPPER_SHOVEL.get());
                 pOutput.accept(ModItems.COPPER_HOE.get());
+                
+                pOutput.accept(ModItems.EXPOSED_COPPER_SWORD.get());
+                pOutput.accept(ModItems.EXPOSED_COPPER_PICKAXE.get());
+                pOutput.accept(ModItems.EXPOSED_COPPER_AXE.get());
+                pOutput.accept(ModItems.EXPOSED_COPPER_SHOVEL.get());
+                pOutput.accept(ModItems.EXPOSED_COPPER_HOE.get());
 
+                pOutput.accept(ModItems.WEATHERED_COPPER_SWORD.get());
+                pOutput.accept(ModItems.WEATHERED_COPPER_PICKAXE.get());
+                pOutput.accept(ModItems.WEATHERED_COPPER_AXE.get());
+                pOutput.accept(ModItems.WEATHERED_COPPER_SHOVEL.get());
+                pOutput.accept(ModItems.WEATHERED_COPPER_HOE.get());
+
+                pOutput.accept(ModItems.OXIDIZED_COPPER_SWORD.get());
+                pOutput.accept(ModItems.OXIDIZED_COPPER_PICKAXE.get());
+                pOutput.accept(ModItems.OXIDIZED_COPPER_AXE.get());
+                pOutput.accept(ModItems.OXIDIZED_COPPER_SHOVEL.get());
+                pOutput.accept(ModItems.OXIDIZED_COPPER_HOE.get());
             })
             .build());
 

@@ -2,16 +2,13 @@ package net.mathimomos.erythrium.item.custom;
 
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.SwordItem;
-import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 
-public class OxidizingSwordItem extends SwordItem {
+public class OxidizingAxeItem extends AxeItem {
     private final Item nextStateItem;
 
-    public OxidizingSwordItem(Tier tier, int attackDamageModifier, float attackSpeedModifier, Properties properties, Item nextStateItem) {
+    public OxidizingAxeItem(Tier tier, float attackDamageModifier, float attackSpeedModifier, Properties properties, Item nextStateItem) {
         super(tier, attackDamageModifier, attackSpeedModifier, properties);
         this.nextStateItem = nextStateItem;
     }

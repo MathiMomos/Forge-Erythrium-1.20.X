@@ -92,5 +92,23 @@
   "item.erythrium.copper_shovel": "Copper Shovel",
   "item.erythrium.copper_hoe": "Copper Hoe",
 
+  "item.erythrium.exposed_copper_sword": "Exposed Copper Sword",
+  "item.erythrium.exposed_copper_pickaxe": "Exposed Copper Pickaxe",
+  "item.erythrium.exposed_copper_axe": "Exposed Copper Axe",
+  "item.erythrium.exposed_copper_shovel": "Exposed Copper Shovel",
+  "item.erythrium.exposed_copper_hoe": "Exposed Copper Hoe",
+
+  "item.erythrium.weathered_copper_sword": "Weathered Copper Sword",
+  "item.erythrium.weathered_copper_pickaxe": "Weathered Copper Pickaxe",
+  "item.erythrium.weathered_copper_axe": "Weathered Copper Axe",
+  "item.erythrium.weathered_copper_shovel": "Weathered Copper Shovel",
+  "item.erythrium.weathered_copper_hoe": "Weathered Copper Hoe",
+
+  "item.erythrium.oxidized_copper_sword": "Oxidized Copper Sword",
+  "item.erythrium.oxidized_copper_pickaxe": "Oxidized Copper Pickaxe",
+  "item.erythrium.oxidized_copper_axe": "Oxidized Copper Axe",
+  "item.erythrium.oxidized_copper_shovel": "Oxidized Copper Shovel",
+  "item.erythrium.oxidized_copper_hoe": "Oxidized Copper Hoe",
+
   "erythrium.erythrium_tab": "Erythrium"
 }
