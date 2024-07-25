@@ -139,8 +139,18 @@ public class ModItems {
     public static final RegistryObject<Item> OXIDIZED_COPPER_BOOTS = ITEMS.register("oxidized_copper_boots",
             () -> new ArmorItem(ModArmorMaterials.OXIDIZED_COPPER, ArmorItem.Type.BOOTS, new Item.Properties()));
 
+    public static final RegistryObject<Item> OXIDIZED_COPPER_SWORD = ITEMS.register("oxidized_copper_sword",
+            () -> new SwordItem(ModToolTiers.OXIDIZED_COPPER, 4, -2.4F, new Item.Properties()));
+    public static final RegistryObject<Item> WEATHERED_COPPER_SWORD = ITEMS.register("weathered_copper_sword",
+                () -> new OxidizingSwordItem(ModToolTiers.WEATHERED_COPPER, 4, -2.4F, new Item.Properties(),
+                        OXIDIZED_COPPER_SWORD.get()));
+    public static final RegistryObject<Item> EXPOSED_COPPER_SWORD = ITEMS.register("exposed_copper_sword",
+            () -> new OxidizingSwordItem(ModToolTiers.EXPOSED_COPPER, 4, -2.4F, new Item.Properties(),
+                    WEATHERED_COPPER_SWORD.get()));
+
     public static final RegistryObject<Item> COPPER_SWORD = ITEMS.register("copper_sword",
-            () -> new OxidizingSwordItem(ModToolTiers.COPPER, 4, -2.4F, new Item.Properties()));
+            () -> new OxidizingSwordItem(ModToolTiers.COPPER, 4, -2.4F, new Item.Properties(),
+                    EXPOSED_COPPER_SWORD.get()));
     public static final RegistryObject<Item> COPPER_PICKAXE = ITEMS.register("copper_pickaxe",
             () -> new PickaxeItem(ModToolTiers.COPPER, 2, -2.8F, new Item.Properties()));
     public static final RegistryObject<Item> COPPER_AXE = ITEMS.register("copper_axe",
@@ -149,9 +159,6 @@ public class ModItems {
             () -> new ShovelItem(ModToolTiers.COPPER, 2.5f, -3F, new Item.Properties()));
     public static final RegistryObject<Item> COPPER_HOE = ITEMS.register("copper_hoe",
             () -> new HoeItem(ModToolTiers.COPPER, 0, -1F, new Item.Properties()));
-
-    public static final RegistryObject<Item> EXPOSED_COPPER_SWORD = ITEMS.register("exposed_copper_sword",
-            () -> new SwordItem(ModToolTiers.EXPOSED_COPPER, 4, -2.4F, new Item.Properties()));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
