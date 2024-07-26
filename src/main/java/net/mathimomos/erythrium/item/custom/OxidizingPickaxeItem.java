@@ -29,7 +29,7 @@ public class OxidizingPickaxeItem extends PickaxeItem {
                     player.getInventory().setItem(pSlotId, oxidizedTool);
                 }
             } else {
-                pStack.getOrCreateTag().putLong("oxidation_time", pLevel.getGameTime() + 20*10);
+                pStack.getOrCreateTag().putLong("oxidation_time", pLevel.getGameTime() + 10*60*20);
             }
         }
     }

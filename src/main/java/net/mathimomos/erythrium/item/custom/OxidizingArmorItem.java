@@ -47,7 +47,7 @@ public class OxidizingArmorItem extends ArmorItem {
                         }
                     }
                 } else {
-                    pStack.getOrCreateTag().putLong("oxidation_time", pLevel.getGameTime() + 60*20);
+                    pStack.getOrCreateTag().putLong("oxidation_time", pLevel.getGameTime() + 10*60*20);
                 }
             }
         }
