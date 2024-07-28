@@ -140,6 +140,16 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.ROSE_GOLD_SHOVEL);
         handheldItem(ModItems.ROSE_GOLD_HOE);
 
+        trimmedArmorItem(ModItems.STEEL_HELMET);
+        trimmedArmorItem(ModItems.STEEL_CHESTPLATE);
+        trimmedArmorItem(ModItems.STEEL_LEGGINGS);
+        trimmedArmorItem(ModItems.STEEL_BOOTS);
+
+        trimmedArmorItem(ModItems.ROSE_GOLD_HELMET);
+        trimmedArmorItem(ModItems.ROSE_GOLD_CHESTPLATE);
+        trimmedArmorItem(ModItems.ROSE_GOLD_LEGGINGS);
+        trimmedArmorItem(ModItems.ROSE_GOLD_BOOTS);
+
     }
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {
         final String MOD_ID = Erythrium.MOD_ID;

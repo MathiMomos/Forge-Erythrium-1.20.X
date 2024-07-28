@@ -77,6 +77,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().rarity(Rarity.RARE).food(ModFoods.GLITTERMEAT)));
     public static final RegistryObject<Item> OINKBALLS = ITEMS.register("oinkballs",
             () -> new Item(new Item.Properties().food(ModFoods.OINKBALLS)));
+
     public static final RegistryObject<Item> ERYTHRIUM_CROWN = ITEMS.register("erythrium_crown",
             () -> new ArmorItem(ModArmorMaterials.ERYTHRIUM, ArmorItem.Type.HELMET, new Item.Properties()));
     public static final RegistryObject<Item> ERYTHRIUM_CHESTPLATE = ITEMS.register("erythrium_chestplate",
@@ -229,6 +230,23 @@ public class ModItems {
     public static final RegistryObject<Item> ROSE_GOLD_HOE = ITEMS.register("rose_gold_hoe",
             () -> new HoeItem(ModToolTiers.ROSE_GOLD, 0, 0F, new Item.Properties()));
 
+    public static final RegistryObject<Item> STEEL_HELMET = ITEMS.register("steel_helmet",
+            () -> new ArmorItem(ModArmorMaterials.STEEL, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> STEEL_CHESTPLATE = ITEMS.register("steel_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.STEEL, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<Item> STEEL_LEGGINGS = ITEMS.register("steel_leggings",
+            () -> new ArmorItem(ModArmorMaterials.STEEL, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<Item> STEEL_BOOTS = ITEMS.register("steel_boots",
+            () -> new ArmorItem(ModArmorMaterials.STEEL, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+    public static final RegistryObject<Item> ROSE_GOLD_HELMET = ITEMS.register("rose_gold_helmet",
+            () -> new ArmorItem(ModArmorMaterials.ROSE_GOLD, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> ROSE_GOLD_CHESTPLATE = ITEMS.register("rose_gold_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.ROSE_GOLD, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<Item> ROSE_GOLD_LEGGINGS = ITEMS.register("rose_gold_leggings",
+            () -> new ArmorItem(ModArmorMaterials.ROSE_GOLD, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<Item> ROSE_GOLD_BOOTS = ITEMS.register("rose_gold_boots",
+            () -> new ArmorItem(ModArmorMaterials.ROSE_GOLD, ArmorItem.Type.BOOTS, new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
