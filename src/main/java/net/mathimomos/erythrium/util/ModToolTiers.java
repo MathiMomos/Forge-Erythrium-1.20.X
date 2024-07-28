@@ -39,4 +39,16 @@ public class ModToolTiers {
             new ResourceLocation(Erythrium.MOD_ID, "oxidized_copper"), List.of(Tiers.STONE), List.of(Tiers.IRON)
     );
 
+    public static final Tier STEEL = TierSortingRegistry.registerTier(
+            new ForgeTier(2, 905, 7, 0.5F, 0,
+                    ModTags.Blocks.NEEDS_STEEL_TOOL, () -> Ingredient.of(ModItems.STEEL_INGOT.get())),
+            new ResourceLocation(Erythrium.MOD_ID, "steel"), List.of(Tiers.IRON), List.of(Tiers.DIAMOND)
+    );
+    public static final Tier ROSE_GOLD = TierSortingRegistry.registerTier(
+            new ForgeTier(2, 905, 7, 0.5F, 0,
+                    ModTags.Blocks.NEEDS_ROSE_GOLD_TOOL, () -> Ingredient.of(ModItems.ROSE_GOLD_INGOT.get())),
+            new ResourceLocation(Erythrium.MOD_ID, "rose_gold"), List.of(Tiers.IRON), List.of(Tiers.DIAMOND)
+    );
+
+
 }

@@ -198,6 +198,38 @@ public class ModItems {
             () -> new OxidizingHoeItem(ModToolTiers.COPPER, 0, -1F, new Item.Properties(),
                     ModItems.EXPOSED_COPPER_HOE.get()));
 
+    public static final RegistryObject<Item> STEEL_INGOT = ITEMS.register("steel_ingot",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ROSE_GOLD_INGOT = ITEMS.register("rose_gold_ingot",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> STEEL_PLATE = ITEMS.register("steel_plate",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ROSE_GOLD_PLATE = ITEMS.register("rose_gold_plate",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> STEEL_SWORD = ITEMS.register("steel_sword",
+            () -> new SwordItem(ModToolTiers.STEEL, 5, -2.4F, new Item.Properties()));
+    public static final RegistryObject<Item> STEEL_PICKAXE = ITEMS.register("steel_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.STEEL, 3, -2.8F, new Item.Properties()));
+    public static final RegistryObject<Item> STEEL_AXE = ITEMS.register("steel_axe",
+            () -> new AxeItem(ModToolTiers.STEEL, 7.5F, -3F, new Item.Properties()));
+    public static final RegistryObject<Item> STEEL_SHOVEL = ITEMS.register("steel_shovel",
+            () -> new ShovelItem(ModToolTiers.STEEL, 3.5f, -3F, new Item.Properties()));
+    public static final RegistryObject<Item> STEEL_HOE = ITEMS.register("steel_hoe",
+            () -> new HoeItem(ModToolTiers.STEEL, 0, 0F, new Item.Properties()));
+
+    public static final RegistryObject<Item> ROSE_GOLD_SWORD = ITEMS.register("rose_gold_sword",
+            () -> new SwordItem(ModToolTiers.ROSE_GOLD, 5, -2.4F, new Item.Properties()));
+    public static final RegistryObject<Item> ROSE_GOLD_PICKAXE = ITEMS.register("rose_gold_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.ROSE_GOLD, 3, -2.8F, new Item.Properties()));
+    public static final RegistryObject<Item> ROSE_GOLD_AXE = ITEMS.register("rose_gold_axe",
+            () -> new AxeItem(ModToolTiers.ROSE_GOLD, 7.5F, -3F, new Item.Properties()));
+    public static final RegistryObject<Item> ROSE_GOLD_SHOVEL = ITEMS.register("rose_gold_shovel",
+            () -> new ShovelItem(ModToolTiers.ROSE_GOLD, 3.5f, -3F, new Item.Properties()));
+    public static final RegistryObject<Item> ROSE_GOLD_HOE = ITEMS.register("rose_gold_hoe",
+            () -> new HoeItem(ModToolTiers.ROSE_GOLD, 0, 0F, new Item.Properties()));
+
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

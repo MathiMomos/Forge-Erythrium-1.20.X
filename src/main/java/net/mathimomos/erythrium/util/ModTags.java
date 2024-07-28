@@ -13,6 +13,8 @@ public class ModTags {
         ///Tag
         public static TagKey<Block> NEEDS_ERYTHRIUM_TOOL = tag("needs_erythrium_tool");
         public static TagKey<Block> NEEDS_COPPER_TOOL = tag("needs_copper_tool");
+        public static TagKey<Block> NEEDS_STEEL_TOOL = tag("needs_steel_tool");
+        public static TagKey<Block> NEEDS_ROSE_GOLD_TOOL = tag("needs_rose_gold_tool");
 
         private static TagKey<Block> tag(String name) {
             return BlockTags.create(new ResourceLocation(Erythrium.MOD_ID, name));

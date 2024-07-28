@@ -124,9 +124,25 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.OXIDIZED_COPPER_SHOVEL);
         handheldItem(ModItems.OXIDIZED_COPPER_HOE);
 
+        simpleItem(ModItems.STEEL_INGOT);
+        simpleItem(ModItems.STEEL_PLATE);
+        handheldItem(ModItems.STEEL_SWORD);
+        handheldItem(ModItems.STEEL_PICKAXE);
+        handheldItem(ModItems.STEEL_AXE);
+        handheldItem(ModItems.STEEL_SHOVEL);
+        handheldItem(ModItems.STEEL_HOE);
+
+        simpleItem(ModItems.ROSE_GOLD_INGOT);
+        simpleItem(ModItems.ROSE_GOLD_PLATE);
+        handheldItem(ModItems.ROSE_GOLD_SWORD);
+        handheldItem(ModItems.ROSE_GOLD_PICKAXE);
+        handheldItem(ModItems.ROSE_GOLD_AXE);
+        handheldItem(ModItems.ROSE_GOLD_SHOVEL);
+        handheldItem(ModItems.ROSE_GOLD_HOE);
+
     }
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {
-        final String MOD_ID = Erythrium.MOD_ID; // Change this to your mod id
+        final String MOD_ID = Erythrium.MOD_ID;
 
         if(itemRegistryObject.get() instanceof ArmorItem armorItem) {
             trimMaterials.entrySet().forEach(entry -> {

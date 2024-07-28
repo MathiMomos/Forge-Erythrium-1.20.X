@@ -124,6 +124,22 @@ public class ModCreativeModeTabs {
                 pOutput.accept(ModItems.OXIDIZED_COPPER_AXE.get());
                 pOutput.accept(ModItems.OXIDIZED_COPPER_SHOVEL.get());
                 pOutput.accept(ModItems.OXIDIZED_COPPER_HOE.get());
+
+                pOutput.accept(ModItems.STEEL_INGOT.get());
+                pOutput.accept(ModItems.STEEL_PLATE.get());
+                pOutput.accept(ModItems.STEEL_SWORD.get());
+                pOutput.accept(ModItems.STEEL_PICKAXE.get());
+                pOutput.accept(ModItems.STEEL_AXE.get());
+                pOutput.accept(ModItems.STEEL_SHOVEL.get());
+                pOutput.accept(ModItems.STEEL_HOE.get());
+
+                pOutput.accept(ModItems.ROSE_GOLD_INGOT.get());
+                pOutput.accept(ModItems.ROSE_GOLD_PLATE.get());
+                pOutput.accept(ModItems.ROSE_GOLD_SWORD.get());
+                pOutput.accept(ModItems.ROSE_GOLD_PICKAXE.get());
+                pOutput.accept(ModItems.ROSE_GOLD_AXE.get());
+                pOutput.accept(ModItems.ROSE_GOLD_SHOVEL.get());
+                pOutput.accept(ModItems.ROSE_GOLD_HOE.get());
             })
             .build());
 
