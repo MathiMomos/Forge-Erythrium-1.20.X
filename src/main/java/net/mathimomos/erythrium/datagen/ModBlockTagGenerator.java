@@ -28,7 +28,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.IGNITE_ORE.get(),
-                    ModBlocks.IGNITE_BLOCK.get()
+                        ModBlocks.IGNITE_BLOCK.get(),
+                        ModBlocks.ROSE_GOLD_BLOCK.get(),
+                        ModBlocks.STEEL_BLOCK.get()
                 );
 
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
@@ -63,7 +65,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.ROSE_QUARTZ_ORE.get(),
                         ModBlocks.ROSE_QUARTZ_BLOCK.get(),
                         ModBlocks.COPPER_CHAGER.get(),
-                        ModBlocks.IRON_NUGGET_ORE.get()
+                        ModBlocks.IRON_NUGGET_ORE.get(),
+                        ModBlocks.ROSE_GOLD_BLOCK.get(),
+                        ModBlocks.STEEL_BLOCK.get()
                 );
 
         this.tag(BlockTags.MINEABLE_WITH_AXE)

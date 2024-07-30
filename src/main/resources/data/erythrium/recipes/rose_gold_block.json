@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "erythrium:rose_gold_ingot"
+    }
+  },
+  "result": {
+    "item": "erythrium:rose_gold_block"
+  }
+}

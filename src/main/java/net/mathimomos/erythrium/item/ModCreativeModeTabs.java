@@ -150,6 +150,9 @@ public class ModCreativeModeTabs {
                 pOutput.accept(ModItems.ROSE_GOLD_CHESTPLATE.get());
                 pOutput.accept(ModItems.ROSE_GOLD_LEGGINGS.get());
                 pOutput.accept(ModItems.ROSE_GOLD_BOOTS.get());
+
+                pOutput.accept(ModBlocks.STEEL_BLOCK.get());
+                pOutput.accept(ModBlocks.ROSE_GOLD_BLOCK.get());
             })
             .build());
 

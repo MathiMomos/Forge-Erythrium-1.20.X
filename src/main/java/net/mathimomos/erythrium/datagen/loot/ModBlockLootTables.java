@@ -60,6 +60,10 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.IRON_NUGGET_ORE.get(),
                 block -> createMoreThanOneOreDrops(ModBlocks.IRON_NUGGET_ORE.get(), ModItems.RAW_IRON_NUGGET.get(),
                         1F, 4F));
+
+        this.dropSelf(ModBlocks.STEEL_BLOCK.get());
+        this.dropSelf(ModBlocks.ROSE_GOLD_BLOCK.get());
+
     }
 
     protected LootTable.Builder createMoreThanOneOreDrops(Block pBlock, Item pItem, float min, float max) {

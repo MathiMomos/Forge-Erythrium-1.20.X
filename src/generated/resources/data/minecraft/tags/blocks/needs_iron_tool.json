@@ -1,6 +1,8 @@
 {
   "values": [
     "erythrium:ignite_ore",
-    "erythrium:ignite_block"
+    "erythrium:ignite_block",
+    "erythrium:rose_gold_block",
+    "erythrium:steel_block"
   ]
 }

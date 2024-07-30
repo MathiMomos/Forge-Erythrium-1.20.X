@@ -111,6 +111,7 @@
   "item.erythrium.oxidized_copper_hoe": "Oxidized Copper Hoe",
 
   "item.erythrium.steel_ingot": "Steel Ingot",
+  "block.erythrium.steel_block": "Block of Steel",
   "item.erythrium.steel_plate": "Steel Plate",
   "item.erythrium.steel_sword": "Steel Sword",
   "item.erythrium.steel_pickaxe": "Steel Pickaxe",
@@ -118,21 +119,24 @@
   "item.erythrium.steel_shovel": "Steel Shovel",
   "item.erythrium.steel_hoe": "Steel Hoe",
 
-  "item.erythrium.rose_gold_ingot": "Steel Ingot",
-  "item.erythrium.rose_gold_plate": "Steel Plate",
-  "item.erythrium.rose_gold_sword": "Steel Sword",
-  "item.erythrium.rose_gold_pickaxe": "Steel Pickaxe",
-  "item.erythrium.rose_gold_axe": "Steel Axe",
-  "item.erythrium.rose_gold_shovel": "Steel Shovel",
-  "item.erythrium.rose_gold_hoe": "Steel Hoe",
-
   "item.erythrium.rose_gold_ingot": "Rose Gold Ingot",
+  "block.erythrium.rose_gold_block": "Block of Rose Gold",
   "item.erythrium.rose_gold_plate": "Rose Gold Plate",
   "item.erythrium.rose_gold_sword": "Rose Gold Sword",
   "item.erythrium.rose_gold_pickaxe": "Rose Gold Pickaxe",
   "item.erythrium.rose_gold_axe": "Rose Gold Axe",
   "item.erythrium.rose_gold_shovel": "Rose Gold Shovel",
   "item.erythrium.rose_gold_hoe": "Rose Gold Hoe",
+
+  "item.erythrium.steel_helmet": "Steel Helmet",
+  "item.erythrium.steel_chestplate": "Steel Chestplate",
+  "item.erythrium.steel_leggings": "Steel Leggings",
+  "item.erythrium.steel_boots": "Steel Boots",
+
+  "item.erythrium.rose_gold_helmet": "Rose Gold Helmet",
+  "item.erythrium.rose_gold_chestplate": "Rose Gold Chestplate",
+  "item.erythrium.rose_gold_leggings": "Rose Gold Leggings",
+  "item.erythrium.rose_gold_boots": "Rose Gold Boots",
 
   "erythrium.erythrium_tab": "Erythrium"
 }

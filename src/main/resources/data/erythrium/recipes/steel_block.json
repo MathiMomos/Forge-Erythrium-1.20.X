@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "erythrium:steel_ingot"
+    }
+  },
+  "result": {
+    "item": "erythrium:steel_block"
+  }
+}
