@@ -18,11 +18,6 @@ import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.Nullable;
 
 public class DiamondCutterBlock extends BaseEntityBlock {
-    private final ItemStackHandler itemHandler = new ItemStackHandler(2);
-
-    private static final int INPUT_SLOT = 0;
-    private static final int OUTPUT_SLOT = 1;
-    private LazyOptional<IItemHandler> lazyItemHandler = LazyOptional.empty();
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
     public static final VoxelShape SHAPE = Block.box(0, 0, 0, 16, 9, 16);
 

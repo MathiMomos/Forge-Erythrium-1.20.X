@@ -31,25 +31,30 @@ public class ModConfiguredFeatures {
         RuleTest netherrackReplaceables = new BlockMatchTest(Blocks.NETHERRACK);
         RuleTest quartzOreReplaceables = new BlockMatchTest(Blocks.NETHER_QUARTZ_ORE);
         RuleTest ironOreReplaceables = new BlockMatchTest(Blocks.IRON_ORE);
-        RuleTest gravelReplaceeables = new BlockMatchTest(Blocks.GRAVEL);
+        RuleTest gravelReplaceables = new BlockMatchTest(Blocks.GRAVEL);
 
         List<OreConfiguration.TargetBlockState> overworldErythriumOres = List.of(OreConfiguration.target(stoneReplaceables,
                 ModBlocks.ERYTHRIUM_ORE.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceables, ModBlocks.DEEPSLATE_ERYTHRIUM_ORE.get().defaultBlockState())
                 );
-        register(context, OVERWORLD_ERYTHRIUM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldErythriumOres, 4));
-        register(context, OVERWORLD_FLINT_BLOCK_KEY, Feature.ORE, new OreConfiguration(gravelReplaceeables, ModBlocks.FLINT_BLOCK.get().defaultBlockState(), 10));
-        register(context, NETHER_IGNITE_ORE_KEY, Feature.ORE, new OreConfiguration(netherrackReplaceables, ModBlocks.IGNITE_ORE.get().defaultBlockState(), 15));
-        register(context, NETHER_ROSE_QUARTZ_ORE_KEY, Feature.ORE, new OreConfiguration(quartzOreReplaceables, ModBlocks.ROSE_QUARTZ_ORE.get().defaultBlockState(), 12));
-        register(context, OVERWORLD_IRON_NUGGET_ORE_KEY, Feature.ORE, new OreConfiguration(ironOreReplaceables, ModBlocks.IRON_NUGGET_ORE.get().defaultBlockState(), 16));
-    }
 
-    public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {
-        return ResourceKey.create(Registries.CONFIGURED_FEATURE, new ResourceLocation(Erythrium.MOD_ID, name));
+        List<OreConfiguration.TargetBlockState> gravelReplacement = List.of(
+                OreConfiguration.target(gravelReplaceables, ModBlocks.FLINT_BLOCK.get().defaultBlockState())
+        );
+
+        register(context, OVERWORLD_ERYTHRIUM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldErythriumOres, 4));
+        register(context, OVERWORLD_FLINT_BLOCK_KEY, Feature.ORE, new OreConfiguration(gravelReplacement, 48));
+        register(context, NETHER_IGNITE_ORE_KEY, Feature.ORE, new OreConfiguration(netherrackReplaceables, ModBlocks.IGNITE_ORE.get().defaultBlockState(), 16));
+        register(context, NETHER_ROSE_QUARTZ_ORE_KEY, Feature.ORE, new OreConfiguration(quartzOreReplaceables, ModBlocks.ROSE_QUARTZ_ORE.get().defaultBlockState(), 24));
+        register(context, OVERWORLD_IRON_NUGGET_ORE_KEY, Feature.ORE, new OreConfiguration(ironOreReplaceables, ModBlocks.IRON_NUGGET_ORE.get().defaultBlockState(), 64));
     }
 
     private static <FC extends FeatureConfiguration, F extends Feature<FC>> void register(BootstapContext<ConfiguredFeature<?, ?>> context,
                                                                                           ResourceKey<ConfiguredFeature<?, ?>> key, F feature, FC configuration) {
         context.register(key, new ConfiguredFeature<>(feature, configuration));
+    }
+
+    public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {
+        return ResourceKey.create(Registries.CONFIGURED_FEATURE, new ResourceLocation(Erythrium.MOD_ID, name));
     }
 }

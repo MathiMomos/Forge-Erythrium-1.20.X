@@ -31,12 +31,12 @@ public class ModBiomeModifiers {
         context.register(ADD_IRON_NUGGET_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.IRON_NUGGET_ORE_PLACED_KEY)),
-                GenerationStep.Decoration.UNDERGROUND_DECORATION));
+                GenerationStep.Decoration.TOP_LAYER_MODIFICATION));
 
         context.register(ADD_FLINT_BLOCK, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.FLINT_BLOCK_PLACED_KEY)),
-                GenerationStep.Decoration.UNDERGROUND_DECORATION));
+                GenerationStep.Decoration.TOP_LAYER_MODIFICATION));
 
         context.register(ADD_IGNITE_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_NETHER),
@@ -46,7 +46,7 @@ public class ModBiomeModifiers {
         context.register(ADD_ROSE_QUARTZ_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_NETHER),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.ROSE_QUARTZ_ORE_PLACED_KEY)),
-                GenerationStep.Decoration.UNDERGROUND_DECORATION));
+                GenerationStep.Decoration.TOP_LAYER_MODIFICATION));
     }
 
     private static ResourceKey<BiomeModifier> registerKey(String name) {
