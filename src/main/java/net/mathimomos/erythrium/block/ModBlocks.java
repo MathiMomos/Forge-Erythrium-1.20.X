@@ -63,23 +63,25 @@ public class ModBlocks {
     public static final RegistryObject<Block> COPPER_CHAGER = registerBlock("copper_charger",
             () -> new CopperChargerBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK)));
 
-    public static final RegistryObject<Block> DIAMOND_CUTTER = registerBlock("diamond_cutter",
-            () -> new DiamondCutterBlock(BlockBehaviour.Properties.copy(Blocks.STONECUTTER).noOcclusion()));
-
     public static final RegistryObject<Block> IRON_NUGGET_ORE = registerBlock("iron_nugget_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> STEEL_BLOCK = registerBlock("steel_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+
     public static final RegistryObject<Block> ROSE_GOLD_BLOCK = registerBlock("rose_gold_block",
                 () -> new Block(BlockBehaviour.Properties.copy(Blocks.GOLD_BLOCK)));
+
+
+    public static final RegistryObject<Block> DIAMOND_CUTTER = registerBlock("diamond_cutter",
+            () -> new DiamondCutterBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).noOcclusion()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
         return toReturn;
-
     }
+
     private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
         return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
