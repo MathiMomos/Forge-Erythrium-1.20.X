@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " D ",
+    "$S$",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:deepslate"
+    },
+    "$": {
+      "item": "erythrium:iron_plate"
+    },
+    "S": {
+      "item": "minecraft:stonecutter"
+    },
+    "D": {
+      "item": "erythrium:rough_diamond"
+    }
+  },
+  "result": {
+    "item": "erythrium:diamond_cutter"
+  }
+}

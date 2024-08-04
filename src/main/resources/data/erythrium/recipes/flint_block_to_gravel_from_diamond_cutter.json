@@ -1,0 +1,11 @@
+{
+  "type": "erythrium:diamond_cutter",
+  "ingredients": [
+    {
+      "item": "erythrium:flint_block"
+    }
+  ],
+  "result": {
+    "item": "minecraft:gravel"
+  }
+}
