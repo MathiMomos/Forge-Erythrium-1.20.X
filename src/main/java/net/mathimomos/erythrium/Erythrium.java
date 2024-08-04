@@ -5,6 +5,7 @@ import net.mathimomos.erythrium.block.ModBlocks;
 import net.mathimomos.erythrium.block.entity.ModBlockEntities;
 import net.mathimomos.erythrium.item.ModCreativeModeTabs;
 import net.mathimomos.erythrium.item.ModItems;
+import net.mathimomos.erythrium.recipe.ModRecipies;
 import net.mathimomos.erythrium.screen.DiamondCutterScreen;
 import net.mathimomos.erythrium.screen.ModMenuTypes;
 import net.minecraft.client.gui.screens.MenuScreens;
@@ -38,6 +39,8 @@ public class Erythrium {
         ModBlockEntities.register(modEventBus);
         ModMenuTypes.register(modEventBus);
 
+        ModRecipies.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
@@ -45,7 +48,7 @@ public class Erythrium {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-        LOGGER.info("Common Setup: Erythrium Mod");
+
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
@@ -63,12 +66,11 @@ public class Erythrium {
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-    public static class ClientModEvents {
+    public static class ClientModEvents
+    {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-
             MenuScreens.register(ModMenuTypes.DIAMOND_CUTTER_MENU.get(), DiamondCutterScreen::new);
-
         }
     }
 }

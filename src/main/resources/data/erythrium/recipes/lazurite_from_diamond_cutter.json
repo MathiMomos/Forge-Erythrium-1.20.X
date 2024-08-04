@@ -1,0 +1,11 @@
+{
+  "type": "erythrium:diamond_cutter",
+  "ingredients": [
+    {
+      "item": "minecraft:lapis_lazuli"
+    }
+  ],
+  "result": {
+    "item": "erythrium:lazurite"
+  }
+}

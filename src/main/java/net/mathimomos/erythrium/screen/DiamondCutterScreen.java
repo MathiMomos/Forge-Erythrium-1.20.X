@@ -11,7 +11,7 @@ import net.minecraft.world.entity.player.Inventory;
 
 public class DiamondCutterScreen extends AbstractContainerScreen<DiamondCutterMenu> {
     private static final ResourceLocation TEXTURE =
-            new ResourceLocation(Erythrium.MOD_ID, "textures/gui/diamond_cutter_gui.png");
+            new ResourceLocation(Erythrium.MOD_ID, "textures/gui/diamond_cutter.png");
 
     public DiamondCutterScreen(DiamondCutterMenu pMenu, Inventory pPlayerInventory, Component pTitle) {
         super(pMenu, pPlayerInventory, pTitle);
@@ -20,8 +20,10 @@ public class DiamondCutterScreen extends AbstractContainerScreen<DiamondCutterMe
     @Override
     protected void init() {
         super.init();
-        this.inventoryLabelY = 10000;
-        this.titleLabelY = 10000;
+        this.titleLabelX = (this.imageWidth - this.font.width(this.title)) / 2;
+        this.titleLabelY = 6;
+        this.inventoryLabelX = 8;
+        this.inventoryLabelY = this.imageHeight - 94;
     }
 
     @Override
@@ -39,7 +41,7 @@ public class DiamondCutterScreen extends AbstractContainerScreen<DiamondCutterMe
 
     private void renderProgressArrow(GuiGraphics guiGraphics, int x, int y) {
         if(menu.isCrafting()) {
-            guiGraphics.blit(TEXTURE, x + 85, y + 30, 176, 0, 8, menu.getScaledProgress());
+            guiGraphics.blit(TEXTURE, x + 79, y + 34, 176, 0, menu.getScaledProgress(), 16);
         }
     }
 

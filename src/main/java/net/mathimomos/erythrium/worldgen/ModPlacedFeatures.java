@@ -31,7 +31,7 @@ public class ModPlacedFeatures {
                 HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(4))));
 
         register(context, IRON_NUGGET_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_IRON_NUGGET_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(320,
+                ModOrePlacement.commonOrePlacement(256,
                 HeightRangePlacement.uniform(VerticalAnchor.absolute(32), VerticalAnchor.absolute(256))));
 
         register(context, FLINT_BLOCK_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_FLINT_BLOCK_KEY),

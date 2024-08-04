@@ -1,0 +1,11 @@
+{
+  "type": "erythrium:diamond_cutter",
+  "ingredients": [
+    {
+      "item": "erythrium:rough_diamond"
+    }
+  ],
+  "result": {
+    "item": "minecraft:diamond"
+  }
+}

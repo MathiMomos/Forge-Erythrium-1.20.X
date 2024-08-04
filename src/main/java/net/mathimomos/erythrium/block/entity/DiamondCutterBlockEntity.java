@@ -1,6 +1,7 @@
 package net.mathimomos.erythrium.block.entity;
 
 import net.mathimomos.erythrium.item.ModItems;
+import net.mathimomos.erythrium.recipe.DiamondCutterRecipe;
 import net.mathimomos.erythrium.screen.DiamondCutterMenu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -27,6 +28,8 @@ import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+
+import java.util.Optional;
 
 public class DiamondCutterBlockEntity extends BlockEntity implements MenuProvider {
     private final ItemStackHandler itemHandler = new ItemStackHandler(2);
@@ -141,7 +144,9 @@ public class DiamondCutterBlockEntity extends BlockEntity implements MenuProvide
     }
 
     private void craftItem() {
-        ItemStack result = new ItemStack(Items.DIAMOND,1);
+        Optional<DiamondCutterRecipe> recipe = getCurrentRecipe();
+
+        ItemStack result = recipe.get().getResultItem(null);
         this.itemHandler.extractItem(INPUT_SLOT,1,false);
 
         this.itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(result.getItem(),
@@ -149,10 +154,22 @@ public class DiamondCutterBlockEntity extends BlockEntity implements MenuProvide
     }
 
     private boolean hasRecipe() {
-        boolean hasCraftingItem = this.itemHandler.getStackInSlot(INPUT_SLOT).getItem() == ModItems.ROUGH_DIAMOND.get();
-        ItemStack result = new ItemStack(Items.DIAMOND);
+        Optional<DiamondCutterRecipe> recipe = getCurrentRecipe();
 
-        return hasCraftingItem && canInsertAmountIntoOutputSlot(result.getCount()) && canInsertItemIntoOutputSlot(result.getItem());
+        if(recipe.isEmpty()){
+            return false;
+        }
+        ItemStack result = recipe.get().getResultItem(null);
+        return canInsertAmountIntoOutputSlot(result.getCount()) && canInsertItemIntoOutputSlot(result.getItem());
+    }
+
+    private Optional<DiamondCutterRecipe> getCurrentRecipe() {
+        SimpleContainer inventory = new SimpleContainer(this.itemHandler.getSlots());
+        for(int i = 0; i < itemHandler.getSlots(); i++) {
+            inventory.setItem(i, this.itemHandler.getStackInSlot(i));
+        }
+
+        return this.level.getRecipeManager().getRecipeFor(DiamondCutterRecipe.Type.INSTANCE, inventory, level);
     }
 
     private boolean canInsertItemIntoOutputSlot(Item item) {

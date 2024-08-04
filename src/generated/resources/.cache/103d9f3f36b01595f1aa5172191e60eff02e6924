@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-01T14:17:44.2093969	Registries
+// 1.20.1	2024-08-03T17:31:00.7958977	Registries
 2fe4d1ff0b52ff314cfb8cfdbd347d9dc75090e5 data/erythrium/forge/biome_modifier/add_erythrium_ore.json
 4699fdf169f2ec9c9ac1433723652c8600715b54 data/erythrium/forge/biome_modifier/add_flint_block.json
 a82bdf98adeec8672b2d4652a97ec3e929f1d86f data/erythrium/forge/biome_modifier/add_ignite_ore.json
@@ -12,4 +12,5 @@ f116f2a93e38400b0c693994f36475a552ef39e1 data/erythrium/worldgen/configured_feat
 1067cd14fa1a035ca820641d2a9f8c9ddaf9e991 data/erythrium/worldgen/placed_feature/erythrium_ore_placed.json
 fa5e4d7fdbfb5847b5cb78fcd91eca1e5e4d23c1 data/erythrium/worldgen/placed_feature/flint_block_placed.json
 c90305e6cab3dcafd98ef91efbef986c7b1524ba data/erythrium/worldgen/placed_feature/ignite_ore_placed.json
+3e79b73c3604b87fabc820bfc2c6edecd8af05c2 data/erythrium/worldgen/placed_feature/iron_nugget_ore_placed.json
 3e688953ce337567c834d470d3de53805a369919 data/erythrium/worldgen/placed_feature/rose_quartz_ore_placed.json
