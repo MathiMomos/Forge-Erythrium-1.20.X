@@ -41,7 +41,7 @@ public class DiamondCutterBlockEntity extends BlockEntity implements MenuProvide
 
     protected final ContainerData data;
     private int progress = 0;
-    private int maxProgress = 78;
+    private int maxProgress = 50;
 
     public DiamondCutterBlockEntity(BlockPos pPos, BlockState pBlockState) {
         super(ModBlockEntities.DIAMOND_CUTTER_BE.get(), pPos, pBlockState);

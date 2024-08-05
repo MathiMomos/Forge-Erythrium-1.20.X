@@ -153,6 +153,8 @@ public class ModCreativeModeTabs {
 
                 pOutput.accept(ModBlocks.STEEL_BLOCK.get());
                 pOutput.accept(ModBlocks.ROSE_GOLD_BLOCK.get());
+
+                pOutput.accept(ModItems.MUSIC_DISC_SOUND_OF_BREEZE.get());
             })
             .build());
 

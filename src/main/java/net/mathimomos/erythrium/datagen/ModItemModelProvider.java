@@ -150,6 +150,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.ROSE_GOLD_LEGGINGS);
         trimmedArmorItem(ModItems.ROSE_GOLD_BOOTS);
 
+        simpleItem(ModItems.MUSIC_DISC_SOUND_OF_BREEZE);
+
+
     }
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {
         final String MOD_ID = Erythrium.MOD_ID;

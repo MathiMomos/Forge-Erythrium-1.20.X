@@ -2,6 +2,7 @@ package net.mathimomos.erythrium.item;
 
 import net.mathimomos.erythrium.Erythrium;
 import net.mathimomos.erythrium.item.custom.*;
+import net.mathimomos.erythrium.sound.ModSounds;
 import net.mathimomos.erythrium.util.ModToolTiers;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -247,6 +248,10 @@ public class ModItems {
             () -> new ArmorItem(ModArmorMaterials.ROSE_GOLD, ArmorItem.Type.LEGGINGS, new Item.Properties()));
     public static final RegistryObject<Item> ROSE_GOLD_BOOTS = ITEMS.register("rose_gold_boots",
             () -> new ArmorItem(ModArmorMaterials.ROSE_GOLD, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+    public static final RegistryObject<Item> MUSIC_DISC_SOUND_OF_BREEZE = ITEMS.register("music_disc_sound_of_breeze",
+            () -> new RecordItem(2, ModSounds.SOUND_OF_BREEZE, new Item.Properties().stacksTo(1), 2820));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

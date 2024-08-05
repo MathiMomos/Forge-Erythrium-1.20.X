@@ -8,6 +8,7 @@ import net.mathimomos.erythrium.item.ModItems;
 import net.mathimomos.erythrium.recipe.ModRecipies;
 import net.mathimomos.erythrium.screen.DiamondCutterScreen;
 import net.mathimomos.erythrium.screen.ModMenuTypes;
+import net.mathimomos.erythrium.sound.ModSounds;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -38,6 +39,8 @@ public class Erythrium {
 
         ModBlockEntities.register(modEventBus);
         ModMenuTypes.register(modEventBus);
+
+        ModSounds.register(modEventBus);
 
         ModRecipies.register(modEventBus);
 

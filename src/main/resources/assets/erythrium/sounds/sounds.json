@@ -1,0 +1,10 @@
+{
+  "sound_of_breeze": {
+    "sounds": [
+      {
+        "name": "erythrium:sound_of_breeze",
+        "stream": true
+      }
+    ]
+  }
+}

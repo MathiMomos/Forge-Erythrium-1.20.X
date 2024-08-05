@@ -50,5 +50,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
         this.tag(ItemTags.TRIM_MATERIALS)
                 .add(ModItems.COPPER_PLATE.get());
+
+        this.tag(ItemTags.MUSIC_DISCS)
+                .add(ModItems.MUSIC_DISC_SOUND_OF_BREEZE.get());
     }
 }

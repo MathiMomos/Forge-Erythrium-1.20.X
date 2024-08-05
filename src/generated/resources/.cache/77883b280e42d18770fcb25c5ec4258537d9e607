@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-30T22:21:09.3022874	Item Models: erythrium
+// 1.20.1	2024-08-04T18:49:54.038245	Item Models: erythrium
 8538337a8d2e1dbc694329ba13ba465552b2ac0a assets/erythrium/models/item/copper_axe.json
 578474b68d97a74cd51aae90a7cce38331f1114d assets/erythrium/models/item/copper_boots.json
 f9874a269d5bde61999b24e41f0fac58526f6046 assets/erythrium/models/item/copper_boots_amethyst_trim.json
@@ -150,6 +150,7 @@ d5ff61f6d05bc631041f7b6e050b44475c41f471 assets/erythrium/models/item/glittermea
 1912047f0f33b5c1527431b603ed7b25fcdd9f81 assets/erythrium/models/item/iron_plate.json
 268e0f87e936fcfd4550fe7b5b5a95b9ef67ab27 assets/erythrium/models/item/lazurite.json
 65714cbabed7dc107b643b7af8c1a5cd762da338 assets/erythrium/models/item/leather_fragment.json
+86a4f6df88f3aba0f734f1eda102ab4b403ff990 assets/erythrium/models/item/music_disc_sound_of_breeze.json
 6bc97619bb233826f1f68ad0c4b96a73718a2b63 assets/erythrium/models/item/nether_star_shard.json
 224d9c05a23dace2e17bf3841f28c0b29e987cb2 assets/erythrium/models/item/oinkballs.json
 7f71cf461d58a8f06eadb00597184bb2d895c40d assets/erythrium/models/item/oxidized_copper_axe.json
