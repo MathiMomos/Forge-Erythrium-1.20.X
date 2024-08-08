@@ -12,7 +12,7 @@ public class ModFoods {
     public static final FoodProperties GLITTERMEAT = new FoodProperties.Builder()
             .nutrition(10)
             .saturationMod(1.2F)
-            .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 100, 1), 1F)
+            .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 100, 2), 1F)
             .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 1200, 0), 1F)
             .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 300, 0), 1F)
             .alwaysEat()
