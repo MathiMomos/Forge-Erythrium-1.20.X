@@ -44,6 +44,8 @@ public class Erythrium {
 
         ModRecipies.register(modEventBus);
 
+        ModSounds.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);

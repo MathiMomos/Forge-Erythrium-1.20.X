@@ -249,9 +249,8 @@ public class ModItems {
     public static final RegistryObject<Item> ROSE_GOLD_BOOTS = ITEMS.register("rose_gold_boots",
             () -> new ArmorItem(ModArmorMaterials.ROSE_GOLD, ArmorItem.Type.BOOTS, new Item.Properties()));
 
-    public static final RegistryObject<Item> MUSIC_DISC_SOUND_OF_BREEZE = ITEMS.register("music_disc_sound_of_breeze",
-            () -> new RecordItem(2, ModSounds.SOUND_OF_BREEZE, new Item.Properties().stacksTo(1), 2820));
-
+    public static final RegistryObject<Item> MUSIC_DISC_HORIZON = ITEMS.register("music_disc_horizon",
+            () -> new RecordItem(2, ModSounds.HORIZON, new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 2220));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

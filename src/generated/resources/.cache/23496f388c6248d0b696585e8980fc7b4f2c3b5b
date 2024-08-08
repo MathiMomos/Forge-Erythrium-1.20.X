@@ -1,5 +1,6 @@
-// 1.20.1	2024-08-04T18:49:54.038245	Tags for minecraft:item mod id erythrium
-8ba8949b910f91d04d369dd418b939dfbd7ae6fa data/minecraft/tags/items/music_discs.json
+// 1.20.1	2024-08-08T16:01:12.7669817	Tags for minecraft:item mod id erythrium
+8de5a036d105b2191be97dfe16c4543a9d87c481 data/minecraft/tags/items/creeper_drop_music_discs.json
+8de5a036d105b2191be97dfe16c4543a9d87c481 data/minecraft/tags/items/music_discs.json
 63c83080c1315c9a59e7c6228e02e59762794a17 data/minecraft/tags/items/trimmable_armor.json
 607e67a873c98c5b6152052028371057ee651068 data/minecraft/tags/items/trim_materials.json
 3c7f97b8627fb609545e6c30345f0278b5fe8454 data/minecraft/tags/items/trim_templates.json

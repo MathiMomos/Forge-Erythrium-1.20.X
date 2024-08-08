@@ -150,8 +150,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.ROSE_GOLD_LEGGINGS);
         trimmedArmorItem(ModItems.ROSE_GOLD_BOOTS);
 
-        simpleItem(ModItems.MUSIC_DISC_SOUND_OF_BREEZE);
-
+        simpleItem(ModItems.MUSIC_DISC_HORIZON);
 
     }
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {

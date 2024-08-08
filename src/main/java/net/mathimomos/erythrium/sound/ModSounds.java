@@ -12,11 +12,14 @@ public class ModSounds {
     public static final DeferredRegister<SoundEvent> SOUND_EVENTS =
             DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, Erythrium.MOD_ID);
 
-    public static final RegistryObject<SoundEvent> SOUND_OF_BREEZE = registerSoundEvents("sound_of_breeze");
+    public static final RegistryObject<SoundEvent> HORIZON = registerSoundEvents("horizon");
+    public static final RegistryObject<SoundEvent> ASTRA = registerSoundEvents("astra");
+    public static final RegistryObject<SoundEvent> VENOM = registerSoundEvents("venom");
 
     private static RegistryObject<SoundEvent> registerSoundEvents(String name) {
         return SOUND_EVENTS.register(name, () -> SoundEvent.createVariableRangeEvent(new ResourceLocation(Erythrium.MOD_ID, name)));
     }
+
 
     public static void register(IEventBus eventBus) {
         SOUND_EVENTS.register(eventBus);

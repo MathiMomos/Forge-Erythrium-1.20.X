@@ -1,0 +1,10 @@
+{
+  "horizon": {
+    "sounds": [
+      {
+        "name": "erythrium:horizon",
+        "stream": true
+      }
+    ]
+  }
+}
