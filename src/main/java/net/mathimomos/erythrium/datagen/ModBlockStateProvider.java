@@ -39,24 +39,25 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockBottomTopWithItem(ModBlocks.TOMATHI_BLOCK);
         blockDifferentWithItem(ModBlocks.COPPER_CHAGER, true);
 
-        simpleBlockItem(ModBlocks.DIAMOND_CUTTER.get(),
-                new ModelFile.UncheckedModelFile(modLoc("block/diamond_cutter")));
-        horizontalBlock(ModBlocks.DIAMOND_CUTTER.get(),
-                new ModelFile.UncheckedModelFile(modLoc("block/diamond_cutter")));
+        customModelHorizontalBlock(ModBlocks.DIAMOND_CUTTER, "diamond_cutter");
 
         blockWithItem(ModBlocks.IRON_NUGGET_ORE);
         blockWithItem(ModBlocks.STEEL_BLOCK);
         blockWithItem(ModBlocks.ROSE_GOLD_BLOCK);
     }
+
+
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
     }
+
     private void blockBottomTopWithItem(RegistryObject<Block> blockRegistryObject){
         ResourceLocation side = new ResourceLocation(Erythrium.MOD_ID, "block/" + blockRegistryObject.getId().getPath());
         ResourceLocation bottom = new ResourceLocation(Erythrium.MOD_ID, "block/" + blockRegistryObject.getId().getPath() + "_bottom");
         ResourceLocation top = new ResourceLocation(Erythrium.MOD_ID, "block/" + blockRegistryObject.getId().getPath() + "_top");
         simpleBlockWithItem(blockRegistryObject.get(), models().cubeBottomTop(blockRegistryObject.getId().getPath(), side, bottom, top));
     }
+
     private void blockDifferentWithItem(RegistryObject<Block> blockRegistryObject, boolean rotation) {
         ResourceLocation down = new ResourceLocation(Erythrium.MOD_ID, "block/" + blockRegistryObject.getId().getPath()+ "_down");
         ResourceLocation up = new ResourceLocation(Erythrium.MOD_ID, "block/" + blockRegistryObject.getId().getPath() + "_up");
@@ -70,6 +71,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
         } else {
             simpleBlock(blockRegistryObject.get(), models().cube(blockRegistryObject.getId().getPath(), down, up, north, south, west, east).texture("particle", north));
         }
+    }
 
+    private void customModelHorizontalBlock(RegistryObject<Block> blockRegistryObject, String name) {
+        simpleBlockItem(blockRegistryObject.get(),
+                new ModelFile.UncheckedModelFile(modLoc("block/" + name)));
+        horizontalBlock(blockRegistryObject.get(),
+                new ModelFile.UncheckedModelFile(modLoc("block/" + name)));
     }
 }
