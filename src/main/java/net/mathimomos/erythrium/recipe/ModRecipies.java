@@ -14,6 +14,9 @@ public class ModRecipies {
     public static final RegistryObject<RecipeSerializer<DiamondCutterRecipe>> DIAMOND_CUTTER_SERIALIZER =
             SERIALIZERS.register("diamond_cutter", () -> DiamondCutterRecipe.Serializer.INSTANCE);
 
+    public static final RegistryObject<RecipeSerializer<MetalurgicStationRecipe>> METALURGIC_STATION_SERIALIZER =
+            SERIALIZERS.register("metalurgy", () -> MetalurgicStationRecipe.Serializer.INSTANCE);
+
     public static void register(IEventBus eventBus) {
         SERIALIZERS.register(eventBus);
     }
