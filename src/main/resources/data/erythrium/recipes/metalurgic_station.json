@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "B B",
+    "#C#",
+    "#$#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:deepslate"
+    },
+    "$": {
+      "item": "minecraft:lava_bucket"
+    },
+    "C": {
+      "item": "minecraft:cauldron"
+    },
+    "B": {
+      "item": "minecraft:bucket"
+    }
+  },
+  "result": {
+    "item": "erythrium:metalurgic_station"
+  }
+}

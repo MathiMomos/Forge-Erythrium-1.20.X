@@ -56,6 +56,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.COPPER_CHAGER.get());
 
         this.dropSelf(ModBlocks.DIAMOND_CUTTER.get());
+        this.dropSelf(ModBlocks.METALURGIC_STATION.get());
 
         this.add(ModBlocks.IRON_NUGGET_ORE.get(),
                 block -> createMoreThanOneOreDrops(ModBlocks.IRON_NUGGET_ORE.get(), ModItems.RAW_IRON_NUGGET.get(),

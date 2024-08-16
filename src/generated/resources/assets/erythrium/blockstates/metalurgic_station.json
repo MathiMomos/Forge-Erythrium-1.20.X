@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "erythrium:block/metalurgic_station",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "erythrium:block/metalurgic_station"
+    },
+    "facing=south": {
+      "model": "erythrium:block/metalurgic_station",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "erythrium:block/metalurgic_station",
+      "y": 270
+    }
+  }
+}

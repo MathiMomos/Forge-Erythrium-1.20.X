@@ -3,6 +3,7 @@ package net.mathimomos.erythrium.block;
 import net.mathimomos.erythrium.Erythrium;
 import net.mathimomos.erythrium.block.custom.CopperChargerBlock;
 import net.mathimomos.erythrium.block.custom.DiamondCutterBlock;
+import net.mathimomos.erythrium.block.custom.MetalurgicStationBlock;
 import net.mathimomos.erythrium.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -73,6 +74,10 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
     public static final RegistryObject<Block> ROSE_GOLD_BLOCK = registerBlock("rose_gold_block",
                 () -> new Block(BlockBehaviour.Properties.copy(Blocks.GOLD_BLOCK)));
+
+    public static final RegistryObject<Block> METALURGIC_STATION = registerBlock("metalurgic_station",
+            () -> new MetalurgicStationBlock(BlockBehaviour.Properties.copy(Blocks.STONECUTTER).noOcclusion()));
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-30T22:21:09.2897292	Loot Tables
+// 1.20.1	2024-08-16T09:10:48.9370864	Loot Tables
 427b266cd3f85127d21623bc964bb8bbc9971907 data/erythrium/loot_tables/blocks/compacted_erythrium.json
 0fc950b282f1a75048cf6fa93f9390e22279e947 data/erythrium/loot_tables/blocks/copper_charger.json
 fda6c6e37e46766233ec47f6cb511ff260f108dc data/erythrium/loot_tables/blocks/deepslate_erythrium_ore.json
@@ -10,6 +10,7 @@ ebfdf990a84f6c0d16fa50c132571819857cd4f7 data/erythrium/loot_tables/blocks/flint
 42baafa878bc1ae8a80b872d813bcb62fc016537 data/erythrium/loot_tables/blocks/ignite_block.json
 3287104818aec17059c2fa3999e9c18cce8ea4de data/erythrium/loot_tables/blocks/ignite_ore.json
 cec99e7d87d26cc07c34e4744eb8aa0fe07b5a95 data/erythrium/loot_tables/blocks/iron_nugget_ore.json
+b2b31b19524fd60db4fa8f030f261f2e79d886e1 data/erythrium/loot_tables/blocks/metalurgic_station.json
 84d4e2c0e9bc0284b3eaa6f9a8ea4b95901ab760 data/erythrium/loot_tables/blocks/reddish_deepslate_block.json
 5e1ebc64591eda9460dc4cd315379bef4f6a8786 data/erythrium/loot_tables/blocks/reddish_deepslate_tiles_block.json
 ee9db78d7aaac6602d326c0328ac2746b44c32a5 data/erythrium/loot_tables/blocks/rose_gold_block.json

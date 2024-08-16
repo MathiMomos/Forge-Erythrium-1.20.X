@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-30T22:21:09.258202	Block States: erythrium
+// 1.20.1	2024-08-16T09:10:48.9285223	Block States: erythrium
 f36dcaa3b5cc95b243ecfacb65907e0c0fd1545a assets/erythrium/blockstates/compacted_erythrium.json
 feff5a79d7659e559fd53f85fc3764f94028bf30 assets/erythrium/blockstates/copper_charger.json
 6aeabe7920b2360dbfbae368b6163bd68686fdb7 assets/erythrium/blockstates/deepslate_erythrium_ore.json
@@ -10,6 +10,7 @@ bdfe5ddf44e4d515517695aa0c587885907e9433 assets/erythrium/blockstates/flint_bloc
 bb5e0f345c424dbd460f9ad198c4a5707c5c0bb0 assets/erythrium/blockstates/ignite_block.json
 00aca5d9e23e9a7d4d0f1b692fb3a1e6351df95f assets/erythrium/blockstates/ignite_ore.json
 80f96b92d81960448e2eba1452f4aefb33669bf9 assets/erythrium/blockstates/iron_nugget_ore.json
+4cfdc2ce4cdc68af17620b357db1689b69dca67a assets/erythrium/blockstates/metalurgic_station.json
 abd67d399a2f05d4606cefb6f70f175e21052c1e assets/erythrium/blockstates/reddish_deepslate_block.json
 a1414ef7b1dfdd0bdfbe77369be1c3d6239f1203 assets/erythrium/blockstates/reddish_deepslate_tiles_block.json
 139f0408d4cfe2db4d4d3ffa311b5df8b9e64bbd assets/erythrium/blockstates/rose_gold_block.json
@@ -45,6 +46,7 @@ bcb1a57f4570c59e329fdf2a5aba61f47aa489de assets/erythrium/models/item/flint_bloc
 cd35b31a46dd8e92c84287bb36446399b72295c9 assets/erythrium/models/item/ignite_block.json
 95b02a150d270dae547155775dd2a8e80ee04d19 assets/erythrium/models/item/ignite_ore.json
 8f72533b96ec96ccb6c962b59b6e8a2dd512853b assets/erythrium/models/item/iron_nugget_ore.json
+c0dc2c23c82216028742f17da112b7f60d8aab34 assets/erythrium/models/item/metalurgic_station.json
 f2697c607a9f7269c0cf3689148bddb466af24f9 assets/erythrium/models/item/reddish_deepslate_block.json
 78ed70eda6155be93cf937f78afbded9fa17d983 assets/erythrium/models/item/reddish_deepslate_tiles_block.json
 3406169ed6066ab0b26ad04c1f6bc31772c3545d assets/erythrium/models/item/rose_gold_block.json

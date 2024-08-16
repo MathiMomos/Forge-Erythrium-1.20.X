@@ -3,6 +3,8 @@
     "erythrium:ignite_ore",
     "erythrium:ignite_block",
     "erythrium:rose_gold_block",
-    "erythrium:steel_block"
+    "erythrium:steel_block",
+    "erythrium:diamond_cutter",
+    "erythrium:metalurgic_station"
   ]
 }

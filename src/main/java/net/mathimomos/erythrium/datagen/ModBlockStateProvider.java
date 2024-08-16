@@ -40,6 +40,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockDifferentWithItem(ModBlocks.COPPER_CHAGER, true);
 
         customModelHorizontalBlock(ModBlocks.DIAMOND_CUTTER, "diamond_cutter");
+        customModelHorizontalBlock(ModBlocks.METALURGIC_STATION, "metalurgic_station");
 
         blockWithItem(ModBlocks.IRON_NUGGET_ORE);
         blockWithItem(ModBlocks.STEEL_BLOCK);
