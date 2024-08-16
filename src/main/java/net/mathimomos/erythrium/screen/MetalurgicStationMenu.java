@@ -12,18 +12,18 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.items.SlotItemHandler;
 
-public class DiamondCutterMenu extends AbstractContainerMenu {
+public class MetalurgicStationMenu extends AbstractContainerMenu {
     public final DiamondCutterBlockEntity blockEntity;
     private final Level level;
     private final ContainerData data;
 
-    public DiamondCutterMenu(int pContainerId, Inventory inv, FriendlyByteBuf extraData) {
-        this(pContainerId, inv, inv.player.level().getBlockEntity(extraData.readBlockPos()), new SimpleContainerData(2));
+    public MetalurgicStationMenu(int pContainerId, Inventory inv, FriendlyByteBuf extraData) {
+        this(pContainerId, inv, inv.player.level().getBlockEntity(extraData.readBlockPos()), new SimpleContainerData(3));
     }
 
-    public DiamondCutterMenu(int pContainerId, Inventory inv, BlockEntity entity, ContainerData data) {
+    public MetalurgicStationMenu(int pContainerId, Inventory inv, BlockEntity entity, ContainerData data){
         super(ModMenuTypes.DIAMOND_CUTTER_MENU.get(), pContainerId);
-        checkContainerSize(inv, 2);
+        checkContainerSize(inv, 3);
         blockEntity = ((DiamondCutterBlockEntity) entity);
         this.level = inv.player.level();
         this.data = data;
@@ -32,8 +32,9 @@ public class DiamondCutterMenu extends AbstractContainerMenu {
         addPlayerHotbar(inv);
 
         this.blockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(iItemHandler -> {
-            this.addSlot(new SlotItemHandler(iItemHandler, 0, 56, 35));
-            this.addSlot(new SlotItemHandler(iItemHandler, 1, 116, 35));
+            this.addSlot(new SlotItemHandler(iItemHandler, 0, 56, 16));
+            this.addSlot(new SlotItemHandler(iItemHandler, 1, 102, 16));
+            this.addSlot(new SlotItemHandler(iItemHandler, 2, 79, 50));
         });
 
         addDataSlots(data);
@@ -46,7 +47,7 @@ public class DiamondCutterMenu extends AbstractContainerMenu {
     public int getScaledProgress() {
         int progress = this.data.get(0);
         int maxProgress = this.data.get(1);  // Max Progress
-        int progressArrowSize = 24; // This is the height in pixels of your arrow
+        int progressArrowSize = 28; // This is the height in pixels of your arrow
 
         return maxProgress != 0 && progress != 0 ? progress * progressArrowSize / maxProgress : 0;
     }
@@ -67,8 +68,7 @@ public class DiamondCutterMenu extends AbstractContainerMenu {
     private static final int TE_INVENTORY_FIRST_SLOT_INDEX = VANILLA_FIRST_SLOT_INDEX + VANILLA_SLOT_COUNT;
 
     // THIS YOU HAVE TO DEFINE!
-    private static final int TE_INVENTORY_SLOT_COUNT = 2;  // must be the number of slots you have!
-
+    private static final int TE_INVENTORY_SLOT_COUNT = 3;  // must be the number of slots you have!
     @Override
     public ItemStack quickMoveStack(Player playerIn, int pIndex) {
         Slot sourceSlot = slots.get(pIndex);
@@ -105,7 +105,7 @@ public class DiamondCutterMenu extends AbstractContainerMenu {
     @Override
     public boolean stillValid(Player player) {
         return stillValid(ContainerLevelAccess.create(level, blockEntity.getBlockPos()),
-                player, ModBlocks.DIAMOND_CUTTER.get());
+                player, ModBlocks.METALURGIC_STATION.get());
     }
 
     private void addPlayerInventory(Inventory playerInventory) {
