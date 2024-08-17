@@ -41,7 +41,7 @@ public class MetalurgicStationBlockEntity extends BlockEntity implements MenuPro
 
     protected final ContainerData data;
     private int progress = 0;
-    private int maxProgress = 60;
+    private int maxProgress = 20*30;
 
     public MetalurgicStationBlockEntity(BlockPos pPos, BlockState pBlockState) {
         super(ModBlockEntities.METALURGIC_STATION_BE.get(), pPos, pBlockState);
