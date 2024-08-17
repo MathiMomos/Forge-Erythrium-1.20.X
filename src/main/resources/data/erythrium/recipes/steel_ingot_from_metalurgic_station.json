@@ -1,0 +1,15 @@
+{
+  "type": "erythrium:metalurgy",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "minecraft:coal"
+    }
+  ],
+  "result": {
+    "item": "erythrium:steel_ingot",
+    "count": 2
+  }
+}

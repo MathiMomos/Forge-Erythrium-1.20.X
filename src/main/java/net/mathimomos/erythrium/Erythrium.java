@@ -7,6 +7,7 @@ import net.mathimomos.erythrium.item.ModCreativeModeTabs;
 import net.mathimomos.erythrium.item.ModItems;
 import net.mathimomos.erythrium.recipe.ModRecipies;
 import net.mathimomos.erythrium.screen.DiamondCutterScreen;
+import net.mathimomos.erythrium.screen.MetalurgicStationScreen;
 import net.mathimomos.erythrium.screen.ModMenuTypes;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -71,6 +72,7 @@ public class Erythrium {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
             MenuScreens.register(ModMenuTypes.DIAMOND_CUTTER_MENU.get(), DiamondCutterScreen::new);
+            MenuScreens.register(ModMenuTypes.METALURGIC_STATION_MENU.get(), MetalurgicStationScreen::new);
         }
     }
 }

@@ -17,6 +17,11 @@ public class ModBlockEntities {
                     BlockEntityType.Builder.of(DiamondCutterBlockEntity::new,
                             ModBlocks.DIAMOND_CUTTER.get()).build(null));
 
+    public static final RegistryObject<BlockEntityType<MetalurgicStationBlockEntity>> METALURGIC_STATION_BE =
+            BLOCK_ENTITIES.register("metalurgic_station_be", () ->
+                    BlockEntityType.Builder.of(MetalurgicStationBlockEntity::new,
+                            ModBlocks.METALURGIC_STATION.get()).build(null));
+
 
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);

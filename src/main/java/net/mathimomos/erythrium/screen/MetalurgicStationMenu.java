@@ -2,6 +2,7 @@ package net.mathimomos.erythrium.screen;
 
 import net.mathimomos.erythrium.block.ModBlocks;
 import net.mathimomos.erythrium.block.entity.DiamondCutterBlockEntity;
+import net.mathimomos.erythrium.block.entity.MetalurgicStationBlockEntity;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
@@ -13,7 +14,7 @@ import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.items.SlotItemHandler;
 
 public class MetalurgicStationMenu extends AbstractContainerMenu {
-    public final DiamondCutterBlockEntity blockEntity;
+    public final MetalurgicStationBlockEntity blockEntity;
     private final Level level;
     private final ContainerData data;
 
@@ -22,9 +23,9 @@ public class MetalurgicStationMenu extends AbstractContainerMenu {
     }
 
     public MetalurgicStationMenu(int pContainerId, Inventory inv, BlockEntity entity, ContainerData data){
-        super(ModMenuTypes.DIAMOND_CUTTER_MENU.get(), pContainerId);
+        super(ModMenuTypes.METALURGIC_STATION_MENU.get(), pContainerId);
         checkContainerSize(inv, 3);
-        blockEntity = ((DiamondCutterBlockEntity) entity);
+        blockEntity = ((MetalurgicStationBlockEntity) entity);
         this.level = inv.player.level();
         this.data = data;
 
