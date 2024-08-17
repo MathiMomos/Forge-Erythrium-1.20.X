@@ -27,12 +27,12 @@ public class MetalurgicStationRecipe implements Recipe<SimpleContainer> {
 
     @Override
     public boolean matches(SimpleContainer simpleContainer, Level level) {
-        if (level.isClientSide()){
+        if (level.isClientSide() || inputItems.size() != 2) {
             return false;
         }
 
-        return inputItems.get(0).test(simpleContainer.getItem(0)) &&
-                inputItems.get(1).test(simpleContainer.getItem(1));
+        return (inputItems.get(0).test(simpleContainer.getItem(0)) && inputItems.get(1).test(simpleContainer.getItem(1))) ||
+                (inputItems.get(0).test(simpleContainer.getItem(1)) && inputItems.get(1).test(simpleContainer.getItem(0)));
     }
 
     @Override
@@ -81,7 +81,7 @@ public class MetalurgicStationRecipe implements Recipe<SimpleContainer> {
             JsonArray ingredients = GsonHelper.getAsJsonArray(jsonObject, "ingredients");
             NonNullList<Ingredient> inputs = NonNullList.withSize(2, Ingredient.EMPTY);
 
-            for (int i = 0; i < ingredients.size(); i++) {
+            for (int i = 0; i < inputs.size() && i < ingredients.size(); i++) {
                 inputs.set(i, Ingredient.fromJson(ingredients.get(i)));
             }
 
@@ -90,13 +90,13 @@ public class MetalurgicStationRecipe implements Recipe<SimpleContainer> {
 
         @Override
         public @Nullable MetalurgicStationRecipe fromNetwork(ResourceLocation resourceLocation, FriendlyByteBuf friendlyByteBuf) {
-            NonNullList<Ingredient> inputs = NonNullList.withSize(friendlyByteBuf.readInt(), Ingredient.EMPTY);
+            NonNullList<Ingredient> inputs = NonNullList.withSize(2, Ingredient.EMPTY);
 
             for (int i = 0; i < inputs.size(); i++) {
                 inputs.set(i, Ingredient.fromNetwork(friendlyByteBuf));
             }
 
-            ItemStack result= friendlyByteBuf.readItem();
+            ItemStack result = friendlyByteBuf.readItem();
             return new MetalurgicStationRecipe(inputs, result, resourceLocation);
         }
 

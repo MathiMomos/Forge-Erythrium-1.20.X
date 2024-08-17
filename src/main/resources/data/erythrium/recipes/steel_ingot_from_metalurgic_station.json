@@ -2,10 +2,12 @@
   "type": "erythrium:metalurgy",
   "ingredients": [
     {
-      "item": "minecraft:iron_ingot"
+      "item": "minecraft:iron_ingot",
+      "count": 4
     },
     {
-      "item": "minecraft:coal"
+      "item": "minecraft:coal",
+      "count": 4
     }
   ],
   "result": {

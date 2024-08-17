@@ -76,6 +76,7 @@ public class ModCreativeModeTabs {
                 pOutput.accept(ModBlocks.COPPER_CHAGER.get());
 
                 pOutput.accept(ModBlocks.DIAMOND_CUTTER.get());
+                pOutput.accept(ModBlocks.METALURGIC_STATION.get());
 
                 pOutput.accept(ModItems.ERYTHRIUM_UPGRADE_SMITHING_TEMPLATE.get());
                 pOutput.accept(ModBlocks.IRON_NUGGET_ORE.get());

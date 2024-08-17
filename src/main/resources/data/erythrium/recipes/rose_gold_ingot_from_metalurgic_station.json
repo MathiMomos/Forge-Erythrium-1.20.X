@@ -2,14 +2,14 @@
   "type": "erythrium:metalurgy",
   "ingredients": [
     {
-      "item": "minecraft:iron_ingot"
+      "item": "minecraft:copper_ingot"
     },
     {
       "item": "minecraft:gold_ingot"
     }
   ],
   "result": {
-    "item": "minecraft:diamond",
-    "count": 1
+    "item": "erythrium:rose_gold_ingot",
+    "count": 2
   }
 }

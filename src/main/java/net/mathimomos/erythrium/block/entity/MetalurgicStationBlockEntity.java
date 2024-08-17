@@ -41,7 +41,7 @@ public class MetalurgicStationBlockEntity extends BlockEntity implements MenuPro
 
     protected final ContainerData data;
     private int progress = 0;
-    private int maxProgress = 120;
+    private int maxProgress = 60;
 
     public MetalurgicStationBlockEntity(BlockPos pPos, BlockState pBlockState) {
         super(ModBlockEntities.METALURGIC_STATION_BE.get(), pPos, pBlockState);
@@ -145,44 +145,31 @@ public class MetalurgicStationBlockEntity extends BlockEntity implements MenuPro
 
     private void craftItem() {
         Optional<MetalurgicStationRecipe> recipe = getCurrentRecipe();
+        if(recipe.isPresent()) {
+            ItemStack result = recipe.get().getResultItem(null);
+            this.itemHandler.extractItem(INPUT_SLOT_1, 1, false);
+            this.itemHandler.extractItem(INPUT_SLOT_2, 1, false);
 
-        ItemStack result = recipe.get().getResultItem(null);
-        this.itemHandler.extractItem(INPUT_SLOT_1,1,false);
-        this.itemHandler.extractItem(INPUT_SLOT_2,1,false);
-
-        this.itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(result.getItem(),
-                this.itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + result.getCount()));
+            this.itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(result.getItem(),
+                    this.itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + result.getCount()));
+        }
     }
 
     private boolean hasRecipe() {
         Optional<MetalurgicStationRecipe> recipe = getCurrentRecipe();
 
-        if(recipe.isEmpty()){
+        if(recipe.isEmpty()) {
             return false;
         }
         ItemStack result = recipe.get().getResultItem(null);
-        return canInsertAmountIntoOutputSlot(result.getCount())
-                && canInsertItemIntoOutputSlot(result.getItem())
-                && hasRequiredInputs(recipe.get());
+        return canInsertAmountIntoOutputSlot(result.getCount()) && canInsertItemIntoOutputSlot(result.getItem());
     }
 
-    private boolean hasRequiredInputs(MetalurgicStationRecipe recipe) {
-        ItemStack input1 = itemHandler.getStackInSlot(INPUT_SLOT_1);
-        ItemStack input2 = itemHandler.getStackInSlot(INPUT_SLOT_2);
-
-        if (recipe.getIngredients().size() < 2) {
-            return false;
-        }
-
-        return (recipe.getIngredients().get(0).test(input1) && recipe.getIngredients().get(1).test(input2)) ||
-                (recipe.getIngredients().get(0).test(input2) && recipe.getIngredients().get(1).test(input1));
-    }
 
     private Optional<MetalurgicStationRecipe> getCurrentRecipe() {
-        SimpleContainer inventory = new SimpleContainer(this.itemHandler.getSlots());
-        for(int i = 0; i < itemHandler.getSlots(); i++) {
-            inventory.setItem(i, this.itemHandler.getStackInSlot(i));
-        }
+        SimpleContainer inventory = new SimpleContainer(2);
+        inventory.setItem(0, this.itemHandler.getStackInSlot(INPUT_SLOT_1));
+        inventory.setItem(1, this.itemHandler.getStackInSlot(INPUT_SLOT_2));
 
         return this.level.getRecipeManager().getRecipeFor(MetalurgicStationRecipe.Type.INSTANCE, inventory, level);
     }
