@@ -1,0 +1,15 @@
+{
+  "type": "erythrium:metalurgy",
+  "ingredients": [
+    {
+      "item": "minecraft:netherite_scrap"
+    },
+    {
+      "item": "minecraft:gold_ingot"
+    }
+  ],
+  "result": {
+    "item": "minecraft:netherite_ingot",
+    "count": 2
+  }
+}

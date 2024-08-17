@@ -147,8 +147,8 @@ public class MetalurgicStationBlockEntity extends BlockEntity implements MenuPro
         Optional<MetalurgicStationRecipe> recipe = getCurrentRecipe();
         if(recipe.isPresent()) {
             ItemStack result = recipe.get().getResultItem(null);
-            this.itemHandler.extractItem(INPUT_SLOT_1, 1, false);
-            this.itemHandler.extractItem(INPUT_SLOT_2, 1, false);
+            this.itemHandler.extractItem(INPUT_SLOT_1, 4, false);
+            this.itemHandler.extractItem(INPUT_SLOT_2, 4, false);
 
             this.itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(result.getItem(),
                     this.itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + result.getCount()));
@@ -162,7 +162,10 @@ public class MetalurgicStationBlockEntity extends BlockEntity implements MenuPro
             return false;
         }
         ItemStack result = recipe.get().getResultItem(null);
-        return canInsertAmountIntoOutputSlot(result.getCount()) && canInsertItemIntoOutputSlot(result.getItem());
+        return canInsertAmountIntoOutputSlot(result.getCount()) &&
+                canInsertItemIntoOutputSlot(result.getItem()) &&
+                itemHandler.getStackInSlot(INPUT_SLOT_1).getCount() >= 4 &&
+                itemHandler.getStackInSlot(INPUT_SLOT_2).getCount() >= 4;
     }
 
 

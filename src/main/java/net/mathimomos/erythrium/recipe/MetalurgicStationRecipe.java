@@ -31,8 +31,10 @@ public class MetalurgicStationRecipe implements Recipe<SimpleContainer> {
             return false;
         }
 
-        return (inputItems.get(0).test(simpleContainer.getItem(0)) && inputItems.get(1).test(simpleContainer.getItem(1))) ||
-                (inputItems.get(0).test(simpleContainer.getItem(1)) && inputItems.get(1).test(simpleContainer.getItem(0)));
+        return inputItems.get(0).test(simpleContainer.getItem(0)) &&
+                inputItems.get(1).test(simpleContainer.getItem(1)) &&
+                simpleContainer.getItem(0).getCount() >= 4 &&
+                simpleContainer.getItem(1).getCount() >= 4;
     }
 
     @Override
