@@ -31,10 +31,20 @@ public class MetalurgicStationRecipe implements Recipe<SimpleContainer> {
             return false;
         }
 
-        return inputItems.get(0).test(simpleContainer.getItem(0)) &&
-                inputItems.get(1).test(simpleContainer.getItem(1)) &&
-                simpleContainer.getItem(0).getCount() >= 4 &&
-                simpleContainer.getItem(1).getCount() >= 4;
+        ItemStack slot0 = simpleContainer.getItem(0);
+        ItemStack slot1 = simpleContainer.getItem(1);
+
+        boolean matchesNormal = inputItems.get(0).test(slot0) &&
+                inputItems.get(1).test(slot1) &&
+                slot0.getCount() >= 4 &&
+                slot1.getCount() >= 4;
+
+        boolean matchesReversed = inputItems.get(0).test(slot1) &&
+                inputItems.get(1).test(slot0) &&
+                slot0.getCount() >= 4 &&
+                slot1.getCount() >= 4;
+
+        return matchesNormal || matchesReversed;
     }
 
     @Override

@@ -45,9 +45,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> IGNITE_ORE = registerBlock("ignite_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)
-                    .strength(1.5f).requiresCorrectToolForDrops(), UniformInt.of(2,4)));
+                    .strength(1.5f).requiresCorrectToolForDrops().lightLevel((state) -> 15), UniformInt.of(2,4)));
     public static final RegistryObject<Block> IGNITE_BLOCK = registerBlock("ignite_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.COAL_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.COAL_BLOCK).lightLevel((state) -> 15)));
 
     public static final RegistryObject<Block> ROSE_QUARTZ_ORE = registerBlock("rose_quartz_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_QUARTZ_ORE)
@@ -62,7 +62,7 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.CORAL_BLOCK).strength(0.6F)));
 
     public static final RegistryObject<Block> COPPER_CHAGER = registerBlock("copper_charger",
-            () -> new CopperChargerBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK)));
+            () -> new CopperChargerBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK).lightLevel((state) -> 15)));
 
     public static final RegistryObject<Block> DIAMOND_CUTTER = registerBlock("diamond_cutter",
             () -> new DiamondCutterBlock(BlockBehaviour.Properties.copy(Blocks.STONECUTTER).noOcclusion()));
@@ -76,7 +76,7 @@ public class ModBlocks {
                 () -> new Block(BlockBehaviour.Properties.copy(Blocks.GOLD_BLOCK)));
 
     public static final RegistryObject<Block> METALURGIC_STATION = registerBlock("metalurgic_station",
-            () -> new MetalurgicStationBlock(BlockBehaviour.Properties.copy(Blocks.STONECUTTER).noOcclusion()));
+            () -> new MetalurgicStationBlock(BlockBehaviour.Properties.copy(Blocks.STONECUTTER).noOcclusion().lightLevel((state) -> 15)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
