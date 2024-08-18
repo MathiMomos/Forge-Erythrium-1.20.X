@@ -62,7 +62,7 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.CORAL_BLOCK).strength(0.6F)));
 
     public static final RegistryObject<Block> COPPER_CHAGER = registerBlock("copper_charger",
-            () -> new CopperChargerBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK).lightLevel((state) -> 15)));
+            () -> new CopperChargerBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK).lightLevel((state) -> 10)));
 
     public static final RegistryObject<Block> DIAMOND_CUTTER = registerBlock("diamond_cutter",
             () -> new DiamondCutterBlock(BlockBehaviour.Properties.copy(Blocks.STONECUTTER).noOcclusion()));
