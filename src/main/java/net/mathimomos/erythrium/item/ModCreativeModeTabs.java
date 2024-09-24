@@ -53,8 +53,8 @@ public class ModCreativeModeTabs {
                 pOutput.accept(ModItems.IGNITE.get());
                 pOutput.accept(ModBlocks.IGNITE_ORE.get());
                 pOutput.accept(ModBlocks.IGNITE_BLOCK.get());
-                pOutput.accept(ModItems.ROSE_QUARTZ.get());
-                pOutput.accept(ModBlocks.ROSE_QUARTZ_ORE.get());
+                pOutput.accept(ModItems.NETHER_ROSE_QUARTZ.get());
+                pOutput.accept(ModBlocks.NETHER_ROSE_QUARTZ_ORE.get());
                 pOutput.accept(ModBlocks.ROSE_QUARTZ_BLOCK.get());
 
                 pOutput.accept(ModBlocks.FLINT_BLOCK.get());
@@ -154,6 +154,27 @@ public class ModCreativeModeTabs {
 
                 pOutput.accept(ModBlocks.STEEL_BLOCK.get());
                 pOutput.accept(ModBlocks.ROSE_GOLD_BLOCK.get());
+
+                pOutput.accept(ModItems.OBSIDIAN_FRAGMENT.get());
+
+                pOutput.accept(ModItems.BAT_WING.get());
+                pOutput.accept(ModItems.PHANTOM_EYE.get());
+                pOutput.accept(ModItems.SQUID_TENTACLE.get());
+                pOutput.accept(ModItems.GLOW_SQUID_TENTACLE.get());
+                pOutput.accept(ModItems.COOKED_SQUID_TENTACLE.get());
+                pOutput.accept(ModItems.FROG_LEG.get());
+
+                pOutput.accept(ModItems.CHERRIES.get());
+                pOutput.accept(ModItems.TUNA.get());
+
+                pOutput.accept(ModBlocks.RHYOLITE.get());
+                pOutput.accept(ModBlocks.SCORIA.get());
+                pOutput.accept(ModBlocks.GABBRO.get());
+
+                pOutput.accept(ModBlocks.POLISHED_RHYOLITE.get());
+                pOutput.accept(ModBlocks.POLISHED_SCORIA.get());
+                pOutput.accept(ModBlocks.POLISHED_GABBRO.get());
+
             })
             .build());
 

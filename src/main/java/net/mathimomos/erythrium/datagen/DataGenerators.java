@@ -1,6 +1,7 @@
 package net.mathimomos.erythrium.datagen;
 
 import net.mathimomos.erythrium.Erythrium;
+import net.mathimomos.erythrium.datagen.loot.ModGlobalLootModifiersProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -30,5 +31,6 @@ public class DataGenerators {
         generator.addProvider(event.includeServer(), new ModItemTagGenerator(packOutput, lookupProvider, blockTagGenerator.contentsGetter(), existingFileHelper));
 
         generator.addProvider(event.includeServer(), new ModWorldGenProvider(packOutput, lookupProvider));
+        generator.addProvider(event.includeClient(), new ModGlobalLootModifiersProvider(packOutput));
     }
 }

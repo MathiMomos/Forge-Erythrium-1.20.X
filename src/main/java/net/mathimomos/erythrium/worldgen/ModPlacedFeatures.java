@@ -22,7 +22,10 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> FLINT_BLOCK_PLACED_KEY = registerKey("flint_block_placed");
     public static final ResourceKey<PlacedFeature> IGNITE_ORE_PLACED_KEY = registerKey("ignite_ore_placed");
     public static final ResourceKey<PlacedFeature> ROSE_QUARTZ_ORE_PLACED_KEY = registerKey("rose_quartz_ore_placed");
-
+    public static final ResourceKey<PlacedFeature> SCORIA_PLACED_KEY = registerKey("scoria_placed");
+    public static final ResourceKey<PlacedFeature> GABBRO_PLACED_KEY = registerKey("gabbro_placed");
+    public static final ResourceKey<PlacedFeature> RHYOLITE_PLACED_KEY = registerKey("rhyolite_placed");
+    ///Cuantas veces se genera por chunk
     public static void bootstrap(BootstapContext<PlacedFeature> context){
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
@@ -39,12 +42,24 @@ public class ModPlacedFeatures {
                 HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(0))));
 
         register(context, IGNITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_IGNITE_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(18,
+                ModOrePlacement.commonOrePlacement(12,
                 HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(128))));
 
         register(context, ROSE_QUARTZ_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_ROSE_QUARTZ_ORE_KEY),
                 ModOrePlacement.commonOrePlacement(24,
                 HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(96))));
+
+        register(context, SCORIA_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_SCORIA_KEY),
+                ModOrePlacement.commonOrePlacement(12,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(31), VerticalAnchor.absolute(127))));
+
+        register(context, GABBRO_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_GABBRO_KEY),
+                ModOrePlacement.commonOrePlacement(12,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(31), VerticalAnchor.absolute(127))));
+
+        register(context, RHYOLITE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_RHYOLITE_KEY),
+                ModOrePlacement.commonOrePlacement(12,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(31), VerticalAnchor.absolute(127))));
     }
 
     private static ResourceKey<PlacedFeature> registerKey(String name) {

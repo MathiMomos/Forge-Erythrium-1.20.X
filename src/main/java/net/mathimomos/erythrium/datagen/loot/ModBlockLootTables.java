@@ -3,7 +3,6 @@ package net.mathimomos.erythrium.datagen.loot;
 import net.mathimomos.erythrium.block.ModBlocks;
 import net.mathimomos.erythrium.item.ModItems;
 import net.minecraft.data.loot.BlockLootSubProvider;
-import net.minecraft.world.flag.FeatureFlagSet;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
@@ -11,7 +10,6 @@ import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
-import net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
@@ -47,8 +45,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createMoreThanOneOreDrops(ModBlocks.FLINT_BLOCK.get(), Items.FLINT,
                         3F, 4F));
 
-        this.add(ModBlocks.ROSE_QUARTZ_ORE.get(),
-                block -> createOreDrop(ModBlocks.ROSE_QUARTZ_ORE.get(), ModItems.ROSE_QUARTZ.get()));
+        this.add(ModBlocks.NETHER_ROSE_QUARTZ_ORE.get(),
+                block -> createOreDrop(ModBlocks.NETHER_ROSE_QUARTZ_ORE.get(), ModItems.NETHER_ROSE_QUARTZ.get()));
         this.dropSelf(ModBlocks.ROSE_QUARTZ_BLOCK.get());
 
         this.dropSelf(ModBlocks.TOMATHI_BLOCK.get());
@@ -64,6 +62,14 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.dropSelf(ModBlocks.STEEL_BLOCK.get());
         this.dropSelf(ModBlocks.ROSE_GOLD_BLOCK.get());
+
+        this.dropSelf(ModBlocks.SCORIA.get());
+        this.dropSelf(ModBlocks.GABBRO.get());
+        this.dropSelf(ModBlocks.RHYOLITE.get());
+
+        this.dropSelf(ModBlocks.POLISHED_SCORIA.get());
+        this.dropSelf(ModBlocks.POLISHED_GABBRO.get());
+        this.dropSelf(ModBlocks.POLISHED_RHYOLITE.get());
 
     }
 

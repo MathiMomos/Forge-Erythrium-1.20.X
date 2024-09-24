@@ -36,6 +36,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> ERYTHRIUM_ORE = registerBlock("erythrium_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
                     .strength(2f).requiresCorrectToolForDrops(), UniformInt.of(4,8)));
+
     public static final RegistryObject<Block> DEEPSLATE_ERYTHRIUM_ORE = registerBlock("deepslate_erythrium_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)
                     .strength(2.5f).requiresCorrectToolForDrops(), UniformInt.of(4,8)));
@@ -49,7 +50,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> IGNITE_BLOCK = registerBlock("ignite_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.COAL_BLOCK).lightLevel((state) -> 15)));
 
-    public static final RegistryObject<Block> ROSE_QUARTZ_ORE = registerBlock("rose_quartz_ore",
+    public static final RegistryObject<Block> NETHER_ROSE_QUARTZ_ORE = registerBlock("nether_rose_quartz_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_QUARTZ_ORE)
                     .strength(2f).requiresCorrectToolForDrops(), UniformInt.of(8,12)));
     public static final RegistryObject<Block> ROSE_QUARTZ_BLOCK = registerBlock("rose_quartz_block",
@@ -77,6 +78,23 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> METALURGIC_STATION = registerBlock("metalurgic_station",
             () -> new MetalurgicStationBlock(BlockBehaviour.Properties.copy(Blocks.STONECUTTER).noOcclusion().lightLevel((state) -> 15)));
+
+    public static final RegistryObject<Block> RHYOLITE = registerBlock("rhyolite",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GRANITE).sound(SoundType.NETHERRACK)));
+    public static final RegistryObject<Block> SCORIA = registerBlock("scoria",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIORITE).sound(SoundType.NETHERRACK)));
+    public static final RegistryObject<Block> GABBRO = registerBlock("gabbro",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.ANDESITE).sound(SoundType.NETHERRACK)));
+
+    public static final RegistryObject<Block> POLISHED_RHYOLITE = registerBlock("polished_rhyolite",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.POLISHED_GRANITE)));
+    public static final RegistryObject<Block> POLISHED_SCORIA = registerBlock("polished_scoria",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.POLISHED_DIORITE)));
+    public static final RegistryObject<Block> POLISHED_GABBRO = registerBlock("polished_gabbro",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.POLISHED_ANDESITE)));
+
+
+
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

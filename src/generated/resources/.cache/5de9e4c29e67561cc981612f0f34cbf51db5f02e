@@ -1,8 +1,8 @@
-// 1.20.1	2024-08-16T09:10:48.9325181	Tags for minecraft:block mod id erythrium
+// 1.20.1	2024-09-24T01:15:58.054359	Tags for minecraft:block mod id erythrium
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/erythrium/tags/blocks/needs_erythrium_tool.json
-6058a0e56b5203fb73484dc9b082b2f66c11e131 data/forge/tags/blocks/needs_netherite_tool.json
+de3de6633a55e82b8974175cc097b733b755759b data/forge/tags/blocks/needs_netherite_tool.json
 93ce05b11115540751bc0d0deca36dd3312d1845 data/minecraft/tags/blocks/mineable/axe.json
-ed7cf200b9329e5ee152dcfa6444317c1af02464 data/minecraft/tags/blocks/mineable/pickaxe.json
+58309bfb1ddf33c97ea16a51dab0a531c8665711 data/minecraft/tags/blocks/mineable/pickaxe.json
 56a2fd13856b34afc3bc27a91e3cbad614693681 data/minecraft/tags/blocks/needs_diamond_tool.json
 7a32a2d4fa933be7c96622395f5e551af8a65d9a data/minecraft/tags/blocks/needs_iron_tool.json
 13a15de0410465d23c0178e70eaeecec73247e39 data/minecraft/tags/blocks/needs_stone_tool.json

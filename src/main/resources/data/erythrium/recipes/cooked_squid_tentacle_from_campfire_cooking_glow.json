@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "misc",
+  "cookingtime": 600,
+  "experience": 0.2,
+  "ingredient":
+    {
+      "item": "erythrium:glow_squid_tentacle"
+    },
+  "result": "erythrium:cooked_squid_tentacle"
+}

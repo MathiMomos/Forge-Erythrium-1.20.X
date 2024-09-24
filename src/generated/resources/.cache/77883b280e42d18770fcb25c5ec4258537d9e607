@@ -1,4 +1,7 @@
-// 1.20.1	2024-07-30T22:21:09.3022874	Item Models: erythrium
+// 1.20.1	2024-09-20T01:47:38.4463515	Item Models: erythrium
+3ee7657a6c17695eb28cda380bace9a3691a61b8 assets/erythrium/models/item/bat_wing.json
+6b38e4ea2cb43716966d953795577ed48966ebb9 assets/erythrium/models/item/cherries.json
+be6b7c25bdcaf892873b34a56df141fac4b064fe assets/erythrium/models/item/cooked_squid_tentacle.json
 8538337a8d2e1dbc694329ba13ba465552b2ac0a assets/erythrium/models/item/copper_axe.json
 578474b68d97a74cd51aae90a7cce38331f1114d assets/erythrium/models/item/copper_boots.json
 f9874a269d5bde61999b24e41f0fac58526f6046 assets/erythrium/models/item/copper_boots_amethyst_trim.json
@@ -144,13 +147,17 @@ fd35bb95b1434e0da09f5bfd081e1208f63ae015 assets/erythrium/models/item/exposed_co
 ffe71a5b745aa93f0a937ed4d907ff87a006adcb assets/erythrium/models/item/exposed_copper_pickaxe.json
 9b98f11bcfe2994b868f3f43802b1fc8f27dad0b assets/erythrium/models/item/exposed_copper_shovel.json
 1093f675751d57222fc4098aef7e73e2e870b9e9 assets/erythrium/models/item/exposed_copper_sword.json
+a33da9251469b12b1c01a296173d573ec217ef40 assets/erythrium/models/item/frog_leg.json
 d5ff61f6d05bc631041f7b6e050b44475c41f471 assets/erythrium/models/item/glittermeat.json
+ab2aff3ec9b8232e75360b2f10359c78b7fd01d2 assets/erythrium/models/item/glow_squid_tentacle.json
 266cc8a22030222380c304a2c445271800a888ed assets/erythrium/models/item/gold_plate.json
 7d802f5f823ed3fc46c1b28867bf32b5a5df934e assets/erythrium/models/item/ignite.json
 1912047f0f33b5c1527431b603ed7b25fcdd9f81 assets/erythrium/models/item/iron_plate.json
 268e0f87e936fcfd4550fe7b5b5a95b9ef67ab27 assets/erythrium/models/item/lazurite.json
 65714cbabed7dc107b643b7af8c1a5cd762da338 assets/erythrium/models/item/leather_fragment.json
+31f83d66cba6735868b3d5bac3c1aa3ac6ca24e3 assets/erythrium/models/item/nether_rose_quartz.json
 6bc97619bb233826f1f68ad0c4b96a73718a2b63 assets/erythrium/models/item/nether_star_shard.json
+144e5221a10fc2deca93f759aafd87954b7d0024 assets/erythrium/models/item/obsidian_fragment.json
 224d9c05a23dace2e17bf3841f28c0b29e987cb2 assets/erythrium/models/item/oinkballs.json
 7f71cf461d58a8f06eadb00597184bb2d895c40d assets/erythrium/models/item/oxidized_copper_axe.json
 2108575e467af718c5f2ff77d212ee1faadb8961 assets/erythrium/models/item/oxidized_copper_boots.json
@@ -201,6 +208,7 @@ b6d5e8adb005a1c3aad0e6c08e3ffa99b195ee29 assets/erythrium/models/item/oxidized_c
 4b16fbf57f1430d6748709c33e80c75acca4938b assets/erythrium/models/item/oxidized_copper_pickaxe.json
 31be0a60a32751231b4e58c0ec330daa7e2759f5 assets/erythrium/models/item/oxidized_copper_shovel.json
 dc8e9519a4b7221477f736a6336f5c740d22c983 assets/erythrium/models/item/oxidized_copper_sword.json
+1d6b799f763d4281d16871efca48c94076e551ec assets/erythrium/models/item/phantom_eye.json
 9f5da9a305cbf7897415556848000ac48f2cf9a9 assets/erythrium/models/item/raw_iron_nugget.json
 3c67c3735520ae78cad37f630086a2c6b1eeabf5 assets/erythrium/models/item/rose_gold_axe.json
 94f4157fc771c432517bb5a0cb7b732b047c5cd2 assets/erythrium/models/item/rose_gold_boots.json
@@ -253,10 +261,12 @@ ae3daa88647c846cdd6d4ef81817e174d8fd7450 assets/erythrium/models/item/rose_gold_
 bba12ee3bc3b353d7b9ad5062ed795e2fc89dd6f assets/erythrium/models/item/rose_gold_plate.json
 0db164027e85b0a506f126233de8fb3285e7df2d assets/erythrium/models/item/rose_gold_shovel.json
 63fe7f29c6e22551bb4bc8140b93e2a1a180a77f assets/erythrium/models/item/rose_gold_sword.json
-be3113013443fbc712f3ca8836ec9b8fbdeba505 assets/erythrium/models/item/rose_quartz.json
 2cbd7b15d2e063499467bbf47b61d4ebc0df2d07 assets/erythrium/models/item/rough_diamond.json
 1447fd1d9d265b8d88eacf67fae8541fda5071f7 assets/erythrium/models/item/rough_emerald.json
 31b9206cb60e208487388596b0fde9e66468a14f assets/erythrium/models/item/rough_erythrium.json
+4bd5e64ec908fa442a629e2b91238ed4d2df7403 assets/erythrium/models/item/rough_nether_quartz.json
+3324c214ea48e69f904e254650dcee84740f60c3 assets/erythrium/models/item/rough_nether_rose_quartz.json
+0b0f294edf1c5f4dbd8ac77cfa22a708fc91de62 assets/erythrium/models/item/squid_tentacle.json
 b2fa63ad303702f18f1895f8c7f8a1fe99c74468 assets/erythrium/models/item/stardust.json
 fa67d7edd378983d02c6566da5d3d247e68ecc4f assets/erythrium/models/item/starshine.json
 a879ae7ab972ff8730b67fd92ece671cd4a3812d assets/erythrium/models/item/steel_axe.json
@@ -311,6 +321,7 @@ b6cf7b6d8f7cff6adefe28a09c9eee43851de5b7 assets/erythrium/models/item/steel_legg
 455134efa93852289f9acd14880aaea1b34b8833 assets/erythrium/models/item/steel_shovel.json
 fe3a0ea3c75cb92eff07d5faf319286279f2d453 assets/erythrium/models/item/steel_sword.json
 3fe37aaadfddb584b36519b28528b5959f725b90 assets/erythrium/models/item/tomathi.json
+5bd197e57083716068ad900c41b0410db8f452ab assets/erythrium/models/item/tuna.json
 80710c1decdc4a7371ca6dcf6f339580ce150260 assets/erythrium/models/item/weathered_copper_axe.json
 137fa2378ac351405cf80a105d73372bd6edde13 assets/erythrium/models/item/weathered_copper_boots.json
 6c3aa357f93c46bc8a78233e27978a58e9c75d8a assets/erythrium/models/item/weathered_copper_boots_amethyst_trim.json

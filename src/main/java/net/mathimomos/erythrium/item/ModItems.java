@@ -11,7 +11,6 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-import java.awt.*;
 import java.util.List;
 
 public class ModItems {
@@ -54,7 +53,7 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> LAZURITE = ITEMS.register("lazurite",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> ROSE_QUARTZ = ITEMS.register("rose_quartz",
+    public static final RegistryObject<Item> NETHER_ROSE_QUARTZ = ITEMS.register("nether_rose_quartz",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ENCHANTED_TOME = ITEMS.register("enchanted_tome",
             () -> new Item(new Item.Properties()));
@@ -247,6 +246,34 @@ public class ModItems {
             () -> new ArmorItem(ModArmorMaterials.ROSE_GOLD, ArmorItem.Type.LEGGINGS, new Item.Properties()));
     public static final RegistryObject<Item> ROSE_GOLD_BOOTS = ITEMS.register("rose_gold_boots",
             () -> new ArmorItem(ModArmorMaterials.ROSE_GOLD, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+    public static final RegistryObject<Item> CHERRIES = ITEMS.register("cherries",
+            () -> new Item(new Item.Properties().food(ModFoods.CHERRIES)));
+    public static final RegistryObject<Item> TUNA = ITEMS.register("tuna",
+            () -> new Item(new Item.Properties().food(ModFoods.TUNA)));
+
+    public static final RegistryObject<Item> OBSIDIAN_FRAGMENT = ITEMS.register("obsidian_fragment",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ROUGH_NETHER_QUARTZ = ITEMS.register("rough_nether_quartz",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ROUGH_NETHER_ROSE_QUARTZ = ITEMS.register("rough_nether_rose_quartz",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> BAT_WING = ITEMS.register("bat_wing",
+                () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> PHANTOM_EYE = ITEMS.register("phantom_eye",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SQUID_TENTACLE = ITEMS.register("squid_tentacle",
+            () -> new Item(new Item.Properties().food(ModFoods.RAW_SQUID)));
+    public static final RegistryObject<Item> GLOW_SQUID_TENTACLE = ITEMS.register("glow_squid_tentacle",
+            () -> new Item(new Item.Properties().food(ModFoods.RAW_GLOW_SQUID)));
+    public static final RegistryObject<Item> COOKED_SQUID_TENTACLE = ITEMS.register("cooked_squid_tentacle",
+            () -> new Item(new Item.Properties().food(ModFoods.COOKED_SQUID)));
+    public static final RegistryObject<Item> FROG_LEG = ITEMS.register("frog_leg",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> HOLA = ITEMS.register("hola",
+            () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

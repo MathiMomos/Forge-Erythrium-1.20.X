@@ -1,0 +1,12 @@
+{
+  "entries": [
+    "erythrium:squid_tentacle_from_squid",
+    "erythrium:tuna_from_cactus",
+    "erythrium:glow_squid_tentacle_from_glow_squid",
+    "erythrium:phantom_eye_from_phantom",
+    "erythrium:cherries_from_cherry_leaves",
+    "erythrium:frog_leg_from_frog",
+    "erythrium:bat_wing_from_bat"
+  ],
+  "replace": false
+}

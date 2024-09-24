@@ -38,9 +38,12 @@
   "block.erythrium.ignite_ore": "Ignite Ore",
   "block.erythrium.ignite_block": "Ignite Block",
   "item.erythrium.ignite": "Ignite",
-  "block.erythrium.rose_quartz_ore": "Rose Quartz Ore",
+
+  "block.erythrium.nether_rose_quartz_ore": "Nether Rose Quartz Ore",
   "block.erythrium.rose_quartz_block": "Rose Quartz Block",
-  "item.erythrium.rose_quartz": "Rose Quartz",
+  "item.erythrium.rough_nether_rose_quartz": "Rough Nether Rose Quartz",
+  "item.erythrium.rough_nether_quartz": "Rough Nether Quartz",
+  "item.erythrium.nether_rose_quartz": "Nether Rose Quartz",
 
   "block.erythrium.flint_block": "Flint Block",
 
@@ -138,6 +141,21 @@
   "item.erythrium.rose_gold_chestplate": "Rose Gold Chestplate",
   "item.erythrium.rose_gold_leggings": "Rose Gold Leggings",
   "item.erythrium.rose_gold_boots": "Rose Gold Boots",
+
+  "item.erythrium.obsidian_fragment": "Obsidian Fragment",
+  "item.erythrium.bat_wing": "Bat Wing",
+  "item.erythrium.phantom_eye": "Phantom Eye",
+  "item.erythrium.squid_tentacle": "Squid Tentacle",
+  "item.erythrium.glow_squid_tentacle": "Glow Squid Tentacle",
+  "item.erythrium.cooked_squid_tentacle": "Cooked Squid Tentacle",
+  "item.erythrium.frog_leg": "Frog Leg",
+
+  "item.erythrium.cherries": "Cherries",
+  "item.erythrium.tuna": "Tuna",
+
+  "block.erythrium.scoria": "Scoria",
+  "block.erythrium.gabbro": "Gabbro",
+  "block.erythrium.rhyolite": "Rhyolite",
 
   "erythrium.erythrium_tab": "Erythrium"
 }

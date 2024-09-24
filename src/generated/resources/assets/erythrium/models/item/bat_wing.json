@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "erythrium:item/rose_quartz"
+    "layer0": "erythrium:item/bat_wing"
   }
 }

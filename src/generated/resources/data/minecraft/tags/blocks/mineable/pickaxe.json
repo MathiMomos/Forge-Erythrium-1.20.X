@@ -10,13 +10,19 @@
     "erythrium:ignite_ore",
     "erythrium:ignite_block",
     "erythrium:flint_block",
-    "erythrium:rose_quartz_ore",
+    "erythrium:nether_rose_quartz_ore",
     "erythrium:rose_quartz_block",
     "erythrium:copper_charger",
     "erythrium:iron_nugget_ore",
     "erythrium:rose_gold_block",
     "erythrium:steel_block",
     "erythrium:diamond_cutter",
-    "erythrium:metalurgic_station"
+    "erythrium:metalurgic_station",
+    "erythrium:scoria",
+    "erythrium:gabbro",
+    "erythrium:rhyolite",
+    "erythrium:polished_scoria",
+    "erythrium:polished_gabbro",
+    "erythrium:polished_rhyolite"
   ]
 }

@@ -58,7 +58,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.GOLD_PLATE);
         simpleItem(ModItems.DIAMOND_TWIN);
         simpleItem(ModItems.LAZURITE);
-        simpleItem(ModItems.ROSE_QUARTZ);
+        simpleItem(ModItems.NETHER_ROSE_QUARTZ);
         simpleItem(ModItems.ENCHANTED_TOME);
 
         simpleItem(ModItems.STARDUST);
@@ -149,6 +149,20 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.ROSE_GOLD_CHESTPLATE);
         trimmedArmorItem(ModItems.ROSE_GOLD_LEGGINGS);
         trimmedArmorItem(ModItems.ROSE_GOLD_BOOTS);
+
+        simpleItem(ModItems.CHERRIES);
+        simpleItem(ModItems.TUNA);
+
+        simpleItem(ModItems.OBSIDIAN_FRAGMENT);
+        simpleItem(ModItems.ROUGH_NETHER_QUARTZ);
+        simpleItem(ModItems.ROUGH_NETHER_ROSE_QUARTZ);
+
+        simpleItem(ModItems.BAT_WING);
+        simpleItem(ModItems.PHANTOM_EYE);
+        simpleItem(ModItems.SQUID_TENTACLE);
+        simpleItem(ModItems.GLOW_SQUID_TENTACLE);
+        simpleItem(ModItems.COOKED_SQUID_TENTACLE);
+        simpleItem(ModItems.FROG_LEG);
 
     }
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {

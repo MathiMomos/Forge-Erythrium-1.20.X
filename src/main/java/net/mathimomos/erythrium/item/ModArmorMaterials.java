@@ -23,6 +23,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
             SoundEvents.ARMOR_EQUIP_IRON, 0f, 0f, () ->Ingredient.of(Items.COPPER_INGOT)),
     OXIDIZED_COPPER("oxidized_copper", 25, new int[]{1, 3, 2, 1}, 0,
             SoundEvents.ARMOR_EQUIP_IRON, 0f, 0f, () ->Ingredient.of(Items.COPPER_INGOT)),
+
     STEEL("steel", 25, new int[]{2,7,5,2}, 0,
             SoundEvents.ARMOR_EQUIP_IRON, 1f,0.25f, () ->Ingredient.of(ModItems.STEEL_INGOT.get())),
     ROSE_GOLD("rose_gold", 25, new int[]{2,7,5,2}, 10,

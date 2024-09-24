@@ -5,6 +5,7 @@ import net.mathimomos.erythrium.block.ModBlocks;
 import net.mathimomos.erythrium.block.entity.ModBlockEntities;
 import net.mathimomos.erythrium.item.ModCreativeModeTabs;
 import net.mathimomos.erythrium.item.ModItems;
+import net.mathimomos.erythrium.loot.ModLootModifiers;
 import net.mathimomos.erythrium.recipe.ModRecipies;
 import net.mathimomos.erythrium.screen.DiamondCutterScreen;
 import net.mathimomos.erythrium.screen.MetalurgicStationScreen;
@@ -36,6 +37,8 @@ public class Erythrium {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModLootModifiers.register(modEventBus);
 
         ModBlockEntities.register(modEventBus);
         ModMenuTypes.register(modEventBus);

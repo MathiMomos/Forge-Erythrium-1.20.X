@@ -48,7 +48,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(ModTags.Blocks.NEEDS_ERYTHRIUM_TOOL);
 
         this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
-                .add(ModBlocks.ROSE_QUARTZ_ORE.get(),
+                .add(ModBlocks.NETHER_ROSE_QUARTZ_ORE.get(),
                         ModBlocks.ROSE_QUARTZ_BLOCK.get()
                 );
 
@@ -64,14 +64,20 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.IGNITE_ORE.get(),
                         ModBlocks.IGNITE_BLOCK.get(),
                         ModBlocks.FLINT_BLOCK.get(),
-                        ModBlocks.ROSE_QUARTZ_ORE.get(),
+                        ModBlocks.NETHER_ROSE_QUARTZ_ORE.get(),
                         ModBlocks.ROSE_QUARTZ_BLOCK.get(),
                         ModBlocks.COPPER_CHAGER.get(),
                         ModBlocks.IRON_NUGGET_ORE.get(),
                         ModBlocks.ROSE_GOLD_BLOCK.get(),
                         ModBlocks.STEEL_BLOCK.get(),
                         ModBlocks.DIAMOND_CUTTER.get(),
-                        ModBlocks.METALURGIC_STATION.get()
+                        ModBlocks.METALURGIC_STATION.get(),
+                        ModBlocks.SCORIA.get(),
+                        ModBlocks.GABBRO.get(),
+                        ModBlocks.RHYOLITE.get(),
+                        ModBlocks.POLISHED_SCORIA.get(),
+                        ModBlocks.POLISHED_GABBRO.get(),
+                        ModBlocks.POLISHED_RHYOLITE.get()
                 );
 
         this.tag(BlockTags.MINEABLE_WITH_AXE)

@@ -24,4 +24,25 @@ public class ModFoods {
             .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 300, 2), 0.75F)
             .meat()
             .build();
+    public static final FoodProperties CHERRIES = new FoodProperties.Builder()
+            .nutrition(4)
+            .saturationMod(0.3F)
+            .build();
+    public static final FoodProperties TUNA = new FoodProperties.Builder()
+            .nutrition(4)
+            .saturationMod(0.3F)
+            .build();
+    public  static final FoodProperties RAW_SQUID = new FoodProperties.Builder()
+            .nutrition(2)
+            .saturationMod(0.1F)
+            .build();
+    public  static final FoodProperties RAW_GLOW_SQUID = new FoodProperties.Builder()
+            .nutrition(2)
+            .saturationMod(0.1F)
+            .effect(() -> new MobEffectInstance(MobEffects.GLOWING, 1200, 0), 1F)
+            .build();
+    public  static final FoodProperties COOKED_SQUID = new FoodProperties.Builder()
+            .nutrition(4)
+            .saturationMod(0.6F)
+            .build();
 }

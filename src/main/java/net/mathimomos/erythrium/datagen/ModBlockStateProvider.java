@@ -9,7 +9,6 @@ import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.RegistryObject;
 
 public class ModBlockStateProvider extends BlockStateProvider {
@@ -32,7 +31,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.IGNITE_ORE);
         blockWithItem(ModBlocks.IGNITE_BLOCK);
 
-        blockWithItem(ModBlocks.ROSE_QUARTZ_ORE);
+        blockWithItem(ModBlocks.NETHER_ROSE_QUARTZ_ORE);
         blockWithItem(ModBlocks.ROSE_QUARTZ_BLOCK);
 
         blockWithItem(ModBlocks.FLINT_BLOCK);
@@ -45,6 +44,14 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.IRON_NUGGET_ORE);
         blockWithItem(ModBlocks.STEEL_BLOCK);
         blockWithItem(ModBlocks.ROSE_GOLD_BLOCK);
+
+        blockWithItem(ModBlocks.SCORIA);
+        blockWithItem(ModBlocks.GABBRO);
+        blockWithItem(ModBlocks.RHYOLITE);
+
+        blockWithItem(ModBlocks.POLISHED_SCORIA);
+        blockWithItem(ModBlocks.POLISHED_GABBRO);
+        blockWithItem(ModBlocks.POLISHED_RHYOLITE);
     }
 
 

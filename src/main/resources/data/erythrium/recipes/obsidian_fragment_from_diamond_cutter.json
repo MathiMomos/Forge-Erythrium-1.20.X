@@ -1,0 +1,12 @@
+{
+  "type": "erythrium:diamond_cutter",
+  "ingredients": [
+    {
+      "item": "minecraft:obsidian"
+    }
+  ],
+  "result": {
+    "item": "erythrium:obsidian_fragment",
+    "count": 4
+  }
+}

@@ -24,7 +24,7 @@
                   }
                 }
               ],
-              "name": "erythrium:rose_quartz_ore"
+              "name": "erythrium:nether_rose_quartz_ore"
             },
             {
               "type": "minecraft:item",
@@ -38,7 +38,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "erythrium:rose_quartz"
+              "name": "erythrium:nether_rose_quartz"
             }
           ]
         }
@@ -46,5 +46,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "erythrium:blocks/rose_quartz_ore"
+  "random_sequence": "erythrium:blocks/nether_rose_quartz_ore"
 }

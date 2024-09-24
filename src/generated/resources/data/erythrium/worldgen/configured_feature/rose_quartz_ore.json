@@ -6,7 +6,7 @@
     "targets": [
       {
         "state": {
-          "Name": "erythrium:rose_quartz_ore"
+          "Name": "erythrium:nether_rose_quartz_ore"
         },
         "target": {
           "block": "minecraft:nether_quartz_ore",
