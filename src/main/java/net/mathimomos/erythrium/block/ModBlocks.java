@@ -2,16 +2,14 @@ package net.mathimomos.erythrium.block;
 
 import net.mathimomos.erythrium.Erythrium;
 import net.mathimomos.erythrium.block.custom.CopperChargerBlock;
+import net.mathimomos.erythrium.block.custom.DamageOnStepBlock;
 import net.mathimomos.erythrium.block.custom.DiamondCutterBlock;
 import net.mathimomos.erythrium.block.custom.MetalurgicStationBlock;
 import net.mathimomos.erythrium.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -86,6 +84,30 @@ public class ModBlocks {
     public static final RegistryObject<Block> GABBRO = registerBlock("gabbro",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.ANDESITE).sound(SoundType.NETHERRACK)));
 
+    public static final RegistryObject<Block> RHYOLITE_STAIRS = registerBlock("rhyolite_stairs",
+            () -> new StairBlock(() -> ModBlocks.RHYOLITE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.GRANITE).sound(SoundType.NETHERRACK)));
+    public static final RegistryObject<Block> SCORIA_STAIRS = registerBlock("scoria_stairs",
+            () -> new StairBlock(() -> ModBlocks.SCORIA.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.DIORITE).sound(SoundType.NETHERRACK)));
+    public static final RegistryObject<Block> GABBRO_STAIRS = registerBlock("gabbro_stairs",
+            () -> new StairBlock(() -> ModBlocks.GABBRO.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.ANDESITE).sound(SoundType.NETHERRACK)));
+
+    public static final RegistryObject<Block> RHYOLITE_SLAB = registerBlock("rhyolite_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.GRANITE).sound(SoundType.NETHERRACK)));
+    public static final RegistryObject<Block> SCORIA_SLAB = registerBlock("scoria_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.DIORITE).sound(SoundType.NETHERRACK)));
+    public static final RegistryObject<Block> GABBRO_SLAB = registerBlock("gabbro_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.ANDESITE).sound(SoundType.NETHERRACK)));
+
+    public static final RegistryObject<Block> RHYOLITE_WALL = registerBlock("rhyolite_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.GRANITE).sound(SoundType.NETHERRACK)));
+    public static final RegistryObject<Block> SCORIA_WALL = registerBlock("scoria_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.DIORITE).sound(SoundType.NETHERRACK)));
+    public static final RegistryObject<Block> GABBRO_WALL = registerBlock("gabbro_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.ANDESITE).sound(SoundType.NETHERRACK)));
+
     public static final RegistryObject<Block> POLISHED_RHYOLITE = registerBlock("polished_rhyolite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.POLISHED_GRANITE)));
     public static final RegistryObject<Block> POLISHED_SCORIA = registerBlock("polished_scoria",
@@ -93,9 +115,31 @@ public class ModBlocks {
     public static final RegistryObject<Block> POLISHED_GABBRO = registerBlock("polished_gabbro",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.POLISHED_ANDESITE)));
 
+    public static final RegistryObject<Block> POLISHED_RHYOLITE_STAIRS = registerBlock("polished_rhyolite_stairs",
+            () -> new StairBlock(() -> ModBlocks.RHYOLITE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.GRANITE)));
+    public static final RegistryObject<Block> POLISHED_SCORIA_STAIRS = registerBlock("polished_scoria_stairs",
+            () -> new StairBlock(() -> ModBlocks.SCORIA.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.DIORITE)));
+    public static final RegistryObject<Block> POLISHED_GABBRO_STAIRS = registerBlock("polished_gabbro_stairs",
+            () -> new StairBlock(() -> ModBlocks.GABBRO.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.ANDESITE)));
 
+    public static final RegistryObject<Block> POLISHED_RHYOLITE_SLAB = registerBlock("polished_rhyolite_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.GRANITE)));
+    public static final RegistryObject<Block> POLISHED_SCORIA_SLAB = registerBlock("polished_scoria_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.DIORITE)));
+    public static final RegistryObject<Block> POLISHED_GABBRO_SLAB = registerBlock("polished_gabbro_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.ANDESITE)));
 
+    public static final RegistryObject<Block> SOULRRACK = registerBlock("soulrrack",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)));
 
+    public static final RegistryObject<Block> SOUL_MAGMA_BLOCK = registerBlock("soul_magma_block",
+            () -> new DamageOnStepBlock(BlockBehaviour.Properties.copy(Blocks.MAGMA_BLOCK).lightLevel((state) -> 3), 2.0f));
+
+    public static final RegistryObject<Block> GLOWING_OBSIDIAN = registerBlock("glowing_obsidian",
+            () -> new DamageOnStepBlock(BlockBehaviour.Properties.copy(Blocks.OBSIDIAN).lightLevel((state) -> 3), 1.0f));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

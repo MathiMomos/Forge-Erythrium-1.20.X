@@ -63,14 +63,43 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.STEEL_BLOCK.get());
         this.dropSelf(ModBlocks.ROSE_GOLD_BLOCK.get());
 
+        this.dropSelf(ModBlocks.RHYOLITE.get());
         this.dropSelf(ModBlocks.SCORIA.get());
         this.dropSelf(ModBlocks.GABBRO.get());
-        this.dropSelf(ModBlocks.RHYOLITE.get());
 
+        this.dropSelf(ModBlocks.RHYOLITE_STAIRS.get());
+        this.dropSelf(ModBlocks.SCORIA_STAIRS.get());
+        this.dropSelf(ModBlocks.GABBRO_STAIRS.get());
+
+        this.add(ModBlocks.RHYOLITE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.RHYOLITE_SLAB.get()));
+        this.add(ModBlocks.SCORIA_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.SCORIA_SLAB.get()));
+        this.add(ModBlocks.GABBRO_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.GABBRO_SLAB.get()));
+
+        this.dropSelf(ModBlocks.RHYOLITE_WALL.get());
+        this.dropSelf(ModBlocks.SCORIA_WALL.get());
+        this.dropSelf(ModBlocks.GABBRO_WALL.get());
+
+        this.dropSelf(ModBlocks.POLISHED_RHYOLITE.get());
         this.dropSelf(ModBlocks.POLISHED_SCORIA.get());
         this.dropSelf(ModBlocks.POLISHED_GABBRO.get());
-        this.dropSelf(ModBlocks.POLISHED_RHYOLITE.get());
 
+        this.dropSelf(ModBlocks.POLISHED_RHYOLITE_STAIRS.get());
+        this.dropSelf(ModBlocks.POLISHED_SCORIA_STAIRS.get());
+        this.dropSelf(ModBlocks.POLISHED_GABBRO_STAIRS.get());
+
+        this.add(ModBlocks.POLISHED_RHYOLITE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.POLISHED_RHYOLITE_SLAB.get()));
+        this.add(ModBlocks.POLISHED_SCORIA_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.POLISHED_SCORIA_SLAB.get()));
+        this.add(ModBlocks.POLISHED_GABBRO_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.POLISHED_GABBRO_SLAB.get()));
+
+        this.dropSelf(ModBlocks.SOULRRACK.get());
+        this.dropSelf(ModBlocks.SOUL_MAGMA_BLOCK.get());
+        this.dropSelf(ModBlocks.GLOWING_OBSIDIAN.get());
     }
 
     protected LootTable.Builder createMoreThanOneOreDrops(Block pBlock, Item pItem, float min, float max) {

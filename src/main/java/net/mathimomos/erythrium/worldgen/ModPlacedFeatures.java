@@ -25,6 +25,10 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> SCORIA_PLACED_KEY = registerKey("scoria_placed");
     public static final ResourceKey<PlacedFeature> GABBRO_PLACED_KEY = registerKey("gabbro_placed");
     public static final ResourceKey<PlacedFeature> RHYOLITE_PLACED_KEY = registerKey("rhyolite_placed");
+    public static final ResourceKey<PlacedFeature> SOULRRACK_PLACED_KEY = registerKey("soulrrack_placed");
+    public static final ResourceKey<PlacedFeature> SOUL_MAGMA_BLOCK_PLACED_KEY = registerKey("soul_magma_block_placed");
+
+
     ///Cuantas veces se genera por chunk
     public static void bootstrap(BootstapContext<PlacedFeature> context){
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -60,6 +64,14 @@ public class ModPlacedFeatures {
         register(context, RHYOLITE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_RHYOLITE_KEY),
                 ModOrePlacement.commonOrePlacement(12,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(31), VerticalAnchor.absolute(127))));
+
+        register(context, SOULRRACK_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_SOULRRACK_KEY),
+                ModOrePlacement.commonOrePlacement(16,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(31), VerticalAnchor.absolute(127))));
+
+        register(context, SOUL_MAGMA_BLOCK_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_SOUL_MAGMA_BLOCK_KEY),
+                ModOrePlacement.commonOrePlacement(4,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(27), VerticalAnchor.absolute(127))));
     }
 
     private static ResourceKey<PlacedFeature> registerKey(String name) {

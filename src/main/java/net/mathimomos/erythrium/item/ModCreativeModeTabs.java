@@ -171,9 +171,33 @@ public class ModCreativeModeTabs {
                 pOutput.accept(ModBlocks.SCORIA.get());
                 pOutput.accept(ModBlocks.GABBRO.get());
 
+                pOutput.accept(ModBlocks.RHYOLITE_STAIRS.get());
+                pOutput.accept(ModBlocks.SCORIA_STAIRS.get());
+                pOutput.accept(ModBlocks.GABBRO_STAIRS.get());
+
+                pOutput.accept(ModBlocks.RHYOLITE_SLAB.get());
+                pOutput.accept(ModBlocks.SCORIA_SLAB.get());
+                pOutput.accept(ModBlocks.GABBRO_SLAB.get());
+
+                pOutput.accept(ModBlocks.RHYOLITE_WALL.get());
+                pOutput.accept(ModBlocks.SCORIA_WALL.get());
+                pOutput.accept(ModBlocks.GABBRO_WALL.get());
+
                 pOutput.accept(ModBlocks.POLISHED_RHYOLITE.get());
                 pOutput.accept(ModBlocks.POLISHED_SCORIA.get());
                 pOutput.accept(ModBlocks.POLISHED_GABBRO.get());
+
+                pOutput.accept(ModBlocks.POLISHED_RHYOLITE_STAIRS.get());
+                pOutput.accept(ModBlocks.POLISHED_SCORIA_STAIRS.get());
+                pOutput.accept(ModBlocks.POLISHED_GABBRO_STAIRS.get());
+
+                pOutput.accept(ModBlocks.POLISHED_RHYOLITE_SLAB.get());
+                pOutput.accept(ModBlocks.POLISHED_SCORIA_SLAB.get());
+                pOutput.accept(ModBlocks.POLISHED_GABBRO_SLAB.get());
+
+                pOutput.accept(ModBlocks.SOULRRACK.get());
+                pOutput.accept(ModBlocks.SOUL_MAGMA_BLOCK.get());
+                pOutput.accept(ModBlocks.GLOWING_OBSIDIAN.get());
 
             })
             .build());

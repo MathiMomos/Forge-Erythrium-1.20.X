@@ -157,5 +157,33 @@
   "block.erythrium.gabbro": "Gabbro",
   "block.erythrium.rhyolite": "Rhyolite",
 
+  "block.erythrium.scoria_stairs": "Scoria Stairs",
+  "block.erythrium.gabbro_stairs": "Gabbro Stairs",
+  "block.erythrium.rhyolite_stairs": "Rhyolite Stairs",
+
+  "block.erythrium.scoria_slab": "Scoria Slab",
+  "block.erythrium.gabbro_slab": "Gabbro Slab",
+  "block.erythrium.rhyolite_slab": "Rhyolite Slab",
+
+  "block.erythrium.scoria_wall": "Scoria Wall",
+  "block.erythrium.gabbro_wall": "Gabbro Wall",
+  "block.erythrium.rhyolite_wall": "Rhyolite Wall",
+
+  "block.erythrium.polished_scoria": "Polished Scoria",
+  "block.erythrium.polished_gabbro": "Polished Gabbro",
+  "block.erythrium.polished_rhyolite": "Polished Rhyolite",
+
+  "block.erythrium.polished_scoria_stairs": "Polished Scoria Stairs",
+  "block.erythrium.polished_gabbro_stairs": "Polished Gabbro Stairs",
+  "block.erythrium.polished_rhyolite_stairs": "Polished Rhyolite Stairs",
+
+  "block.erythrium.polished_scoria_slab": "Polished Scoria Slab",
+  "block.erythrium.polished_gabbro_slab": "Polished Gabbro Slab",
+  "block.erythrium.polished_rhyolite_slab": "Polished Rhyolite Slab",
+
+  "block.erythrium.soulrrack": "Soulrrack",
+  "block.erythrium.soul_magma_block": "Soul Magma Block",
+  "block.erythrium.glowing_obsidian": "Glowing Obsidian",
+
   "erythrium.erythrium_tab": "Erythrium"
 }

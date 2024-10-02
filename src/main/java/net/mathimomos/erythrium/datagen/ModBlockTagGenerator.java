@@ -42,7 +42,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                     ModBlocks.REDDISH_DEEPSLATE_TILES_BLOCK.get(),
                     ModBlocks.ERYTHRIUM_ORE.get(),
                     ModBlocks.DEEPSLATE_ERYTHRIUM_ORE.get(),
-                    ModBlocks.COMPACTED_ERYTHRIUM.get()
+                    ModBlocks.COMPACTED_ERYTHRIUM.get(),
+                    ModBlocks.GLOWING_OBSIDIAN.get()
                 );
 
         this.tag(ModTags.Blocks.NEEDS_ERYTHRIUM_TOOL);
@@ -75,12 +76,48 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.SCORIA.get(),
                         ModBlocks.GABBRO.get(),
                         ModBlocks.RHYOLITE.get(),
+                        ModBlocks.SCORIA_STAIRS.get(),
+                        ModBlocks.GABBRO_STAIRS.get(),
+                        ModBlocks.RHYOLITE_STAIRS.get(),
+                        ModBlocks.SCORIA_SLAB.get(),
+                        ModBlocks.GABBRO_SLAB.get(),
+                        ModBlocks.RHYOLITE_SLAB.get(),
+                        ModBlocks.SCORIA_WALL.get(),
+                        ModBlocks.GABBRO_WALL.get(),
+                        ModBlocks.RHYOLITE_WALL.get(),
+                        ModBlocks.SCORIA.get(),
+                        ModBlocks.GABBRO.get(),
+                        ModBlocks.RHYOLITE.get(),
                         ModBlocks.POLISHED_SCORIA.get(),
                         ModBlocks.POLISHED_GABBRO.get(),
-                        ModBlocks.POLISHED_RHYOLITE.get()
+                        ModBlocks.POLISHED_RHYOLITE.get(),
+                        ModBlocks.POLISHED_SCORIA_STAIRS.get(),
+                        ModBlocks.POLISHED_GABBRO_STAIRS.get(),
+                        ModBlocks.POLISHED_RHYOLITE_STAIRS.get(),
+                        ModBlocks.POLISHED_SCORIA_SLAB.get(),
+                        ModBlocks.POLISHED_GABBRO_SLAB.get(),
+                        ModBlocks.POLISHED_RHYOLITE_SLAB.get(),
+                        ModBlocks.SOULRRACK.get(),
+                        ModBlocks.SOUL_MAGMA_BLOCK.get(),
+                        ModBlocks.GLOWING_OBSIDIAN.get()
                 );
 
         this.tag(BlockTags.MINEABLE_WITH_AXE)
                 .add(ModBlocks.TOMATHI_BLOCK.get());
+
+        this.tag(BlockTags.WALLS)
+                .add(ModBlocks.RHYOLITE_WALL.get(),
+                        ModBlocks.SCORIA_WALL.get(),
+                        ModBlocks.GABBRO_WALL.get()
+                );
+
+        this.tag(BlockTags.SOUL_FIRE_BASE_BLOCKS).add(ModBlocks.SOULRRACK.get(), ModBlocks.SOUL_MAGMA_BLOCK.get());
+        this.tag(BlockTags.SOUL_SPEED_BLOCKS).add(ModBlocks.SOULRRACK.get(), ModBlocks.SOUL_MAGMA_BLOCK.get());
+        this.tag(BlockTags.WITHER_SUMMON_BASE_BLOCKS).add(ModBlocks.SOULRRACK.get());
+
+        this.tag(BlockTags.INFINIBURN_OVERWORLD).add(ModBlocks.SOUL_MAGMA_BLOCK.get());
+        this.tag(BlockTags.INFINIBURN_NETHER).add(ModBlocks.SOUL_MAGMA_BLOCK.get());
+        this.tag(BlockTags.INFINIBURN_END).add(ModBlocks.SOUL_MAGMA_BLOCK.get());
+
     }
 }

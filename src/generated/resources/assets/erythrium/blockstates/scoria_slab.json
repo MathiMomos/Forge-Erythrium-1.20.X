@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "erythrium:block/scoria_slab"
+    },
+    "type=double": {
+      "model": "erythrium:block/scoria"
+    },
+    "type=top": {
+      "model": "erythrium:block/scoria_slab_top"
+    }
+  }
+}

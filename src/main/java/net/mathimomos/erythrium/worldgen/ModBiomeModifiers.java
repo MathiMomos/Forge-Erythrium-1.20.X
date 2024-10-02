@@ -21,6 +21,8 @@ public class ModBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_SCORIA = registerKey("add_scoria");
     public static final ResourceKey<BiomeModifier> ADD_GABBRO = registerKey("add_gabbro");
     public static final ResourceKey<BiomeModifier> ADD_RHYOLITE = registerKey("add_rhyolite");
+    public static final ResourceKey<BiomeModifier> ADD_SOULRRACK = registerKey("add_soulrrack");
+    public static final ResourceKey<BiomeModifier> ADD_SOUL_MAGMA_BLOCK = registerKey("add_soul_magma_block");
 
     public static void bootstrap(BootstapContext<BiomeModifier> context){
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
@@ -61,11 +63,20 @@ public class ModBiomeModifiers {
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.RHYOLITE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
-
         context.register(ADD_ROSE_QUARTZ_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_NETHER),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.ROSE_QUARTZ_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.TOP_LAYER_MODIFICATION));
+
+        context.register(ADD_SOULRRACK, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_NETHER),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.SOULRRACK_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_SOUL_MAGMA_BLOCK, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_NETHER),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.SOUL_MAGMA_BLOCK_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
     }
 
     private static ResourceKey<BiomeModifier> registerKey(String name) {

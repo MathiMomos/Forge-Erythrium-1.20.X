@@ -1,6 +1,7 @@
 package net.mathimomos.erythrium.datagen;
 
 import net.mathimomos.erythrium.Erythrium;
+import net.mathimomos.erythrium.block.ModBlocks;
 import net.mathimomos.erythrium.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceKey;
@@ -15,6 +16,7 @@ import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.LinkedHashMap;
@@ -164,6 +166,27 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.COOKED_SQUID_TENTACLE);
         simpleItem(ModItems.FROG_LEG);
 
+        evenSimplerBlockItem(ModBlocks.RHYOLITE_STAIRS);
+        evenSimplerBlockItem(ModBlocks.SCORIA_STAIRS);
+        evenSimplerBlockItem(ModBlocks.GABBRO_STAIRS);
+
+        evenSimplerBlockItem(ModBlocks.RHYOLITE_SLAB);
+        evenSimplerBlockItem(ModBlocks.SCORIA_SLAB);
+        evenSimplerBlockItem(ModBlocks.GABBRO_SLAB);
+
+        wallItem(ModBlocks.RHYOLITE_WALL, ModBlocks.RHYOLITE);
+        wallItem(ModBlocks.SCORIA_WALL, ModBlocks.SCORIA);
+        wallItem(ModBlocks.GABBRO_WALL, ModBlocks.GABBRO);
+
+        evenSimplerBlockItem(ModBlocks.POLISHED_RHYOLITE_STAIRS);
+        evenSimplerBlockItem(ModBlocks.POLISHED_SCORIA_STAIRS);
+        evenSimplerBlockItem(ModBlocks.POLISHED_GABBRO_STAIRS);
+
+        evenSimplerBlockItem(ModBlocks.POLISHED_RHYOLITE_SLAB);
+        evenSimplerBlockItem(ModBlocks.POLISHED_SCORIA_SLAB);
+        evenSimplerBlockItem(ModBlocks.POLISHED_GABBRO_SLAB);
+
+
     }
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {
         final String MOD_ID = Erythrium.MOD_ID;
@@ -220,6 +243,16 @@ public class ModItemModelProvider extends ItemModelProvider {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/handheld")).texture("layer0",
                 new ResourceLocation(Erythrium.MOD_ID,"item/" + item.getId().getPath()));
+    }
+
+    public void evenSimplerBlockItem(RegistryObject<Block> block) {
+        this.withExistingParent(Erythrium.MOD_ID + ":" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath(),
+                modLoc("block/" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath()));
+    }
+
+    public void wallItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/wall_inventory"))
+                .texture("wall",  new ResourceLocation(Erythrium.MOD_ID, "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
     }
 
     private ItemModelBuilder simpleBlockItem(RegistryObject<Block> item) {

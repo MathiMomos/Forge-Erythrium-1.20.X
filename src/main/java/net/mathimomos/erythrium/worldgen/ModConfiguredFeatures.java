@@ -28,6 +28,8 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_SCORIA_KEY = registerKey("scoria");
     public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_GABBRO_KEY = registerKey("gabbro");
     public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_RHYOLITE_KEY = registerKey("rhyolite");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_SOULRRACK_KEY = registerKey("soulrrack");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_SOUL_MAGMA_BLOCK_KEY = registerKey("soul_magma_block");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context){
         RuleTest stoneReplaceables = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -37,6 +39,8 @@ public class ModConfiguredFeatures {
         RuleTest ironOreReplaceables = new BlockMatchTest(Blocks.IRON_ORE);
         RuleTest gravelReplaceables = new BlockMatchTest(Blocks.GRAVEL);
         RuleTest basaltReplaceables = new BlockMatchTest(Blocks.BASALT);
+        RuleTest soulsandReplaceables = new BlockMatchTest(Blocks.SOUL_SAND);
+        RuleTest soulsoilReplaceables = new BlockMatchTest(Blocks.SOUL_SOIL);
 
         List<OreConfiguration.TargetBlockState> overworldErythriumOres = List.of(OreConfiguration.target(stoneReplaceables,
                 ModBlocks.ERYTHRIUM_ORE.get().defaultBlockState()),
@@ -56,6 +60,17 @@ public class ModConfiguredFeatures {
                         ModBlocks.SCORIA.get().defaultBlockState()),
                 OreConfiguration.target(gravelReplaceables, ModBlocks.SCORIA.get().defaultBlockState())
         );
+
+        List<OreConfiguration.TargetBlockState> soulrrackRocks = List.of(OreConfiguration.target(soulsandReplaceables,
+                        ModBlocks.SOULRRACK.get().defaultBlockState()),
+                OreConfiguration.target(soulsoilReplaceables, ModBlocks.SOULRRACK.get().defaultBlockState())
+        );
+
+        List<OreConfiguration.TargetBlockState> soulMagmaBlockRocks = List.of(OreConfiguration.target(soulsandReplaceables,
+                        ModBlocks.SOUL_MAGMA_BLOCK.get().defaultBlockState()),
+                OreConfiguration.target(soulsoilReplaceables, ModBlocks.SOUL_MAGMA_BLOCK.get().defaultBlockState())
+        );
+
         ///tamano de los blobs
         register(context, OVERWORLD_ERYTHRIUM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldErythriumOres, 4));
         register(context, OVERWORLD_FLINT_BLOCK_KEY, Feature.ORE, new OreConfiguration(gravelReplaceables, ModBlocks.FLINT_BLOCK.get().defaultBlockState(), 32));
@@ -65,6 +80,9 @@ public class ModConfiguredFeatures {
         register(context, NETHER_IGNITE_ORE_KEY, Feature.ORE, new OreConfiguration(netherrackReplaceables, ModBlocks.IGNITE_ORE.get().defaultBlockState(), 12));
         register(context, NETHER_ROSE_QUARTZ_ORE_KEY, Feature.ORE, new OreConfiguration(quartzOreReplaceables, ModBlocks.NETHER_ROSE_QUARTZ_ORE.get().defaultBlockState(), 24));
         register(context, OVERWORLD_IRON_NUGGET_ORE_KEY, Feature.ORE, new OreConfiguration(ironOreReplaceables, ModBlocks.IRON_NUGGET_ORE.get().defaultBlockState(), 64));
+        register(context, NETHER_SOULRRACK_KEY, Feature.ORE, new OreConfiguration(soulrrackRocks, 48));
+        register(context, NETHER_SOUL_MAGMA_BLOCK_KEY, Feature.ORE, new OreConfiguration(soulMagmaBlockRocks, 32));
+
     }
 
     private static <FC extends FeatureConfiguration, F extends Feature<FC>> void register(BootstapContext<ConfiguredFeature<?, ?>> context,

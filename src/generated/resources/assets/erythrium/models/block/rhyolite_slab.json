@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "erythrium:block/rhyolite",
+    "side": "erythrium:block/rhyolite",
+    "top": "erythrium:block/rhyolite"
+  }
+}

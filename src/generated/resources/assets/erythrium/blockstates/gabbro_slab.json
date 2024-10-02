@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "erythrium:block/gabbro_slab"
+    },
+    "type=double": {
+      "model": "erythrium:block/gabbro"
+    },
+    "type=top": {
+      "model": "erythrium:block/gabbro_slab_top"
+    }
+  }
+}

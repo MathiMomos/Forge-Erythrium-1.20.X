@@ -1,4 +1,4 @@
-// 1.20.1	2024-09-20T01:47:38.4463515	Item Models: erythrium
+// 1.20.1	2024-09-24T11:20:11.9402817	Item Models: erythrium
 3ee7657a6c17695eb28cda380bace9a3691a61b8 assets/erythrium/models/item/bat_wing.json
 6b38e4ea2cb43716966d953795577ed48966ebb9 assets/erythrium/models/item/cherries.json
 be6b7c25bdcaf892873b34a56df141fac4b064fe assets/erythrium/models/item/cooked_squid_tentacle.json
@@ -148,6 +148,9 @@ ffe71a5b745aa93f0a937ed4d907ff87a006adcb assets/erythrium/models/item/exposed_co
 9b98f11bcfe2994b868f3f43802b1fc8f27dad0b assets/erythrium/models/item/exposed_copper_shovel.json
 1093f675751d57222fc4098aef7e73e2e870b9e9 assets/erythrium/models/item/exposed_copper_sword.json
 a33da9251469b12b1c01a296173d573ec217ef40 assets/erythrium/models/item/frog_leg.json
+88795b1a67fc33606df0903fbec3f1f90a70e451 assets/erythrium/models/item/gabbro_slab.json
+a4be5720f7a5cd0f5bbbb687dc6c4886ae47a301 assets/erythrium/models/item/gabbro_stairs.json
+d6aa133d73665b58feb32c9362d11a37da650b52 assets/erythrium/models/item/gabbro_wall.json
 d5ff61f6d05bc631041f7b6e050b44475c41f471 assets/erythrium/models/item/glittermeat.json
 ab2aff3ec9b8232e75360b2f10359c78b7fd01d2 assets/erythrium/models/item/glow_squid_tentacle.json
 266cc8a22030222380c304a2c445271800a888ed assets/erythrium/models/item/gold_plate.json
@@ -209,7 +212,16 @@ b6d5e8adb005a1c3aad0e6c08e3ffa99b195ee29 assets/erythrium/models/item/oxidized_c
 31be0a60a32751231b4e58c0ec330daa7e2759f5 assets/erythrium/models/item/oxidized_copper_shovel.json
 dc8e9519a4b7221477f736a6336f5c740d22c983 assets/erythrium/models/item/oxidized_copper_sword.json
 1d6b799f763d4281d16871efca48c94076e551ec assets/erythrium/models/item/phantom_eye.json
+ff6097dca5b04d90c6b0d3ec297a02478fda0290 assets/erythrium/models/item/polished_gabbro_slab.json
+c492023b0f88c088ac08c2b091f37542bccc9ba0 assets/erythrium/models/item/polished_gabbro_stairs.json
+d5aef4d2ad177d69ca125958b8db35a35f394e8a assets/erythrium/models/item/polished_rhyolite_slab.json
+dc623a2e405683544cb8d2b93c1ad094f31e86cb assets/erythrium/models/item/polished_rhyolite_stairs.json
+2b80d4abc7df155fbb8a29e7c4e08954463d9e53 assets/erythrium/models/item/polished_scoria_slab.json
+62650b85621451ebfb51ea51b44003d21f80677a assets/erythrium/models/item/polished_scoria_stairs.json
 9f5da9a305cbf7897415556848000ac48f2cf9a9 assets/erythrium/models/item/raw_iron_nugget.json
+4148bc811912f71a4d7d55080bf99d5bd55d4339 assets/erythrium/models/item/rhyolite_slab.json
+29ab9ad9f889ad79fec6d40ce2b48849b3a54315 assets/erythrium/models/item/rhyolite_stairs.json
+de117b3352e71cca38c5868d7024593149b30a1d assets/erythrium/models/item/rhyolite_wall.json
 3c67c3735520ae78cad37f630086a2c6b1eeabf5 assets/erythrium/models/item/rose_gold_axe.json
 94f4157fc771c432517bb5a0cb7b732b047c5cd2 assets/erythrium/models/item/rose_gold_boots.json
 4d405fe7b19fbf643e691d3167310fc056aec549 assets/erythrium/models/item/rose_gold_boots_amethyst_trim.json
@@ -266,6 +278,9 @@ bba12ee3bc3b353d7b9ad5062ed795e2fc89dd6f assets/erythrium/models/item/rose_gold_
 31b9206cb60e208487388596b0fde9e66468a14f assets/erythrium/models/item/rough_erythrium.json
 4bd5e64ec908fa442a629e2b91238ed4d2df7403 assets/erythrium/models/item/rough_nether_quartz.json
 3324c214ea48e69f904e254650dcee84740f60c3 assets/erythrium/models/item/rough_nether_rose_quartz.json
+499274d0eb261bba790721cec17a68a20473b59a assets/erythrium/models/item/scoria_slab.json
+b859b22da6085598703b42149c21cbe8c78feb71 assets/erythrium/models/item/scoria_stairs.json
+27c14ff8452d6f1eac51111eb6b6166f6e789545 assets/erythrium/models/item/scoria_wall.json
 0b0f294edf1c5f4dbd8ac77cfa22a708fc91de62 assets/erythrium/models/item/squid_tentacle.json
 b2fa63ad303702f18f1895f8c7f8a1fe99c74468 assets/erythrium/models/item/stardust.json
 fa67d7edd378983d02c6566da5d3d247e68ecc4f assets/erythrium/models/item/starshine.json

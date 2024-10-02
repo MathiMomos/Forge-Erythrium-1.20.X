@@ -6,6 +6,9 @@ import net.mathimomos.erythrium.block.ModBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SlabBlock;
+import net.minecraft.world.level.block.StairBlock;
+import net.minecraft.world.level.block.WallBlock;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -45,13 +48,37 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.STEEL_BLOCK);
         blockWithItem(ModBlocks.ROSE_GOLD_BLOCK);
 
+        blockWithItem(ModBlocks.RHYOLITE);
         blockWithItem(ModBlocks.SCORIA);
         blockWithItem(ModBlocks.GABBRO);
-        blockWithItem(ModBlocks.RHYOLITE);
 
+        stairsBlock(((StairBlock) ModBlocks.RHYOLITE_STAIRS.get()), blockTexture(ModBlocks.RHYOLITE.get()));
+        stairsBlock(((StairBlock) ModBlocks.SCORIA_STAIRS.get()), blockTexture(ModBlocks.SCORIA.get()));
+        stairsBlock(((StairBlock) ModBlocks.GABBRO_STAIRS.get()), blockTexture(ModBlocks.GABBRO.get()));
+
+        slabBlock(((SlabBlock) ModBlocks.RHYOLITE_SLAB.get()), blockTexture(ModBlocks.RHYOLITE.get()), blockTexture(ModBlocks.RHYOLITE.get()));
+        slabBlock(((SlabBlock) ModBlocks.SCORIA_SLAB.get()), blockTexture(ModBlocks.SCORIA.get()), blockTexture(ModBlocks.SCORIA.get()));
+        slabBlock(((SlabBlock) ModBlocks.GABBRO_SLAB.get()), blockTexture(ModBlocks.GABBRO.get()), blockTexture(ModBlocks.GABBRO.get()));
+
+        wallBlock(((WallBlock) ModBlocks.RHYOLITE_WALL.get()), blockTexture(ModBlocks.RHYOLITE.get()));
+        wallBlock(((WallBlock) ModBlocks.SCORIA_WALL.get()), blockTexture(ModBlocks.SCORIA.get()));
+        wallBlock(((WallBlock) ModBlocks.GABBRO_WALL.get()), blockTexture(ModBlocks.GABBRO.get()));
+
+        blockWithItem(ModBlocks.POLISHED_RHYOLITE);
         blockWithItem(ModBlocks.POLISHED_SCORIA);
         blockWithItem(ModBlocks.POLISHED_GABBRO);
-        blockWithItem(ModBlocks.POLISHED_RHYOLITE);
+
+        stairsBlock(((StairBlock) ModBlocks.POLISHED_RHYOLITE_STAIRS.get()), blockTexture(ModBlocks.POLISHED_RHYOLITE.get()));
+        stairsBlock(((StairBlock) ModBlocks.POLISHED_SCORIA_STAIRS.get()), blockTexture(ModBlocks.POLISHED_SCORIA.get()));
+        stairsBlock(((StairBlock) ModBlocks.POLISHED_GABBRO_STAIRS.get()), blockTexture(ModBlocks.POLISHED_GABBRO.get()));
+
+        slabBlock(((SlabBlock) ModBlocks.POLISHED_RHYOLITE_SLAB.get()), blockTexture(ModBlocks.POLISHED_RHYOLITE.get()), blockTexture(ModBlocks.POLISHED_RHYOLITE.get()));
+        slabBlock(((SlabBlock) ModBlocks.POLISHED_SCORIA_SLAB.get()), blockTexture(ModBlocks.POLISHED_SCORIA.get()), blockTexture(ModBlocks.POLISHED_SCORIA.get()));
+        slabBlock(((SlabBlock) ModBlocks.POLISHED_GABBRO_SLAB.get()), blockTexture(ModBlocks.POLISHED_GABBRO.get()), blockTexture(ModBlocks.POLISHED_GABBRO.get()));
+
+        blockWithItem(ModBlocks.SOULRRACK);
+        blockWithItem(ModBlocks.SOUL_MAGMA_BLOCK);
+        blockWithItem(ModBlocks.GLOWING_OBSIDIAN);
     }
 
 

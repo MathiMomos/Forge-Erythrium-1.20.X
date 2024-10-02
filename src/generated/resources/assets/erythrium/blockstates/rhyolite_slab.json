@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "erythrium:block/rhyolite_slab"
+    },
+    "type=double": {
+      "model": "erythrium:block/rhyolite"
+    },
+    "type=top": {
+      "model": "erythrium:block/rhyolite_slab_top"
+    }
+  }
+}

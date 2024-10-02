@@ -1,8 +1,15 @@
-// 1.20.1	2024-09-24T01:15:58.054359	Tags for minecraft:block mod id erythrium
+// 1.20.1	2024-09-24T23:18:17.6922828	Tags for minecraft:block mod id erythrium
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/erythrium/tags/blocks/needs_erythrium_tool.json
 de3de6633a55e82b8974175cc097b733b755759b data/forge/tags/blocks/needs_netherite_tool.json
+b8f23ff1e2e19a1c26ba28e3f53417bdbf513f6e data/minecraft/tags/blocks/infiniburn_end.json
+b8f23ff1e2e19a1c26ba28e3f53417bdbf513f6e data/minecraft/tags/blocks/infiniburn_nether.json
+b8f23ff1e2e19a1c26ba28e3f53417bdbf513f6e data/minecraft/tags/blocks/infiniburn_overworld.json
 93ce05b11115540751bc0d0deca36dd3312d1845 data/minecraft/tags/blocks/mineable/axe.json
-58309bfb1ddf33c97ea16a51dab0a531c8665711 data/minecraft/tags/blocks/mineable/pickaxe.json
-56a2fd13856b34afc3bc27a91e3cbad614693681 data/minecraft/tags/blocks/needs_diamond_tool.json
+0636b642b0449a091a1ae8a1c684b830b7d6a65c data/minecraft/tags/blocks/mineable/pickaxe.json
+d7b6172d4db31a97fe29e3c668409dac27ff1d1f data/minecraft/tags/blocks/needs_diamond_tool.json
 7a32a2d4fa933be7c96622395f5e551af8a65d9a data/minecraft/tags/blocks/needs_iron_tool.json
 13a15de0410465d23c0178e70eaeecec73247e39 data/minecraft/tags/blocks/needs_stone_tool.json
+066c7aa913d9b06ede7cf3e3be063432568b9970 data/minecraft/tags/blocks/soul_fire_base_blocks.json
+066c7aa913d9b06ede7cf3e3be063432568b9970 data/minecraft/tags/blocks/soul_speed_blocks.json
+4de8d498bf7766d7ea6c044460b0ee5efb61dd83 data/minecraft/tags/blocks/walls.json
+61ce67e56096dc7e0f2fad306cecfd991bc52775 data/minecraft/tags/blocks/wither_summon_base_blocks.json
