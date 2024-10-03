@@ -1,4 +1,4 @@
-// 1.20.1	2024-09-24T11:20:11.9402817	Item Models: erythrium
+// 1.20.1	2024-10-03T00:45:52.7226079	Item Models: erythrium
 3ee7657a6c17695eb28cda380bace9a3691a61b8 assets/erythrium/models/item/bat_wing.json
 6b38e4ea2cb43716966d953795577ed48966ebb9 assets/erythrium/models/item/cherries.json
 be6b7c25bdcaf892873b34a56df141fac4b064fe assets/erythrium/models/item/cooked_squid_tentacle.json
@@ -336,6 +336,7 @@ b6cf7b6d8f7cff6adefe28a09c9eee43851de5b7 assets/erythrium/models/item/steel_legg
 455134efa93852289f9acd14880aaea1b34b8833 assets/erythrium/models/item/steel_shovel.json
 fe3a0ea3c75cb92eff07d5faf319286279f2d453 assets/erythrium/models/item/steel_sword.json
 3fe37aaadfddb584b36519b28528b5959f725b90 assets/erythrium/models/item/tomathi.json
+63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/erythrium/models/item/tomathi_spawn_egg.json
 5bd197e57083716068ad900c41b0410db8f452ab assets/erythrium/models/item/tuna.json
 80710c1decdc4a7371ca6dcf6f339580ce150260 assets/erythrium/models/item/weathered_copper_axe.json
 137fa2378ac351405cf80a105d73372bd6edde13 assets/erythrium/models/item/weathered_copper_boots.json

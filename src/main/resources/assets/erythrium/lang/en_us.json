@@ -185,5 +185,8 @@
   "block.erythrium.soul_magma_block": "Soul Magma Block",
   "block.erythrium.glowing_obsidian": "Glowing Obsidian",
 
+  "item.erythrium.tomathi_spawn_egg": "Tomathi Spawn Egg",
+  "entity.erythrium.tomathi_base": "Tomathi",
+
   "erythrium.erythrium_tab": "Erythrium"
 }

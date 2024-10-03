@@ -3,6 +3,8 @@ package net.mathimomos.erythrium;
 import com.mojang.logging.LogUtils;
 import net.mathimomos.erythrium.block.ModBlocks;
 import net.mathimomos.erythrium.block.entity.ModBlockEntities;
+import net.mathimomos.erythrium.entity.ModEntities;
+import net.mathimomos.erythrium.entity.client.TomathiBaseRenderer;
 import net.mathimomos.erythrium.item.ModCreativeModeTabs;
 import net.mathimomos.erythrium.item.ModItems;
 import net.mathimomos.erythrium.loot.ModLootModifiers;
@@ -11,6 +13,7 @@ import net.mathimomos.erythrium.screen.DiamondCutterScreen;
 import net.mathimomos.erythrium.screen.MetalurgicStationScreen;
 import net.mathimomos.erythrium.screen.ModMenuTypes;
 import net.minecraft.client.gui.screens.MenuScreens;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -39,6 +42,8 @@ public class Erythrium {
         ModBlocks.register(modEventBus);
 
         ModLootModifiers.register(modEventBus);
+
+        ModEntities.register(modEventBus);
 
         ModBlockEntities.register(modEventBus);
         ModMenuTypes.register(modEventBus);
@@ -76,6 +81,7 @@ public class Erythrium {
         public static void onClientSetup(FMLClientSetupEvent event) {
             MenuScreens.register(ModMenuTypes.DIAMOND_CUTTER_MENU.get(), DiamondCutterScreen::new);
             MenuScreens.register(ModMenuTypes.METALURGIC_STATION_MENU.get(), MetalurgicStationScreen::new);
+            EntityRenderers.register(ModEntities.TOMATHI_BASE.get(), TomathiBaseRenderer::new);
         }
     }
 }

@@ -199,6 +199,8 @@ public class ModCreativeModeTabs {
                 pOutput.accept(ModBlocks.SOUL_MAGMA_BLOCK.get());
                 pOutput.accept(ModBlocks.GLOWING_OBSIDIAN.get());
 
+                pOutput.accept(ModItems.TOMATHI_SPAWN_EGG.get());
+
             })
             .build());
 

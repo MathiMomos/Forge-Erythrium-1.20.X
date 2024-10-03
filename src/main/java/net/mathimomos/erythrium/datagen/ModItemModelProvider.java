@@ -186,6 +186,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         evenSimplerBlockItem(ModBlocks.POLISHED_SCORIA_SLAB);
         evenSimplerBlockItem(ModBlocks.POLISHED_GABBRO_SLAB);
 
+        withExistingParent(ModItems.TOMATHI_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+
 
     }
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {
