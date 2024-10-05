@@ -6,6 +6,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.AgeableMob;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.*;
@@ -72,6 +73,7 @@ public class TomathiBigEntity extends Animal implements GeoEntity {
 
     }
 
+
     @Override
     public void registerControllers(AnimatableManager.ControllerRegistrar controllerRegistrar) {
         controllerRegistrar.add(new AnimationController<>(this, "controller", 0, this::predicate));
@@ -121,37 +123,40 @@ public class TomathiBigEntity extends Animal implements GeoEntity {
     public boolean hurt(DamageSource source, float amount) {
         boolean result = super.hurt(source, amount);
         if (result) {
+            LivingEntity attacker = source.getEntity() instanceof LivingEntity ? (LivingEntity) source.getEntity() : null;
+            if (attacker != null) {
+                this.setLastHurtByMob(attacker);
+            }
             alertOthers();
         }
         return result;
     }
 
     private void alertOthers() {
-        double alertRadius = this.getAttributeValue(Attributes.FOLLOW_RANGE);
+        if (!this.level().isClientSide){
+            double alertRadius = this.getAttributeValue(Attributes.FOLLOW_RANGE);
+            LivingEntity attacker = this.getLastHurtByMob();
 
-        this.level().getEntitiesOfClass(TomathiBaseEntity.class, this.getBoundingBox().inflate(alertRadius)).forEach((baseTomathi) -> {
-            if (baseTomathi.getTarget() == null) {
-                baseTomathi.setTarget(this.getLastHurtByMob());
-            }
-        });
+            if (attacker != null) {
+                this.level().getEntitiesOfClass(TomathiBaseEntity.class, this.getBoundingBox().inflate(alertRadius)).forEach((baseTomathi) -> {
+                        baseTomathi.setTarget(attacker);
+                });
 
-        this.level().getEntitiesOfClass(TomathiLongEntity.class, this.getBoundingBox().inflate(alertRadius)).forEach((longTomathi) -> {
-            if (longTomathi.getTarget() == null) {
-                longTomathi.setTarget(this.getLastHurtByMob());
-            }
-        });
+                this.level().getEntitiesOfClass(TomathiLongEntity.class, this.getBoundingBox().inflate(alertRadius)).forEach((longTomathi) -> {
+                        longTomathi.setTarget(attacker);
+                });
 
-        this.level().getEntitiesOfClass(TomathiGreenEntity.class, this.getBoundingBox().inflate(alertRadius)).forEach((greenTomathi) -> {
-            if (greenTomathi.getTarget() == null) {
-                greenTomathi.setTarget(this.getLastHurtByMob());
-            }
-        });
+                this.level().getEntitiesOfClass(TomathiGreenEntity.class, this.getBoundingBox().inflate(alertRadius)).forEach((greenTomathi) -> {
+                        greenTomathi.setTarget(attacker);
+                });
 
-        this.level().getEntitiesOfClass(TomathiBigEntity.class, this.getBoundingBox().inflate(alertRadius)).forEach((bigTomathi) -> {
-            if (bigTomathi != this && bigTomathi.getTarget() == null) {
-                bigTomathi.setTarget(this.getLastHurtByMob());
+                this.level().getEntitiesOfClass(TomathiBigEntity.class, this.getBoundingBox().inflate(alertRadius)).forEach((bigTomathi) -> {
+                    if (bigTomathi != this) {
+                        bigTomathi.setTarget(attacker);
+                    }
+                });
             }
-        });
+        }
     }
 
     @Override
@@ -166,6 +171,6 @@ public class TomathiBigEntity extends Animal implements GeoEntity {
 
     @Override
     public boolean isFood(ItemStack pStack) {
-        return pStack.is(ModItems.OINKBALLS.get()) || pStack.is(Items.PORKCHOP);
+        return pStack.is(ModItems.OINKBALLS.get());
     }
 }
