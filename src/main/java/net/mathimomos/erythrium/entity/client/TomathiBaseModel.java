@@ -13,16 +13,25 @@ import software.bernie.geckolib.model.data.EntityModelData;
 public class TomathiBaseModel extends GeoModel<TomathiBaseEntity> {
     @Override
     public ResourceLocation getModelResource(TomathiBaseEntity tomathiBaseEntity) {
+        if (tomathiBaseEntity.isBaby()) {
+            return new ResourceLocation(Erythrium.MOD_ID, "geo/tomathi_baby.geo.json");
+        }
         return new ResourceLocation(Erythrium.MOD_ID, "geo/tomathi_base.geo.json");
     }
 
     @Override
     public ResourceLocation getTextureResource(TomathiBaseEntity tomathiBaseEntity) {
+        if (tomathiBaseEntity.isBaby()) {
+            return new ResourceLocation(Erythrium.MOD_ID, "textures/entity/tomathi_baby.png");
+        }
         return new ResourceLocation(Erythrium.MOD_ID, "textures/entity/tomathi_base.png");
     }
 
     @Override
     public ResourceLocation getAnimationResource(TomathiBaseEntity tomathiBaseEntity) {
+        if (tomathiBaseEntity.isBaby()) {
+            return new ResourceLocation(Erythrium.MOD_ID, "animations/tomathi_baby.animation.json");
+        }
         return new ResourceLocation(Erythrium.MOD_ID, "animations/tomathi_base.animation.json");
     }
 

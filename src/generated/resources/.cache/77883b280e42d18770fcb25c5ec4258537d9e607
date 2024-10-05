@@ -1,4 +1,4 @@
-// 1.20.1	2024-10-03T00:45:52.7226079	Item Models: erythrium
+// 1.20.1	2024-10-05T02:16:16.5082741	Item Models: erythrium
 3ee7657a6c17695eb28cda380bace9a3691a61b8 assets/erythrium/models/item/bat_wing.json
 6b38e4ea2cb43716966d953795577ed48966ebb9 assets/erythrium/models/item/cherries.json
 be6b7c25bdcaf892873b34a56df141fac4b064fe assets/erythrium/models/item/cooked_squid_tentacle.json
@@ -154,10 +154,13 @@ d6aa133d73665b58feb32c9362d11a37da650b52 assets/erythrium/models/item/gabbro_wal
 d5ff61f6d05bc631041f7b6e050b44475c41f471 assets/erythrium/models/item/glittermeat.json
 ab2aff3ec9b8232e75360b2f10359c78b7fd01d2 assets/erythrium/models/item/glow_squid_tentacle.json
 266cc8a22030222380c304a2c445271800a888ed assets/erythrium/models/item/gold_plate.json
+63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/erythrium/models/item/green_tomathi_spawn_egg.json
+63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/erythrium/models/item/heavy_tomathi_spawn_egg.json
 7d802f5f823ed3fc46c1b28867bf32b5a5df934e assets/erythrium/models/item/ignite.json
 1912047f0f33b5c1527431b603ed7b25fcdd9f81 assets/erythrium/models/item/iron_plate.json
 268e0f87e936fcfd4550fe7b5b5a95b9ef67ab27 assets/erythrium/models/item/lazurite.json
 65714cbabed7dc107b643b7af8c1a5cd762da338 assets/erythrium/models/item/leather_fragment.json
+63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/erythrium/models/item/long_tomathi_spawn_egg.json
 31f83d66cba6735868b3d5bac3c1aa3ac6ca24e3 assets/erythrium/models/item/nether_rose_quartz.json
 6bc97619bb233826f1f68ad0c4b96a73718a2b63 assets/erythrium/models/item/nether_star_shard.json
 144e5221a10fc2deca93f759aafd87954b7d0024 assets/erythrium/models/item/obsidian_fragment.json

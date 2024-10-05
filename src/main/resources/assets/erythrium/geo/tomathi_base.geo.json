@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.tomathi_mob",
+				"identifier": "geometry.tomathi_base",
 				"texture_width": 64,
 				"texture_height": 32,
 				"visible_bounds_width": 2,
@@ -13,12 +13,12 @@
 			"bones": [
 				{
 					"name": "Todo",
-					"pivot": [0, 0, 0]
+					"pivot": [0, 8, 0]
 				},
 				{
 					"name": "Cuerpo",
 					"parent": "Todo",
-					"pivot": [0, 13, 1]
+					"pivot": [0, 13, 0]
 				},
 				{
 					"name": "Body",
@@ -87,7 +87,7 @@
 				{
 					"name": "LLeg",
 					"parent": "Todo",
-					"pivot": [-2, 7, 0],
+					"pivot": [-2, 9, 0],
 					"cubes": [
 						{"origin": [-3, 0, -1], "size": [1, 9, 1], "uv": [60, 18]},
 						{"origin": [-4, 7, -2], "size": [3, 2, 3], "uv": [37, 0]},
@@ -97,7 +97,7 @@
 				{
 					"name": "RLeg",
 					"parent": "Todo",
-					"pivot": [2, 7, 0],
+					"pivot": [2, 9, 0],
 					"cubes": [
 						{"origin": [2, 0, -1], "size": [1, 9, 1], "uv": [60, 18]},
 						{"origin": [1, 7, -2], "size": [3, 2, 3], "uv": [37, 0]},

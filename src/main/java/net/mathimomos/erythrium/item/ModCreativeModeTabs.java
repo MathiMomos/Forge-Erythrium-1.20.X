@@ -200,6 +200,9 @@ public class ModCreativeModeTabs {
                 pOutput.accept(ModBlocks.GLOWING_OBSIDIAN.get());
 
                 pOutput.accept(ModItems.TOMATHI_SPAWN_EGG.get());
+                pOutput.accept(ModItems.LONG_TOMATHI_SPAWN_EGG.get());
+                pOutput.accept(ModItems.GREEN_TOMATHI_SPAWN_EGG.get());
+                pOutput.accept(ModItems.HEAVY_TOMATHI_SPAWN_EGG.get());
 
             })
             .build());

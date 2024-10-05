@@ -187,6 +187,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         evenSimplerBlockItem(ModBlocks.POLISHED_GABBRO_SLAB);
 
         withExistingParent(ModItems.TOMATHI_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+        withExistingParent(ModItems.LONG_TOMATHI_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+        withExistingParent(ModItems.GREEN_TOMATHI_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+        withExistingParent(ModItems.HEAVY_TOMATHI_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
 
 
     }

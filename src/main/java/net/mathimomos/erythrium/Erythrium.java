@@ -5,6 +5,9 @@ import net.mathimomos.erythrium.block.ModBlocks;
 import net.mathimomos.erythrium.block.entity.ModBlockEntities;
 import net.mathimomos.erythrium.entity.ModEntities;
 import net.mathimomos.erythrium.entity.client.TomathiBaseRenderer;
+import net.mathimomos.erythrium.entity.client.TomathiBigRenderer;
+import net.mathimomos.erythrium.entity.client.TomathiGreenRenderer;
+import net.mathimomos.erythrium.entity.client.TomathiLongRenderer;
 import net.mathimomos.erythrium.item.ModCreativeModeTabs;
 import net.mathimomos.erythrium.item.ModItems;
 import net.mathimomos.erythrium.loot.ModLootModifiers;
@@ -82,6 +85,9 @@ public class Erythrium {
             MenuScreens.register(ModMenuTypes.DIAMOND_CUTTER_MENU.get(), DiamondCutterScreen::new);
             MenuScreens.register(ModMenuTypes.METALURGIC_STATION_MENU.get(), MetalurgicStationScreen::new);
             EntityRenderers.register(ModEntities.TOMATHI_BASE.get(), TomathiBaseRenderer::new);
+            EntityRenderers.register(ModEntities.TOMATHI_LONG.get(), TomathiLongRenderer::new);
+            EntityRenderers.register(ModEntities.TOMATHI_GREEN.get(), TomathiGreenRenderer::new);
+            EntityRenderers.register(ModEntities.TOMATHI_BIG.get(), TomathiBigRenderer::new);
         }
     }
 }

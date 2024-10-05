@@ -277,6 +277,15 @@ public class ModItems {
     public static final RegistryObject<Item> TOMATHI_SPAWN_EGG = ITEMS.register("tomathi_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntities.TOMATHI_BASE, 0xD63347, 0x09B167, new Item.Properties()));
 
+    public static final RegistryObject<Item> LONG_TOMATHI_SPAWN_EGG = ITEMS.register("long_tomathi_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntities.TOMATHI_LONG, 0xD63347, 0x09B167, new Item.Properties()));
+
+    public static final RegistryObject<Item> GREEN_TOMATHI_SPAWN_EGG = ITEMS.register("green_tomathi_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntities.TOMATHI_GREEN, 0x86B838, 0x09B167, new Item.Properties()));
+
+    public static final RegistryObject<Item> HEAVY_TOMATHI_SPAWN_EGG = ITEMS.register("heavy_tomathi_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntities.TOMATHI_BIG, 0x09B167, 0xD63347, new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

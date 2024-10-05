@@ -187,6 +187,12 @@
 
   "item.erythrium.tomathi_spawn_egg": "Tomathi Spawn Egg",
   "entity.erythrium.tomathi_base": "Tomathi",
+  "item.erythrium.long_tomathi_spawn_egg": "Long Tomathi Spawn Egg",
+  "entity.erythrium.tomathi_long": "Long Tomathi",
+  "item.erythrium.green_tomathi_spawn_egg": "Green Tomathi Spawn Egg",
+  "entity.erythrium.tomathi_green": "Green Tomathi",
+  "item.erythrium.heavy_tomathi_spawn_egg": "Heavy Tomathi Spawn Egg",
+  "entity.erythrium.tomathi_big": "Heavy Tomathi",
 
   "erythrium.erythrium_tab": "Erythrium"
 }
