@@ -1,4 +1,4 @@
-// 1.20.1	2024-10-05T02:16:16.5082741	Item Models: erythrium
+// 1.20.1	2024-10-09T03:19:32.2859555	Item Models: erythrium
 3ee7657a6c17695eb28cda380bace9a3691a61b8 assets/erythrium/models/item/bat_wing.json
 6b38e4ea2cb43716966d953795577ed48966ebb9 assets/erythrium/models/item/cherries.json
 be6b7c25bdcaf892873b34a56df141fac4b064fe assets/erythrium/models/item/cooked_squid_tentacle.json
@@ -276,6 +276,8 @@ ae3daa88647c846cdd6d4ef81817e174d8fd7450 assets/erythrium/models/item/rose_gold_
 bba12ee3bc3b353d7b9ad5062ed795e2fc89dd6f assets/erythrium/models/item/rose_gold_plate.json
 0db164027e85b0a506f126233de8fb3285e7df2d assets/erythrium/models/item/rose_gold_shovel.json
 63fe7f29c6e22551bb4bc8140b93e2a1a180a77f assets/erythrium/models/item/rose_gold_sword.json
+b283d7de0080dac4b279701cd2f94126a2bead6a assets/erythrium/models/item/rose_quartz_slab.json
+6269c6cd7cadc214977700b83fb2f37cda3c062c assets/erythrium/models/item/rose_quartz_stairs.json
 2cbd7b15d2e063499467bbf47b61d4ebc0df2d07 assets/erythrium/models/item/rough_diamond.json
 1447fd1d9d265b8d88eacf67fae8541fda5071f7 assets/erythrium/models/item/rough_emerald.json
 31b9206cb60e208487388596b0fde9e66468a14f assets/erythrium/models/item/rough_erythrium.json
@@ -284,6 +286,8 @@ bba12ee3bc3b353d7b9ad5062ed795e2fc89dd6f assets/erythrium/models/item/rose_gold_
 499274d0eb261bba790721cec17a68a20473b59a assets/erythrium/models/item/scoria_slab.json
 b859b22da6085598703b42149c21cbe8c78feb71 assets/erythrium/models/item/scoria_stairs.json
 27c14ff8452d6f1eac51111eb6b6166f6e789545 assets/erythrium/models/item/scoria_wall.json
+6b2a38a4d5f5d41bd336328c89ba352b07141ba0 assets/erythrium/models/item/smooth_rose_quartz_slab.json
+8b2e3d792d6f0948419b9e48f5befb58b64ee543 assets/erythrium/models/item/smooth_rose_quartz_stairs.json
 0b0f294edf1c5f4dbd8ac77cfa22a708fc91de62 assets/erythrium/models/item/squid_tentacle.json
 b2fa63ad303702f18f1895f8c7f8a1fe99c74468 assets/erythrium/models/item/stardust.json
 fa67d7edd378983d02c6566da5d3d247e68ecc4f assets/erythrium/models/item/starshine.json

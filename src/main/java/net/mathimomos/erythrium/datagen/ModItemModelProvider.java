@@ -63,6 +63,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.NETHER_ROSE_QUARTZ);
         simpleItem(ModItems.ENCHANTED_TOME);
 
+        evenSimplerBlockItem(ModBlocks.ROSE_QUARTZ_STAIRS);
+        evenSimplerBlockItem(ModBlocks.ROSE_QUARTZ_SLAB);
+        evenSimplerBlockItem(ModBlocks.SMOOTH_ROSE_QUARTZ_STAIRS);
+        evenSimplerBlockItem(ModBlocks.SMOOTH_ROSE_QUARTZ_SLAB);
+
         simpleItem(ModItems.STARDUST);
         simpleItem(ModItems.NETHER_STAR_SHARD);
         simpleItem(ModItems.STARSHINE);

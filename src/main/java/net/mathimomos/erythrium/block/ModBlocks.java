@@ -44,15 +44,36 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> IGNITE_ORE = registerBlock("ignite_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)
-                    .strength(1.5f).requiresCorrectToolForDrops().lightLevel((state) -> 15), UniformInt.of(2,4)));
+                    .strength(1.5f).requiresCorrectToolForDrops().lightLevel((state) -> 3), UniformInt.of(2,4)));
     public static final RegistryObject<Block> IGNITE_BLOCK = registerBlock("ignite_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.COAL_BLOCK).lightLevel((state) -> 15)));
 
     public static final RegistryObject<Block> NETHER_ROSE_QUARTZ_ORE = registerBlock("nether_rose_quartz_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_QUARTZ_ORE)
                     .strength(2f).requiresCorrectToolForDrops(), UniformInt.of(8,12)));
+
     public static final RegistryObject<Block> ROSE_QUARTZ_BLOCK = registerBlock("rose_quartz_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK)));
+    public static final RegistryObject<Block> ROSE_QUARTZ_STAIRS = registerBlock("rose_quartz_stairs",
+            () -> new StairBlock(() -> ModBlocks.ROSE_QUARTZ_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK)));
+    public static final RegistryObject<Block> ROSE_QUARTZ_SLAB = registerBlock("rose_quartz_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_SLAB)));
+    public static final RegistryObject<Block> CHISELED_ROSE_QUARTZ_BLOCK = registerBlock("chiseled_rose_quartz_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CHISELED_QUARTZ_BLOCK)));
+    public static final RegistryObject<Block> ROSE_QUARTZ_BRICKS = registerBlock("rose_quartz_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BRICKS)));
+    public static final RegistryObject<Block> ROSE_QUARTZ_PILLAR = registerBlock("rose_quartz_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR)));
+
+
+    public static final RegistryObject<Block> SMOOTH_ROSE_QUARTZ = registerBlock("smooth_rose_quartz",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.SMOOTH_QUARTZ)));
+    public static final RegistryObject<Block> SMOOTH_ROSE_QUARTZ_STAIRS = registerBlock("smooth_rose_quartz_stairs",
+            () -> new StairBlock(() -> ModBlocks.ROSE_QUARTZ_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.SMOOTH_QUARTZ_STAIRS)));
+    public static final RegistryObject<Block> SMOOTH_ROSE_QUARTZ_SLAB = registerBlock("smooth_rose_quartz_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.SMOOTH_QUARTZ_SLAB)));
 
     public static final RegistryObject<Block> FLINT_BLOCK = registerBlock("flint_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));

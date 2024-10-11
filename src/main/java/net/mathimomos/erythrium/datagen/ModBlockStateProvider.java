@@ -3,13 +3,14 @@ package net.mathimomos.erythrium.datagen;
 
 import net.mathimomos.erythrium.Erythrium;
 import net.mathimomos.erythrium.block.ModBlocks;
+import net.mathimomos.erythrium.block.custom.CopperChargerBlock;
+import net.minecraft.core.Direction;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SlabBlock;
-import net.minecraft.world.level.block.StairBlock;
-import net.minecraft.world.level.block.WallBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
@@ -35,11 +36,22 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.IGNITE_BLOCK);
 
         blockWithItem(ModBlocks.NETHER_ROSE_QUARTZ_ORE);
+
         blockWithItem(ModBlocks.ROSE_QUARTZ_BLOCK);
+        stairsBlock(((StairBlock) ModBlocks.ROSE_QUARTZ_STAIRS.get()), blockTexture(ModBlocks.ROSE_QUARTZ_BLOCK.get()));
+        slabBlock(((SlabBlock) ModBlocks.ROSE_QUARTZ_SLAB.get()), blockTexture(ModBlocks.ROSE_QUARTZ_BLOCK.get()), blockTexture(ModBlocks.ROSE_QUARTZ_BLOCK.get()));
+        blockTopWithItem(ModBlocks.CHISELED_ROSE_QUARTZ_BLOCK);
+        blockWithItem(ModBlocks.ROSE_QUARTZ_BRICKS);
+        pillarWithItem(ModBlocks.ROSE_QUARTZ_PILLAR);
+
+        blockWithItem(ModBlocks.SMOOTH_ROSE_QUARTZ);
+        stairsBlock(((StairBlock) ModBlocks.SMOOTH_ROSE_QUARTZ_STAIRS.get()), blockTexture(ModBlocks.SMOOTH_ROSE_QUARTZ.get()));
+        slabBlock(((SlabBlock) ModBlocks.SMOOTH_ROSE_QUARTZ_SLAB.get()), blockTexture(ModBlocks.SMOOTH_ROSE_QUARTZ.get()), blockTexture(ModBlocks.SMOOTH_ROSE_QUARTZ.get()));
+
 
         blockWithItem(ModBlocks.FLINT_BLOCK);
         blockBottomTopWithItem(ModBlocks.TOMATHI_BLOCK);
-        blockDifferentWithItem(ModBlocks.COPPER_CHAGER, true);
+        CopperChargerWithItem(ModBlocks.COPPER_CHAGER);
 
         customModelHorizontalBlock(ModBlocks.DIAMOND_CUTTER, "diamond_cutter");
         customModelHorizontalBlock(ModBlocks.METALURGIC_STATION, "metalurgic_station");
@@ -92,6 +104,18 @@ public class ModBlockStateProvider extends BlockStateProvider {
         ResourceLocation top = new ResourceLocation(Erythrium.MOD_ID, "block/" + blockRegistryObject.getId().getPath() + "_top");
         simpleBlockWithItem(blockRegistryObject.get(), models().cubeBottomTop(blockRegistryObject.getId().getPath(), side, bottom, top));
     }
+    private void blockTopWithItem(RegistryObject<Block> blockRegistryObject){
+        ResourceLocation side = new ResourceLocation(Erythrium.MOD_ID, "block/" + blockRegistryObject.getId().getPath());
+        ResourceLocation top = new ResourceLocation(Erythrium.MOD_ID, "block/" + blockRegistryObject.getId().getPath() + "_top");
+        simpleBlockWithItem(blockRegistryObject.get(), models().cubeTop(blockRegistryObject.getId().getPath(), side, top));
+    }
+
+    private void pillarWithItem(RegistryObject<Block> blockRegistryObject){
+        ResourceLocation side = new ResourceLocation(Erythrium.MOD_ID, "block/" + blockRegistryObject.getId().getPath());
+        ResourceLocation top = new ResourceLocation(Erythrium.MOD_ID, "block/" + blockRegistryObject.getId().getPath() + "_top");
+        axisBlock(blockRegistryObject.get(), side, top);
+        simpleBlockItem(blockRegistryObject.get(), models().cubeColumn(blockRegistryObject.getId().getPath(), side, top));
+    }
 
     private void blockDifferentWithItem(RegistryObject<Block> blockRegistryObject, boolean rotation) {
         ResourceLocation down = new ResourceLocation(Erythrium.MOD_ID, "block/" + blockRegistryObject.getId().getPath()+ "_down");
@@ -108,10 +132,57 @@ public class ModBlockStateProvider extends BlockStateProvider {
         }
     }
 
+    private void CopperChargerWithItem(RegistryObject<Block> blockRegistryObject) {
+        ResourceLocation down = new ResourceLocation(Erythrium.MOD_ID, "block/" + blockRegistryObject.getId().getPath() + "_down");
+        ResourceLocation up = new ResourceLocation(Erythrium.MOD_ID, "block/" + blockRegistryObject.getId().getPath() + "_up");
+        ResourceLocation north = new ResourceLocation(Erythrium.MOD_ID, "block/" + blockRegistryObject.getId().getPath() + "_north");
+        ResourceLocation south = new ResourceLocation(Erythrium.MOD_ID, "block/" + blockRegistryObject.getId().getPath() + "_south");
+        ResourceLocation west = new ResourceLocation(Erythrium.MOD_ID, "block/" + blockRegistryObject.getId().getPath() + "_west");
+        ResourceLocation east = new ResourceLocation(Erythrium.MOD_ID, "block/" + blockRegistryObject.getId().getPath() + "_east");
+        ResourceLocation north_on = new ResourceLocation(Erythrium.MOD_ID, "block/" + blockRegistryObject.getId().getPath() + "_north_on");
+
+        // Define los modelos según el estado del bloque (powered o no)
+        getVariantBuilder(blockRegistryObject.get()).forAllStates(state -> {
+            boolean powered = state.getValue(CopperChargerBlock.POWERED);
+            ModelFile modelFile = powered ?
+                    models().cube(blockRegistryObject.getId().getPath() + "_powered", down, up, north_on, south, west, east)
+                            .texture("particle", north_on) :
+                    models().cube(blockRegistryObject.getId().getPath() + "_unpowered", down, up, north, south, west, east)
+                            .texture("particle", north);
+
+            // Invertir rotación si es necesario
+            int rotationY = (state.getValue(CopperChargerBlock.FACING).get2DDataValue() * 90 + 180) % 360;
+
+            return ConfiguredModel.builder()
+                    .modelFile(modelFile)
+                    .rotationY(rotationY)  // Invertir rotación
+                    .build();
+        });
+
+        // Registra el item con el modelo del estado "unpowered"
+        simpleBlockItem(blockRegistryObject.get(), models().cube(blockRegistryObject.getId().getPath() + "_unpowered", down, up, north, south, west, east).texture("particle", north));
+    }
+
+
+
     private void customModelHorizontalBlock(RegistryObject<Block> blockRegistryObject, String name) {
         simpleBlockItem(blockRegistryObject.get(),
                 new ModelFile.UncheckedModelFile(modLoc("block/" + name)));
         horizontalBlock(blockRegistryObject.get(),
                 new ModelFile.UncheckedModelFile(modLoc("block/" + name)));
+    }
+
+    protected void axisBlock(Block block, ResourceLocation side, ResourceLocation end) {
+        ResourceLocation blockName = BuiltInRegistries.BLOCK.getKey(block);
+        getVariantBuilder(block)
+                .forAllStates(state -> {
+                    Direction.Axis axis = state.getValue(RotatedPillarBlock.AXIS);
+                    ModelFile model = models().cubeColumn(blockName.getPath(), side, end);
+                    return ConfiguredModel.builder()
+                            .modelFile(model)
+                            .rotationX(axis == Direction.Axis.Y ? 0 : 90)
+                            .rotationY(axis == Direction.Axis.X ? 90 : 0)
+                            .build();
+                });
     }
 }

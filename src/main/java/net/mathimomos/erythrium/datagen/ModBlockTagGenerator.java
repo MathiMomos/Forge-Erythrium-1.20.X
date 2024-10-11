@@ -50,7 +50,15 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
         this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
                 .add(ModBlocks.NETHER_ROSE_QUARTZ_ORE.get(),
-                        ModBlocks.ROSE_QUARTZ_BLOCK.get()
+                        ModBlocks.ROSE_QUARTZ_BLOCK.get(),
+                        ModBlocks.ROSE_QUARTZ_STAIRS.get(),
+                        ModBlocks.ROSE_QUARTZ_SLAB.get(),
+                        ModBlocks.CHISELED_ROSE_QUARTZ_BLOCK.get(),
+                        ModBlocks.ROSE_QUARTZ_BRICKS.get(),
+                        ModBlocks.ROSE_QUARTZ_PILLAR.get(),
+                        ModBlocks.SMOOTH_ROSE_QUARTZ.get(),
+                        ModBlocks.SMOOTH_ROSE_QUARTZ_STAIRS.get(),
+                        ModBlocks.SMOOTH_ROSE_QUARTZ_SLAB.get()
                 );
 
 
@@ -67,6 +75,14 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.FLINT_BLOCK.get(),
                         ModBlocks.NETHER_ROSE_QUARTZ_ORE.get(),
                         ModBlocks.ROSE_QUARTZ_BLOCK.get(),
+                        ModBlocks.ROSE_QUARTZ_STAIRS.get(),
+                        ModBlocks.ROSE_QUARTZ_SLAB.get(),
+                        ModBlocks.CHISELED_ROSE_QUARTZ_BLOCK.get(),
+                        ModBlocks.ROSE_QUARTZ_BRICKS.get(),
+                        ModBlocks.ROSE_QUARTZ_PILLAR.get(),
+                        ModBlocks.SMOOTH_ROSE_QUARTZ.get(),
+                        ModBlocks.SMOOTH_ROSE_QUARTZ_STAIRS.get(),
+                        ModBlocks.SMOOTH_ROSE_QUARTZ_SLAB.get(),
                         ModBlocks.COPPER_CHAGER.get(),
                         ModBlocks.IRON_NUGGET_ORE.get(),
                         ModBlocks.ROSE_GOLD_BLOCK.get(),

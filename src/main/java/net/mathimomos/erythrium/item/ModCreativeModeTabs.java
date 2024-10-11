@@ -53,9 +53,19 @@ public class ModCreativeModeTabs {
                 pOutput.accept(ModItems.IGNITE.get());
                 pOutput.accept(ModBlocks.IGNITE_ORE.get());
                 pOutput.accept(ModBlocks.IGNITE_BLOCK.get());
+
                 pOutput.accept(ModItems.NETHER_ROSE_QUARTZ.get());
                 pOutput.accept(ModBlocks.NETHER_ROSE_QUARTZ_ORE.get());
+
                 pOutput.accept(ModBlocks.ROSE_QUARTZ_BLOCK.get());
+                pOutput.accept(ModBlocks.ROSE_QUARTZ_STAIRS.get());
+                pOutput.accept(ModBlocks.ROSE_QUARTZ_SLAB.get());
+                pOutput.accept(ModBlocks.CHISELED_ROSE_QUARTZ_BLOCK.get());
+                pOutput.accept(ModBlocks.ROSE_QUARTZ_BRICKS.get());
+                pOutput.accept(ModBlocks.ROSE_QUARTZ_PILLAR.get());
+                pOutput.accept(ModBlocks.SMOOTH_ROSE_QUARTZ.get());
+                pOutput.accept(ModBlocks.SMOOTH_ROSE_QUARTZ_STAIRS.get());
+                pOutput.accept(ModBlocks.SMOOTH_ROSE_QUARTZ_SLAB.get());
 
                 pOutput.accept(ModBlocks.FLINT_BLOCK.get());
 
