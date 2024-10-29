@@ -25,6 +25,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     @Override
     protected void generate() {
         this.dropSelf(ModBlocks.ERYTHRIUM_BLOCK.get());
+        this.dropSelf(ModBlocks.CHISELED_ERYTHRIUM_BLOCK.get());
         this.dropSelf(ModBlocks.ERYTHRIUM_TILES_BLOCK.get());
         this.dropSelf(ModBlocks.REDDISH_DEEPSLATE_BLOCK.get());
         this.dropSelf(ModBlocks.REDDISH_DEEPSLATE_TILES_BLOCK.get());

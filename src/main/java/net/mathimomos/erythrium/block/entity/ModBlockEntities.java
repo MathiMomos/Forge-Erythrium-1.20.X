@@ -22,6 +22,11 @@ public class ModBlockEntities {
                     BlockEntityType.Builder.of(MetalurgicStationBlockEntity::new,
                             ModBlocks.METALURGIC_STATION.get()).build(null));
 
+    public static final RegistryObject<BlockEntityType<CopperChargerBlockEntity>> COPPER_CHARGER_BE =
+            BLOCK_ENTITIES.register("copper_charger_be", () ->
+                    BlockEntityType.Builder.of(CopperChargerBlockEntity::new,
+                            ModBlocks.COPPER_CHAGER.get()).build(null));
+
 
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);

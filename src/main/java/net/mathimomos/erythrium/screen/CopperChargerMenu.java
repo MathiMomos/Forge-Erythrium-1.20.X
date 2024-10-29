@@ -1,6 +1,7 @@
 package net.mathimomos.erythrium.screen;
 
 import net.mathimomos.erythrium.block.ModBlocks;
+import net.mathimomos.erythrium.block.entity.CopperChargerBlockEntity;
 import net.mathimomos.erythrium.block.entity.DiamondCutterBlockEntity;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
@@ -13,7 +14,7 @@ import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.items.SlotItemHandler;
 
 public class CopperChargerMenu extends AbstractContainerMenu {
-    public final DiamondCutterBlockEntity blockEntity;
+    public final CopperChargerBlockEntity blockEntity;
     private final Level level;
     private final ContainerData data;
 
@@ -24,7 +25,7 @@ public class CopperChargerMenu extends AbstractContainerMenu {
     public CopperChargerMenu(int pContainerId, Inventory inv, BlockEntity entity, ContainerData data) {
         super(ModMenuTypes.COPPER_CHARGER_MENU.get(), pContainerId);
         checkContainerSize(inv, 2);
-        blockEntity = ((DiamondCutterBlockEntity) entity);
+        blockEntity = ((CopperChargerBlockEntity) entity);
         this.level = inv.player.level();
         this.data = data;
 

@@ -1,7 +1,9 @@
 package net.mathimomos.erythrium.block.entity;
 
 import net.mathimomos.erythrium.recipe.DiamondCutterRecipe;
+import net.mathimomos.erythrium.screen.CopperChargerMenu;
 import net.mathimomos.erythrium.screen.DiamondCutterMenu;
+import net.mathimomos.erythrium.util.ModEnergyStorage;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
@@ -21,6 +23,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.common.util.LazyOptional;
+import net.minecraftforge.energy.IEnergyStorage;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
@@ -35,6 +38,7 @@ public class CopperChargerBlockEntity extends BlockEntity implements MenuProvide
     private static final int OUTPUT_SLOT = 1;
 
     private LazyOptional<IItemHandler> lazyItemHandler = LazyOptional.empty();
+    private LazyOptional<IEnergyStorage> lazyEnergyHandler = LazyOptional.empty();
 
     protected final ContainerData data;
     private int progress = 0;
@@ -69,6 +73,10 @@ public class CopperChargerBlockEntity extends BlockEntity implements MenuProvide
 
     @Override
     public @NotNull <T> LazyOptional<T> getCapability(@NotNull Capability<T> cap, @Nullable Direction side) {
+        if(cap == ForgeCapabilities.ENERGY){
+            return lazyEnergyHandler.cast();
+        }
+
         if(cap == ForgeCapabilities.ITEM_HANDLER){
             return lazyItemHandler.cast();
         }
@@ -80,12 +88,14 @@ public class CopperChargerBlockEntity extends BlockEntity implements MenuProvide
     public void onLoad() {
         super.onLoad();
         lazyItemHandler = LazyOptional.of(() -> itemHandler);
+        lazyEnergyHandler = LazyOptional.of(() -> ENERGY_STORAGE);
     }
 
     @Override
     public void invalidateCaps() {
         super.invalidateCaps();
         lazyItemHandler.invalidate();
+        lazyEnergyHandler.invalidate();
     }
 
     public void drops(){
@@ -98,19 +108,20 @@ public class CopperChargerBlockEntity extends BlockEntity implements MenuProvide
 
     @Override
     public Component getDisplayName() {
-        return Component.translatable("block.erythrium.diamond_cutter");
+        return Component.translatable("block.erythrium.copper_charger");
     }
 
     @Nullable
     @Override
     public AbstractContainerMenu createMenu(int pContainerId, Inventory pPlayerInventory, Player pPlayer) {
-        return new DiamondCutterMenu(pContainerId, pPlayerInventory, this, this.data);
+        return new CopperChargerMenu(pContainerId, pPlayerInventory, this, this.data);
     }
 
     @Override
     protected void saveAdditional(CompoundTag pTag) {
         pTag.put("inventory", itemHandler.serializeNBT());
-        pTag.putInt("diamond_cutter.progress", progress);
+        pTag.putInt("copper_charger.progress", progress);
+        pTag.putInt("copper_charger.energy", ENERGY_STORAGE.getEnergyStored());
 
         super.saveAdditional(pTag);
     }
@@ -119,10 +130,16 @@ public class CopperChargerBlockEntity extends BlockEntity implements MenuProvide
     public void load(CompoundTag pTag) {
         super.load(pTag);
         itemHandler.deserializeNBT(pTag.getCompound("inventory"));
-        progress = pTag.getInt("diamond_cutter.progress");
+        progress = pTag.getInt("copper_charger.progress.progress");
+        ENERGY_STORAGE.setEnergy(pTag.getInt("copper_charger.energy"));
     }
 
     public void tick(Level pLevel, BlockPos pPos, BlockState pState) {
+
+        /*if(hasBatteryInFirstSlot()) {
+
+        }*/
+
         if(hasRecipe()) {
             increaseCraftingProgress();
             setChanged(pLevel, pPos, pState);
@@ -184,4 +201,13 @@ public class CopperChargerBlockEntity extends BlockEntity implements MenuProvide
     private void increaseCraftingProgress() {
         progress++;
     }
+
+    private final ModEnergyStorage ENERGY_STORAGE = new ModEnergyStorage(4000, 40) {
+        @Override
+        public void onEnergyChanged() {
+            setChanged();
+        }
+    };
+
+    private static int ENERGY_REQ = 20;
 }

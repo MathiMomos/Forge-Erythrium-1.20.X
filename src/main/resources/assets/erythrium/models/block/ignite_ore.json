@@ -1,0 +1,33 @@
+{
+  "parent": "block/block",
+  "textures": {
+    "base": "modid:block/ignite_ore",
+    "overlay": "modid:block/ignite_ore_emissive"
+  },
+  "elements": [
+    {
+      "from": [0, 0, 0],
+      "to": [16, 16, 16],
+      "faces": {
+        "north": {"texture": "#base", "cullface": "north"},
+        "south": {"texture": "#base", "cullface": "south"},
+        "west": {"texture": "#base", "cullface": "west"},
+        "east": {"texture": "#base", "cullface": "east"},
+        "up": {"texture": "#base", "cullface": "up"},
+        "down": {"texture": "#base", "cullface": "down"}
+      }
+    },
+    {
+      "from": [0, 0, 0],
+      "to": [16, 16, 16],
+      "faces": {
+        "north": {"texture": "#overlay", "tintindex": 0},
+        "south": {"texture": "#overlay", "tintindex": 0},
+        "west": {"texture": "#overlay", "tintindex": 0},
+        "east": {"texture": "#overlay", "tintindex": 0},
+        "up": {"texture": "#overlay", "tintindex": 0},
+        "down": {"texture": "#overlay", "tintindex": 0}
+      }
+    }
+  ]
+}

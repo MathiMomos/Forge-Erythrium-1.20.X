@@ -30,6 +30,8 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
     public static final RegistryObject<Block> REDDISH_DEEPSLATE_TILES_BLOCK = registerBlock("reddish_deepslate_tiles_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+    public static final RegistryObject<Block> CHISELED_ERYTHRIUM_BLOCK = registerBlock("chiseled_erythrium_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
     public static final RegistryObject<Block> ERYTHRIUM_ORE = registerBlock("erythrium_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
@@ -44,7 +46,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> IGNITE_ORE = registerBlock("ignite_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)
-                    .strength(1.5f).requiresCorrectToolForDrops().lightLevel((state) -> 3), UniformInt.of(2,4)));
+                    .strength(1.5f)
+                    .requiresCorrectToolForDrops(), UniformInt.of(2, 4)));
+
     public static final RegistryObject<Block> IGNITE_BLOCK = registerBlock("ignite_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.COAL_BLOCK).lightLevel((state) -> 15)));
 

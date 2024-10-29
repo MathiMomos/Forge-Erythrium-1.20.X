@@ -24,6 +24,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         blockWithItem(ModBlocks.ERYTHRIUM_BLOCK);
+        blockWithItem(ModBlocks.CHISELED_ERYTHRIUM_BLOCK);
         blockWithItem(ModBlocks.ERYTHRIUM_TILES_BLOCK);
         blockWithItem(ModBlocks.REDDISH_DEEPSLATE_BLOCK);
         blockWithItem(ModBlocks.REDDISH_DEEPSLATE_TILES_BLOCK);
@@ -32,7 +33,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.DEEPSLATE_ERYTHRIUM_ORE);
         blockWithItem(ModBlocks.COMPACTED_ERYTHRIUM);
 
-        blockWithItem(ModBlocks.IGNITE_ORE);
         blockWithItem(ModBlocks.IGNITE_BLOCK);
 
         blockWithItem(ModBlocks.NETHER_ROSE_QUARTZ_ORE);
@@ -162,8 +162,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
         // Registra el item con el modelo del estado "unpowered"
         simpleBlockItem(blockRegistryObject.get(), models().cube(blockRegistryObject.getId().getPath() + "_unpowered", down, up, north, south, west, east).texture("particle", north));
     }
-
-
 
     private void customModelHorizontalBlock(RegistryObject<Block> blockRegistryObject, String name) {
         simpleBlockItem(blockRegistryObject.get(),

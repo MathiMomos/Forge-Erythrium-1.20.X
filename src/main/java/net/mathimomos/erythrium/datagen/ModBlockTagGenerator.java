@@ -37,6 +37,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.ERYTHRIUM_BLOCK.get(),
+                    ModBlocks.CHISELED_ERYTHRIUM_BLOCK.get(),
                     ModBlocks.ERYTHRIUM_TILES_BLOCK.get(),
                     ModBlocks.REDDISH_DEEPSLATE_BLOCK.get(),
                     ModBlocks.REDDISH_DEEPSLATE_TILES_BLOCK.get(),

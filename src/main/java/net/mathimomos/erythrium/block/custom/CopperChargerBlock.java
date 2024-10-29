@@ -50,32 +50,22 @@ public class CopperChargerBlock extends BaseEntityBlock {
 
     @Override
     public int getLightEmission(BlockState state, BlockGetter world, BlockPos pos) {
-        return state.getValue(POWERED) ? 15 : 0; // Emitirá luz si está activado
+        return state.getValue(POWERED) ? 14 : 0;
     }
 
-    // Método para cambiar el estado de powered
     public void setPowered(Level world, BlockPos pos, BlockState state, boolean powered) {
         world.setBlock(pos, state.setValue(POWERED, powered), 3);
-        System.out.println("CopperCharger powered: " + powered); // Para depuración
+        System.out.println("CopperCharger powered: " + powered);
     }
 
-    // Detectar cambios en los bloques vecinos (por ejemplo, el pararrayos)
     @Override
     public void neighborChanged(BlockState state, Level world, BlockPos pos, Block blockIn, BlockPos fromPos, boolean isMoving) {
-        // Verificar si el bloque encima es un pararrayos
         BlockState aboveBlockState = world.getBlockState(pos.above());
-        System.out.println("Vecino cambió, arriba es: " + aboveBlockState.getBlock()); // Para depuración
 
         if (aboveBlockState.getBlock() instanceof LightningRodBlock) {
-            // Comprobar si el pararrayos está activado (powered=true)
             boolean isPowered = aboveBlockState.getValue(BlockStateProperties.POWERED);
-            System.out.println("Pararrayos powered: " + isPowered); // Para depuración
-
             if (isPowered) {
-                // Cambiar el estado del CopperChargerBlock a powered=true
                 this.setPowered(world, pos, state, true);
-            } else {
-                System.out.println("waza");
             }
         }
     }

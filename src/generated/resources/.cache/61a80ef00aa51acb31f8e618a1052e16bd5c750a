@@ -1,4 +1,5 @@
-// 1.20.1	2024-10-11T02:30:12.9107598	Block States: erythrium
+// 1.20.1	2024-10-29T01:02:56.9636309	Block States: erythrium
+5ec4187370bfe6fb3908dfbd4177bcfbc06eacc3 assets/erythrium/blockstates/chiseled_erythrium_block.json
 54cc4e0dc13f1d6182453db666e1bd03472048f1 assets/erythrium/blockstates/chiseled_rose_quartz_block.json
 f36dcaa3b5cc95b243ecfacb65907e0c0fd1545a assets/erythrium/blockstates/compacted_erythrium.json
 f32bb10a6565f3c213f641605558e3827f6989e7 assets/erythrium/blockstates/copper_charger.json
@@ -14,7 +15,6 @@ bdfe5ddf44e4d515517695aa0c587885907e9433 assets/erythrium/blockstates/flint_bloc
 69d7d03bc7a29428f0afab3e2ba972c968bc5d64 assets/erythrium/blockstates/gabbro_wall.json
 633b979459bb9efa256a1e6a9f242adbfb264d37 assets/erythrium/blockstates/glowing_obsidian.json
 bb5e0f345c424dbd460f9ad198c4a5707c5c0bb0 assets/erythrium/blockstates/ignite_block.json
-00aca5d9e23e9a7d4d0f1b692fb3a1e6351df95f assets/erythrium/blockstates/ignite_ore.json
 80f96b92d81960448e2eba1452f4aefb33669bf9 assets/erythrium/blockstates/iron_nugget_ore.json
 4cfdc2ce4cdc68af17620b357db1689b69dca67a assets/erythrium/blockstates/metalurgic_station.json
 1f84bf2f10778ad0b35a3eba59fae23c78dc3634 assets/erythrium/blockstates/nether_rose_quartz_ore.json
@@ -50,6 +50,7 @@ f19b7d9d1abd828765ce4e7562b946bdf1f70f7b assets/erythrium/blockstates/smooth_ros
 c93076f65c2028a7384ea3e7a5f3c749e55c88ff assets/erythrium/blockstates/soul_magma_block.json
 c47b81a21fbc22d002a40f402272cc2c6fa68391 assets/erythrium/blockstates/steel_block.json
 62e5e5c4eb96e39a0145d30d284e7a7a49d5269f assets/erythrium/blockstates/tomathi_block.json
+1c9137a01becfc42bbd0289cbe727fc3a32b3b72 assets/erythrium/models/block/chiseled_erythrium_block.json
 46a506b461c4f58160e602600253744aee17d736 assets/erythrium/models/block/chiseled_rose_quartz_block.json
 72fe427a5aa981a669017088be9c66955a33612f assets/erythrium/models/block/compacted_erythrium.json
 9f78af94d1530a88f12c9b4136512737d5224ec3 assets/erythrium/models/block/copper_charger_powered.json
@@ -70,7 +71,6 @@ ae9adb4d1eba6ba5ee66d8828a92cfa664bed920 assets/erythrium/models/block/gabbro_wa
 e2f8d292a21901d885926876ce587cfce048fc71 assets/erythrium/models/block/gabbro_wall_side_tall.json
 8929dba58f4f27b82c328dc4defbd2b51dc2d4a7 assets/erythrium/models/block/glowing_obsidian.json
 e3aa0b84e54c1862b359bc103f9c4a6afe2e1677 assets/erythrium/models/block/ignite_block.json
-618755260fa0ebca119fa3ec1380357f66a3bd24 assets/erythrium/models/block/ignite_ore.json
 d1f018c9cab365b8fc93feaf19c58512b0689701 assets/erythrium/models/block/iron_nugget_ore.json
 1ba24aa6b1a493410a3db1a27e12f9aeffa11b4d assets/erythrium/models/block/nether_rose_quartz_ore.json
 0877decdc0982d7086ad2bb8627ad27ff3799fd6 assets/erythrium/models/block/polished_gabbro.json
@@ -130,6 +130,7 @@ fcc21f8be3683c207d6bc4d1ec54aa8abcb10332 assets/erythrium/models/block/smooth_ro
 1c6ce18466b710ca18895ab9f8e8fe6c5ffa2b7c assets/erythrium/models/block/soul_magma_block.json
 16912dc9fc7d6e0bf459e26d853cbbe0fa99be16 assets/erythrium/models/block/steel_block.json
 b8d3630c442e9d4a559ceafa80e7afcb9141765e assets/erythrium/models/block/tomathi_block.json
+3116aa939fdddab4216e5d12be19ccb81368cfca assets/erythrium/models/item/chiseled_erythrium_block.json
 ba070be714b9fa8074a35e0ca6332f93fbb644bd assets/erythrium/models/item/chiseled_rose_quartz_block.json
 3db900b46e45a5f0ce91595162a944d07c9286ef assets/erythrium/models/item/compacted_erythrium.json
 e476532786568b34b72bfe7044d7ea42060c420a assets/erythrium/models/item/copper_charger.json
@@ -142,7 +143,6 @@ bcb1a57f4570c59e329fdf2a5aba61f47aa489de assets/erythrium/models/item/flint_bloc
 a9ed73ccbcca51b051c7128c384f9d696e1a0aae assets/erythrium/models/item/gabbro.json
 e6d85a280762b461e972184cf95febd639777a55 assets/erythrium/models/item/glowing_obsidian.json
 cd35b31a46dd8e92c84287bb36446399b72295c9 assets/erythrium/models/item/ignite_block.json
-95b02a150d270dae547155775dd2a8e80ee04d19 assets/erythrium/models/item/ignite_ore.json
 8f72533b96ec96ccb6c962b59b6e8a2dd512853b assets/erythrium/models/item/iron_nugget_ore.json
 c0dc2c23c82216028742f17da112b7f60d8aab34 assets/erythrium/models/item/metalurgic_station.json
 48d9445cee4abd721cd77fbbf7a9f20911616121 assets/erythrium/models/item/nether_rose_quartz_ore.json
