@@ -46,8 +46,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> IGNITE_ORE = registerBlock("ignite_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)
-                    .strength(1.5f)
+                    .strength(1.5f).noOcclusion()
                     .requiresCorrectToolForDrops(), UniformInt.of(2, 4)));
+
 
     public static final RegistryObject<Block> IGNITE_BLOCK = registerBlock("ignite_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.COAL_BLOCK).lightLevel((state) -> 15)));

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_top",
+  "textures": {
+    "side": "erythrium:block/chiseled_rose_quartz_block",
+    "top": "erythrium:block/chiseled_rose_quartz_block_top"
+  }
+}

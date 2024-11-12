@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "erythrium:block/copper_charger_down",
+    "east": "erythrium:block/copper_charger_west",
+    "north": "erythrium:block/copper_charger_north",
+    "particle": "erythrium:block/copper_charger_north",
+    "south": "erythrium:block/copper_charger_south",
+    "up": "erythrium:block/copper_charger_up",
+    "west": "erythrium:block/copper_charger_east"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "erythrium:block/rose_quartz_block",
+    "side": "erythrium:block/rose_quartz_block",
+    "top": "erythrium:block/rose_quartz_block"
+  }
+}

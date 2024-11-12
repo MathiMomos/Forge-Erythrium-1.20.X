@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "erythrium:block/rose_quartz_slab"
+    },
+    "type=double": {
+      "model": "erythrium:block/rose_quartz_block"
+    },
+    "type=top": {
+      "model": "erythrium:block/rose_quartz_slab_top"
+    }
+  }
+}

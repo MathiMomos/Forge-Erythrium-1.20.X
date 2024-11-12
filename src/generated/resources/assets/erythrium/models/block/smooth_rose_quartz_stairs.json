@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "erythrium:block/smooth_rose_quartz",
+    "side": "erythrium:block/smooth_rose_quartz",
+    "top": "erythrium:block/smooth_rose_quartz"
+  }
+}
