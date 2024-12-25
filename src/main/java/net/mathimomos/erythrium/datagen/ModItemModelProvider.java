@@ -196,6 +196,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         withExistingParent(ModItems.GREEN_TOMATHI_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
         withExistingParent(ModItems.HEAVY_TOMATHI_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
 
+        simpleItem(ModItems.ECTOPLASM);
+        simpleItem(ModItems.WITHERED_BONE);
+
+        simpleItem(ModItems.GUST_MUSIC_DISC);
 
     }
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {

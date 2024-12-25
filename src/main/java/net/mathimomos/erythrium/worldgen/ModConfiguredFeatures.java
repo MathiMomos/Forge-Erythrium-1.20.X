@@ -62,8 +62,8 @@ public class ModConfiguredFeatures {
         );
 
         List<OreConfiguration.TargetBlockState> soulrrackRocks = List.of(OreConfiguration.target(soulsandReplaceables,
-                        ModBlocks.SOULRRACK.get().defaultBlockState()),
-                OreConfiguration.target(soulsoilReplaceables, ModBlocks.SOULRRACK.get().defaultBlockState())
+                        ModBlocks.SOUL_SANDSTONE.get().defaultBlockState()),
+                OreConfiguration.target(soulsoilReplaceables, ModBlocks.SOUL_SANDSTONE.get().defaultBlockState())
         );
 
         List<OreConfiguration.TargetBlockState> soulMagmaBlockRocks = List.of(OreConfiguration.target(soulsandReplaceables,

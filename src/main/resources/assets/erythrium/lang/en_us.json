@@ -34,6 +34,7 @@
   "block.erythrium.erythrium_ore": "Erythrium Ore",
   "block.erythrium.deepslate_erythrium_ore": "Deepslate Erythrium Ore",
   "block.erythrium.compacted_erythrium": "Compacted Erythrium",
+  "block.erythrium.chiseled_erythrium_block": "Chiseled Erythrium Block",
 
   "block.erythrium.ignite_ore": "Ignite Ore",
   "block.erythrium.ignite_block": "Ignite Block",
@@ -41,6 +42,14 @@
 
   "block.erythrium.nether_rose_quartz_ore": "Nether Rose Quartz Ore",
   "block.erythrium.rose_quartz_block": "Rose Quartz Block",
+  "block.erythrium.rose_quartz_stairs": "Rose Quartz Stairs",
+  "block.erythrium.rose_quartz_slab": "Rose Quartz Slab",
+  "block.erythrium.chiseled_rose_quartz_block": "Chiseled Rose Quartz Block",
+  "block.erythrium.rose_quartz_bricks": "Rose Quartz Bricks",
+  "block.erythrium.rose_quartz_pillar": "Rose Quartz Pillar",
+  "block.erythrium.smooth_rose_quartz": "Smooth Rose Quartz",
+  "block.erythrium.smooth_rose_quartz_stairs": "Smooth Rose Quartz Stairs",
+  "block.erythrium.smooth_rose_quartz_slab": "Smooth Rose Quartz Slab",
   "item.erythrium.rough_nether_rose_quartz": "Rough Nether Rose Quartz",
   "item.erythrium.rough_nether_quartz": "Rough Nether Quartz",
   "item.erythrium.nether_rose_quartz": "Nether Rose Quartz",
@@ -181,9 +190,16 @@
   "block.erythrium.polished_gabbro_slab": "Polished Gabbro Slab",
   "block.erythrium.polished_rhyolite_slab": "Polished Rhyolite Slab",
 
-  "block.erythrium.soulrrack": "Soulrrack",
+  "block.erythrium.soul_sandstone": "Soul Sandstone",
   "block.erythrium.soul_magma_block": "Soul Magma Block",
   "block.erythrium.glowing_obsidian": "Glowing Obsidian",
+  "block.erythrium.soulbloom_roots": "Soulbloom Roots",
+
+  "item.erythrium.ectoplasm": "Ectoplasm",
+  "item.erythrium.withered_bone": "Whitered Bone",
+
+  "item.erythrium.music_disc_gust": "§bMusic Disc",
+  "item.erythrium.music_disc_gust.desc": "MathiMomos - Gust",
 
   "item.erythrium.tomathi_spawn_egg": "Tomathi Spawn Egg",
   "entity.erythrium.tomathi_base": "Tomathi",
@@ -194,5 +210,6 @@
   "item.erythrium.heavy_tomathi_spawn_egg": "Heavy Tomathi Spawn Egg",
   "entity.erythrium.tomathi_big": "Heavy Tomathi",
 
-  "erythrium.erythrium_tab": "Erythrium"
+  "erythrium.erythrium_items_tab": "Erythrium - Items",
+  "erythrium.erythrium_blocks_tab": "Erythrium - Blocks"
 }

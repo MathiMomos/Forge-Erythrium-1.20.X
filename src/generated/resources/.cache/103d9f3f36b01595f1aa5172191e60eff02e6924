@@ -1,4 +1,4 @@
-// 1.20.1	2024-09-24T20:42:08.1424089	Registries
+// 1.20.1	2024-11-15T13:39:23.5313935	Registries
 2fe4d1ff0b52ff314cfb8cfdbd347d9dc75090e5 data/erythrium/forge/biome_modifier/add_erythrium_ore.json
 4699fdf169f2ec9c9ac1433723652c8600715b54 data/erythrium/forge/biome_modifier/add_flint_block.json
 a3df3bc0186ee48873e461b9049b3aaeea1b17a1 data/erythrium/forge/biome_modifier/add_gabbro.json
@@ -17,7 +17,7 @@ f9fa761d18e9c989e6b5264aeecc9a3c992a5ee0 data/erythrium/worldgen/configured_feat
 68d7a8f385fe39e44b9752b60607419234f4f89d data/erythrium/worldgen/configured_feature/rhyolite.json
 cb244d21507f1458dbb4e93dade9b916d86027a4 data/erythrium/worldgen/configured_feature/rose_quartz_ore.json
 78510a95e174d5444c85e19b30bcddc5043f1ed1 data/erythrium/worldgen/configured_feature/scoria.json
-395942d432a5f105bc31fb8f23edce87ba28abde data/erythrium/worldgen/configured_feature/soulrrack.json
+690f81316e32cac9f83c529bfdd606213464f208 data/erythrium/worldgen/configured_feature/soulrrack.json
 45641e8775b688eb016087de01bbdc98a1b13bac data/erythrium/worldgen/configured_feature/soul_magma_block.json
 1067cd14fa1a035ca820641d2a9f8c9ddaf9e991 data/erythrium/worldgen/placed_feature/erythrium_ore_placed.json
 fa5e4d7fdbfb5847b5cb78fcd91eca1e5e4d23c1 data/erythrium/worldgen/placed_feature/flint_block_placed.json

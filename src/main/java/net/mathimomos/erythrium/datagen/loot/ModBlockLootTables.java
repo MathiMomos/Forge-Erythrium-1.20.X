@@ -109,9 +109,10 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.POLISHED_GABBRO_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.POLISHED_GABBRO_SLAB.get()));
 
-        this.dropSelf(ModBlocks.SOULRRACK.get());
+        this.dropSelf(ModBlocks.SOUL_SANDSTONE.get());
         this.dropSelf(ModBlocks.SOUL_MAGMA_BLOCK.get());
         this.dropSelf(ModBlocks.GLOWING_OBSIDIAN.get());
+        this.dropSelf(ModBlocks.SOULBLOOM_ROOTS.get());
     }
 
     protected LootTable.Builder createMoreThanOneOreDrops(Block pBlock, Item pItem, float min, float max) {

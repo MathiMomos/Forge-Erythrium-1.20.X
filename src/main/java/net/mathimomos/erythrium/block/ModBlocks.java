@@ -1,10 +1,7 @@
 package net.mathimomos.erythrium.block;
 
 import net.mathimomos.erythrium.Erythrium;
-import net.mathimomos.erythrium.block.custom.CopperChargerBlock;
-import net.mathimomos.erythrium.block.custom.DamageOnStepBlock;
-import net.mathimomos.erythrium.block.custom.DiamondCutterBlock;
-import net.mathimomos.erythrium.block.custom.MetalurgicStationBlock;
+import net.mathimomos.erythrium.block.custom.*;
 import net.mathimomos.erythrium.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -46,7 +43,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> IGNITE_ORE = registerBlock("ignite_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)
-                    .strength(1.5f).noOcclusion()
+                    .strength(1.5f)
                     .requiresCorrectToolForDrops(), UniformInt.of(2, 4)));
 
 
@@ -87,7 +84,8 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.CORAL_BLOCK).strength(0.6F)));
 
     public static final RegistryObject<Block> COPPER_CHAGER = registerBlock("copper_charger",
-            () -> new CopperChargerBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK).lightLevel((state) -> 10)));
+            () -> new CopperChargerBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK).lightLevel((state) -> 10)
+                    .noOcclusion().isViewBlocking((state, reader, pos) -> false)));
 
     public static final RegistryObject<Block> DIAMOND_CUTTER = registerBlock("diamond_cutter",
             () -> new DiamondCutterBlock(BlockBehaviour.Properties.copy(Blocks.STONECUTTER).noOcclusion()));
@@ -158,7 +156,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> POLISHED_GABBRO_SLAB = registerBlock("polished_gabbro_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.ANDESITE)));
 
-    public static final RegistryObject<Block> SOULRRACK = registerBlock("soulrrack",
+    public static final RegistryObject<Block> SOUL_SANDSTONE = registerBlock("soul_sandstone",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)));
 
     public static final RegistryObject<Block> SOUL_MAGMA_BLOCK = registerBlock("soul_magma_block",
@@ -166,6 +164,10 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> GLOWING_OBSIDIAN = registerBlock("glowing_obsidian",
             () -> new DamageOnStepBlock(BlockBehaviour.Properties.copy(Blocks.OBSIDIAN).lightLevel((state) -> 3), 1.0f));
+
+    public static final RegistryObject<Block> SOULBLOOM_ROOTS = registerBlock("soulbloom_roots",
+            () -> new SoulBloomRootsBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).lightLevel((state) -> 3)
+                    .noOcclusion().noCollission().instabreak().emissiveRendering((state, level, pos) -> true)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

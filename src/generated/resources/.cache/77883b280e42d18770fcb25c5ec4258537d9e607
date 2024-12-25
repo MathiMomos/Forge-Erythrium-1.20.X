@@ -1,4 +1,4 @@
-// 1.20.1	2024-10-09T03:19:32.2859555	Item Models: erythrium
+// 1.20.1	2024-12-21T03:02:29.3289582	Item Models: erythrium
 3ee7657a6c17695eb28cda380bace9a3691a61b8 assets/erythrium/models/item/bat_wing.json
 6b38e4ea2cb43716966d953795577ed48966ebb9 assets/erythrium/models/item/cherries.json
 be6b7c25bdcaf892873b34a56df141fac4b064fe assets/erythrium/models/item/cooked_squid_tentacle.json
@@ -55,6 +55,7 @@ c1f8df1a4ae88a2b29d487b66fe6f7cb4c86b2e9 assets/erythrium/models/item/copper_nug
 e922e487c27f31511d463e6cda924c40a8aa23c4 assets/erythrium/models/item/copper_shovel.json
 00fc1bb7a1429826c0bfed1340b48b78e132d0f8 assets/erythrium/models/item/copper_sword.json
 4ad2a86dab463b72860416266921f1d497aea481 assets/erythrium/models/item/diamond_twin.json
+457b6281bafff995c06cea8d11667834d289aaf9 assets/erythrium/models/item/ectoplasm.json
 2247aa692e3681bf076398fd61c15e63b2307087 assets/erythrium/models/item/enchanted_tome.json
 1067c2c5b81583a093f906f92780f3f3c0c9ee2a assets/erythrium/models/item/erythrium.json
 2a9faba08a7bcbb6624b3b6b9a7ec1a62f420804 assets/erythrium/models/item/erythrium_axe.json
@@ -161,6 +162,7 @@ ab2aff3ec9b8232e75360b2f10359c78b7fd01d2 assets/erythrium/models/item/glow_squid
 268e0f87e936fcfd4550fe7b5b5a95b9ef67ab27 assets/erythrium/models/item/lazurite.json
 65714cbabed7dc107b643b7af8c1a5cd762da338 assets/erythrium/models/item/leather_fragment.json
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/erythrium/models/item/long_tomathi_spawn_egg.json
+931188f23b74d5950ea00c13bd73a1d6c27943a7 assets/erythrium/models/item/music_disc_gust.json
 31f83d66cba6735868b3d5bac3c1aa3ac6ca24e3 assets/erythrium/models/item/nether_rose_quartz.json
 6bc97619bb233826f1f68ad0c4b96a73718a2b63 assets/erythrium/models/item/nether_star_shard.json
 144e5221a10fc2deca93f759aafd87954b7d0024 assets/erythrium/models/item/obsidian_fragment.json
@@ -394,3 +396,4 @@ b4b5f422e0da772427d0dece430bd1c3f4218e31 assets/erythrium/models/item/weathered_
 0fe41a8ecc57ea537ba8b039bad5c3807710f477 assets/erythrium/models/item/weathered_copper_pickaxe.json
 b527f69becb9af113683ff9a9b2aaf4f1b7ea31c assets/erythrium/models/item/weathered_copper_shovel.json
 f619e1b5db45c19dbe4cfc06e521dd02462e30a5 assets/erythrium/models/item/weathered_copper_sword.json
+42d5d2da256463ae9aa19f60d4432ae26814f02d assets/erythrium/models/item/withered_bone.json

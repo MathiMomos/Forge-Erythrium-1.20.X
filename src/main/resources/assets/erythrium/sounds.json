@@ -1,0 +1,10 @@
+{
+  "gust": {
+    "sounds": [
+      {
+        "name": "erythrium:gust",
+        "stream": true
+      }
+    ]
+  }
+}

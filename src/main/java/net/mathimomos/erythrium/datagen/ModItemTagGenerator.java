@@ -21,34 +21,44 @@ public class ModItemTagGenerator extends ItemTagsProvider {
     protected void addTags(HolderLookup.Provider pProvider) {
         this.tag(ItemTags.TRIMMABLE_ARMOR)
                 .add(ModItems.ERYTHRIUM_CHESTPLATE.get(),
-                ModItems.ERYTHRIUM_LEGGINGS.get(),
-                ModItems.ERYTHRIUM_BOOTS.get(),
+                        ModItems.ERYTHRIUM_LEGGINGS.get(),
+                        ModItems.ERYTHRIUM_BOOTS.get(),
 
-                ModItems.COPPER_HELMET.get(),
-                ModItems.COPPER_CHESTPLATE.get(),
-                ModItems.COPPER_LEGGINGS.get(),
-                ModItems.COPPER_BOOTS.get(),
+                        ModItems.COPPER_HELMET.get(),
+                        ModItems.COPPER_CHESTPLATE.get(),
+                        ModItems.COPPER_LEGGINGS.get(),
+                        ModItems.COPPER_BOOTS.get(),
 
-                ModItems.EXPOSED_COPPER_HELMET.get(),
-                ModItems.EXPOSED_COPPER_CHESTPLATE.get(),
-                ModItems.EXPOSED_COPPER_LEGGINGS.get(),
-                ModItems.EXPOSED_COPPER_BOOTS.get(),
+                        ModItems.EXPOSED_COPPER_HELMET.get(),
+                        ModItems.EXPOSED_COPPER_CHESTPLATE.get(),
+                        ModItems.EXPOSED_COPPER_LEGGINGS.get(),
+                        ModItems.EXPOSED_COPPER_BOOTS.get(),
 
-                ModItems.WEATHERED_COPPER_HELMET.get(),
-                ModItems.WEATHERED_COPPER_CHESTPLATE.get(),
-                ModItems.WEATHERED_COPPER_LEGGINGS.get(),
-                ModItems.WEATHERED_COPPER_BOOTS.get(),
+                        ModItems.WEATHERED_COPPER_HELMET.get(),
+                        ModItems.WEATHERED_COPPER_CHESTPLATE.get(),
+                        ModItems.WEATHERED_COPPER_LEGGINGS.get(),
+                        ModItems.WEATHERED_COPPER_BOOTS.get(),
 
-                ModItems.OXIDIZED_COPPER_HELMET.get(),
-                ModItems.OXIDIZED_COPPER_CHESTPLATE.get(),
-                ModItems.OXIDIZED_COPPER_LEGGINGS.get(),
-                ModItems.OXIDIZED_COPPER_BOOTS.get()
+                        ModItems.OXIDIZED_COPPER_HELMET.get(),
+                        ModItems.OXIDIZED_COPPER_CHESTPLATE.get(),
+                        ModItems.OXIDIZED_COPPER_LEGGINGS.get(),
+                        ModItems.OXIDIZED_COPPER_BOOTS.get()
 
                 );
         this.tag(ItemTags.TRIM_TEMPLATES)
                 .add(ModItems.ERYTHRIUM_UPGRADE_SMITHING_TEMPLATE.get());
 
         this.tag(ItemTags.TRIM_MATERIALS)
-                .add(ModItems.COPPER_PLATE.get());
+                .add(ModItems.COPPER_PLATE.get(),
+                        ModItems.IRON_PLATE.get(),
+                        ModItems.GOLD_PLATE.get(),
+                        ModItems.STEEL_PLATE.get(),
+                        ModItems.ROSE_GOLD_PLATE.get(),
+                        ModItems.DIAMOND_TWIN.get(),
+                        ModItems.ERYTHRIUM_TWIN.get()
+                        );
+
+        this.tag(ItemTags.MUSIC_DISCS)
+                .add(ModItems.GUST_MUSIC_DISC.get());
     }
 }

@@ -88,7 +88,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         slabBlock(((SlabBlock) ModBlocks.POLISHED_SCORIA_SLAB.get()), blockTexture(ModBlocks.POLISHED_SCORIA.get()), blockTexture(ModBlocks.POLISHED_SCORIA.get()));
         slabBlock(((SlabBlock) ModBlocks.POLISHED_GABBRO_SLAB.get()), blockTexture(ModBlocks.POLISHED_GABBRO.get()), blockTexture(ModBlocks.POLISHED_GABBRO.get()));
 
-        blockWithItem(ModBlocks.SOULRRACK);
+        blockBottomTopWithItem(ModBlocks.SOUL_SANDSTONE);
         blockWithItem(ModBlocks.SOUL_MAGMA_BLOCK);
         blockWithItem(ModBlocks.GLOWING_OBSIDIAN);
     }
@@ -141,6 +141,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         ResourceLocation east = new ResourceLocation(Erythrium.MOD_ID, "block/" + blockRegistryObject.getId().getPath() + "_east");
         ResourceLocation north_on = new ResourceLocation(Erythrium.MOD_ID, "block/" + blockRegistryObject.getId().getPath() + "_north_on");
 
+        String rendertype = "translucent";
         // Define los modelos según el estado del bloque (powered o no)
         getVariantBuilder(blockRegistryObject.get()).forAllStates(state -> {
             boolean powered = state.getValue(CopperChargerBlock.POWERED);
@@ -148,7 +149,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
                     models().cube(blockRegistryObject.getId().getPath() + "_powered", down, up, north_on, south, west, east)
                             .texture("particle", north_on) :
                     models().cube(blockRegistryObject.getId().getPath() + "_unpowered", down, up, north, south, west, east)
-                            .texture("particle", north);
+                            .texture("particle", north).renderType(rendertype);
 
             // Invertir rotación si es necesario
             int rotationY = (state.getValue(CopperChargerBlock.FACING).get2DDataValue() * 90 + 180) % 360;
@@ -160,7 +161,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         });
 
         // Registra el item con el modelo del estado "unpowered"
-        simpleBlockItem(blockRegistryObject.get(), models().cube(blockRegistryObject.getId().getPath() + "_unpowered", down, up, north, south, west, east).texture("particle", north));
+        simpleBlockItem(blockRegistryObject.get(), models().cube(blockRegistryObject.getId().getPath() + "_unpowered", down, up, north, south, west, east).texture("particle", north).renderType(rendertype));
     }
 
     private void customModelHorizontalBlock(RegistryObject<Block> blockRegistryObject, String name) {

@@ -6,7 +6,7 @@
     "targets": [
       {
         "state": {
-          "Name": "erythrium:soulrrack"
+          "Name": "erythrium:soul_sandstone"
         },
         "target": {
           "block": "minecraft:soul_sand",
@@ -15,7 +15,7 @@
       },
       {
         "state": {
-          "Name": "erythrium:soulrrack"
+          "Name": "erythrium:soul_sandstone"
         },
         "target": {
           "block": "minecraft:soul_soil",

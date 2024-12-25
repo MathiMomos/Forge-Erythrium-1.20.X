@@ -3,6 +3,7 @@ package net.mathimomos.erythrium.item;
 import net.mathimomos.erythrium.Erythrium;
 import net.mathimomos.erythrium.entity.ModEntities;
 import net.mathimomos.erythrium.item.custom.*;
+import net.mathimomos.erythrium.sound.ModSounds;
 import net.mathimomos.erythrium.util.ModToolTiers;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -285,6 +286,15 @@ public class ModItems {
 
     public static final RegistryObject<Item> HEAVY_TOMATHI_SPAWN_EGG = ITEMS.register("heavy_tomathi_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntities.TOMATHI_BIG, 0x09B167, 0xD63347, new Item.Properties()));
+
+    public static final RegistryObject<Item> ECTOPLASM = ITEMS.register("ectoplasm",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> WITHERED_BONE = ITEMS.register("withered_bone",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> GUST_MUSIC_DISC = ITEMS.register("music_disc_gust",
+            () -> new RecordItem(2, ModSounds.GUST, new Item.Properties().stacksTo(1), 1740));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

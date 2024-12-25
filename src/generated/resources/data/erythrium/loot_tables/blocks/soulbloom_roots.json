@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "erythrium:soulrrack"
+          "name": "erythrium:soulbloom_roots"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "erythrium:blocks/soulrrack"
+  "random_sequence": "erythrium:blocks/soulbloom_roots"
 }

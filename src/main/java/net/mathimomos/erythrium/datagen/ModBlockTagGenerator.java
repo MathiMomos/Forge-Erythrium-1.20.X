@@ -114,7 +114,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.POLISHED_SCORIA_SLAB.get(),
                         ModBlocks.POLISHED_GABBRO_SLAB.get(),
                         ModBlocks.POLISHED_RHYOLITE_SLAB.get(),
-                        ModBlocks.SOULRRACK.get(),
+                        ModBlocks.SOUL_SANDSTONE.get(),
                         ModBlocks.SOUL_MAGMA_BLOCK.get(),
                         ModBlocks.GLOWING_OBSIDIAN.get()
                 );
@@ -128,9 +128,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.GABBRO_WALL.get()
                 );
 
-        this.tag(BlockTags.SOUL_FIRE_BASE_BLOCKS).add(ModBlocks.SOULRRACK.get(), ModBlocks.SOUL_MAGMA_BLOCK.get());
-        this.tag(BlockTags.SOUL_SPEED_BLOCKS).add(ModBlocks.SOULRRACK.get(), ModBlocks.SOUL_MAGMA_BLOCK.get());
-        this.tag(BlockTags.WITHER_SUMMON_BASE_BLOCKS).add(ModBlocks.SOULRRACK.get());
+        this.tag(BlockTags.SOUL_FIRE_BASE_BLOCKS).add(ModBlocks.SOUL_SANDSTONE.get(), ModBlocks.SOUL_MAGMA_BLOCK.get());
+        this.tag(BlockTags.SOUL_SPEED_BLOCKS).add(ModBlocks.SOUL_SANDSTONE.get(), ModBlocks.SOUL_MAGMA_BLOCK.get());
+        this.tag(BlockTags.WITHER_SUMMON_BASE_BLOCKS).add(ModBlocks.SOUL_SANDSTONE.get());
 
         this.tag(BlockTags.INFINIBURN_OVERWORLD).add(ModBlocks.SOUL_MAGMA_BLOCK.get());
         this.tag(BlockTags.INFINIBURN_NETHER).add(ModBlocks.SOUL_MAGMA_BLOCK.get());

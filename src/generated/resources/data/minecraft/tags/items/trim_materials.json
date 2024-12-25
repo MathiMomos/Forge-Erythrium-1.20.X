@@ -1,5 +1,11 @@
 {
   "values": [
-    "erythrium:copper_plate"
+    "erythrium:copper_plate",
+    "erythrium:iron_plate",
+    "erythrium:gold_plate",
+    "erythrium:steel_plate",
+    "erythrium:rose_gold_plate",
+    "erythrium:diamond_twin",
+    "erythrium:erythrium_twin"
   ]
 }

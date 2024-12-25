@@ -1,4 +1,4 @@
-// 1.20.1	2024-10-24T03:28:22.6516141	Loot Tables
+// 1.20.1	2024-11-15T13:39:23.5303936	Loot Tables
 0e9f530718491d242cc72fa5abbf73dbfae7098b data/erythrium/loot_tables/blocks/chiseled_erythrium_block.json
 b739b05ef24a55dc12c04e4bbd3e59e246bcb777 data/erythrium/loot_tables/blocks/chiseled_rose_quartz_block.json
 427b266cd3f85127d21623bc964bb8bbc9971907 data/erythrium/loot_tables/blocks/compacted_erythrium.json
@@ -47,7 +47,8 @@ dad5f1bde429a76ff31388caf9054a8140cbbf46 data/erythrium/loot_tables/blocks/scori
 027586379b2cc15fe1447c4a01e3aa3c3ce37bae data/erythrium/loot_tables/blocks/smooth_rose_quartz.json
 fe252fb4b9a26c9a05e5cf47b24de289734c2bb7 data/erythrium/loot_tables/blocks/smooth_rose_quartz_slab.json
 bd3c34555c6eda0d0576962417346696b4b16f28 data/erythrium/loot_tables/blocks/smooth_rose_quartz_stairs.json
-28bf15539023829e8347ad90c355449bd2a19b19 data/erythrium/loot_tables/blocks/soulrrack.json
+b1648b02e52062c25a9b62b01944d861c2c7a3cc data/erythrium/loot_tables/blocks/soulbloom_roots.json
 de1f0f05e4e2892bb3153d635aaeecccf98f8fc9 data/erythrium/loot_tables/blocks/soul_magma_block.json
+afa3fa8e218aebefe811b663b6a7741962d2181f data/erythrium/loot_tables/blocks/soul_sandstone.json
 e8627bedf8de79ecdedbfd196ef6c06bdcc9b6a0 data/erythrium/loot_tables/blocks/steel_block.json
 813c1e9b6692b3b1a696d14a0eb43c0ef36a54fd data/erythrium/loot_tables/blocks/tomathi_block.json

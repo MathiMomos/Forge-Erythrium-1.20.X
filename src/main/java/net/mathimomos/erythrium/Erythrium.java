@@ -15,6 +15,7 @@ import net.mathimomos.erythrium.recipe.ModRecipies;
 import net.mathimomos.erythrium.screen.DiamondCutterScreen;
 import net.mathimomos.erythrium.screen.MetalurgicStationScreen;
 import net.mathimomos.erythrium.screen.ModMenuTypes;
+import net.mathimomos.erythrium.sound.ModSounds;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -52,6 +53,8 @@ public class Erythrium {
         ModMenuTypes.register(modEventBus);
 
         ModRecipies.register(modEventBus);
+
+        ModSounds.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
